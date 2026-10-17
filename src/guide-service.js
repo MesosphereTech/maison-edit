@@ -1,6 +1,14 @@
 // Keep provider failures distinct from generated advice in every presentation.
 export function guideFailure(warning, language = "en") {
   const zh = language === "zh";
+  if (warning === "review_daily_limit")
+    return zh
+      ? "今日评审体验的 AI 请求额度已用完，请明天再试。浏览和选款仍可继续。"
+      : "Today's review AI request allowance has been reached. Please try tomorrow; browsing and selecting pieces remain available.";
+  if (warning === "review_busy")
+    return zh
+      ? "导购正在回复其他访客，请稍等片刻再试。"
+      : "The guide is helping other visitors. Please try again in a moment.";
   if (warning === "provider_rate_limited" || warning === "rate_limited")
     return zh
       ? "AI 额度暂不可用或请求过于频繁，请稍后再试。"

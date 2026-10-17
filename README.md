@@ -55,7 +55,7 @@ No test user uploads are accepted. Default body heights and sizes are illustrati
 
 All profile selections, saved, bag, booking and merchant demo state is local to the current browser under one versioned localStorage key. Default fixture images are static assets, not base64 photographs stored in the profile. It does not sync across devices or users. Clearing site data removes it. A production experience needs authenticated customer and merchant accounts, a database, explicit privacy handling, real scheduling/inventory APIs and authorized integration testing.
 
-The full frontend and Node API are privately deployed on Google Cloud Run with real Gemini text guidance verified in a browser. Browsing uses instant prewritten introductions; sending a typed message or a question shortcut automatically requests Gemini after the visible sharing notice. The server receives the key only through Secret Manager. No key is required for a clean local build, and a no-key local server truthfully reports demo availability. Live image generation remains disabled. The optional GPT CLI test adapter is not used by this Cloud Run service; its historical local test limitations are documented separately.
+The full frontend and Node API are deployed on Google Cloud Run as a public judging service and a separate private preview, with real Gemini text guidance verified in a browser. Browsing uses instant prewritten introductions; sending a typed message or a question shortcut automatically requests Gemini after the visible sharing notice. The server receives the key only through Secret Manager. No key is required for a clean local build, and a no-key local server truthfully reports demo availability. Live image generation remains disabled. The optional GPT CLI test adapter is not used by this Cloud Run service; its historical local test limitations are documented separately.
 
 ## Test
 
@@ -67,7 +67,7 @@ npm run test:build
 # E2E_CHROMIUM_PATH=<path-to-chromium> node tests/live-guide-e2e.mjs
 ```
 
-Core and backend tests make no live Google or OpenAI calls and need no credentials. Provider-contract fixtures are synthetic test responses, not evidence of a real provider connection. Browser tests use Playwright and a locally installed headless shell; an ordinary local Chromium executable can be configured where supported. Focused suites cover local-first browsing, deliberate AI chat, quota/cancellation behavior, independent history collapse/minimize and non-overlapping product-guide layouts. The latest recorded application run passed 247/247 and the backend subset passed 56/56. Locale, desktop/mobile guide and staged-runtime checks passed. The legacy general `npm run test:e2e` last passed only 4/24, including failures from obsolete controls and superseded playback expectations; it is not currently a passing release gate, and all remaining failures have not been resolved. Screenshots are generated under `artifacts/` (not published as product assets).
+Core and backend tests make no live Google or OpenAI calls and need no credentials. Provider-contract fixtures are synthetic test responses, not evidence of a real provider connection. Browser tests use Playwright and a locally installed headless shell; an ordinary local Chromium executable can be configured where supported. Focused suites cover local-first browsing, deliberate AI chat, quota/cancellation behavior, independent history collapse/minimize and non-overlapping product-guide layouts. The latest recorded application run passed 252/252 and the backend subset passed 56/56. Locale, desktop/mobile guide and staged-runtime checks passed. The legacy general `npm run test:e2e` last passed only 4/24, including failures from obsolete controls and superseded playback expectations; it is not currently a passing release gate, and all remaining failures have not been resolved. Screenshots are generated under `artifacts/` (not published as product assets).
 
 ## Deployment
 
@@ -77,9 +77,11 @@ Verified on October 18, 2026 (Asia/Shanghai):
 | --- | --- |
 | Source repository | Private `MesosphereTech/maison-edit` |
 | Google project / region | `gen-lang-client-0176200551` / `asia-east1` |
-| Cloud Run service / revision | `maison-edit-private` / `maison-edit-private-00007-sns` |
-| Cloud URL | https://maison-edit-private-904021583303.asia-east1.run.app |
-| Access | Private, requires Cloud Run IAM; unauthenticated requests return 403 |
+| Public judging service / revision | `maison-edit-review` / `maison-edit-review-00001-6n8` |
+| Private preview service / revision | `maison-edit-private` / `maison-edit-private-00007-sns` |
+| Public judging URL | https://maison-edit-review-904021583303.asia-east1.run.app |
+| Private preview URL | https://maison-edit-private-904021583303.asia-east1.run.app |
+| Access | Judging URL: public, no login, HTTP 200. Original preview: private IAM, unauthenticated HTTP 403 |
 | Application | Vite frontend and Node 22 API served together |
 | Gemini | Real typed browser question verified: HTTP 200, `mode: "gemini"`, `externalCall: true`, model `gemini-3.5-flash-lite` |
 | Secrets | Runtime `GEMINI_API_KEY` from Secret Manager; `GEMINI_MODEL` is a server setting; no key in source/frontend/build |
@@ -97,7 +99,15 @@ A separate, clean source snapshot passed a fresh locked dependency installation,
 
 The complete Dockerfile previously built successfully in Cloud Build. The current revision was built from the verified complete image plus current frontend/source and Gemini-adapter updates; see `docs/GOOGLE_DEPLOYMENT.md` for build IDs and verification history. The repository Dockerfile is the reproducible full-source path. Static-only hosting does not provide the Node AI backend. Neither source synchronization nor static preview constitutes a new cloud deployment or a public release.
 
-Keep the repository and Cloud Run private. The three Suno Free recordings are included only for private, personal, non-commercial testing; public use requires license verification or replacement. Products, inventory and visits remain demonstration data. Public release, music clearance and competition submission require separate approval. No key should be read, exported or committed during source synchronization.
+Keep the repository and existing private Cloud Run preview private. The owner approved the separate public judging release and confirmed that music arrangements are handled; original recordings and provenance are retained. Products, inventory and visits remain demonstration data, and deployment does not itself complete a competition submission. No key should be read, exported or committed during source synchronization.
+
+## Public judging release — October 18, 2026
+
+Open **https://maison-edit-review-904021583303.asia-east1.run.app** directly; judges need no Google login or experience code. A fresh, unauthenticated browser loaded the product experience and submitted one real Gemini question. The response returned HTTP 200, `mode: "gemini"`, `externalCall: true`, `model: "gemini-3.5-flash-lite"`, and was displayed verbatim in the transcript. Browsing made no provider requests. History collapse and whole-window minimize also passed in the public browser.
+
+Service `maison-edit-review` is revision `maison-edit-review-00001-6n8`, built by Cloud Build `12d9f390-058e-4213-8ee3-a878bdf12d10`. Only this service has `allUsers:roles/run.invoker`. The original service remains private at revision `maison-edit-private-00007-sns`; its unauthenticated request returned 403. The GitHub repository remains private.
+
+`PUBLIC_REVIEW_MODE=true` enables service-side safeguards: 12 AI requests per minute, 200 per review day (Asia/Shanghai) and two simultaneous AI requests. Rejected requests return 429 before another provider request; browsing stays available and makes no Gemini call. Daily/concurrency feedback is bilingual. These counters are shared within one server process and reset on process restart; they are not durable quotas, authentication or a financial spending cap. Both services use request-based 1 CPU / 512 MiB, zero minimum and one maximum instance each; the existing USD 5 project budget remains an alert, not a hard cap. No billing-tier upgrade or new key was created. Only the existing Secret Manager version reference is injected into the review service; the agent did not read its value.
 
 ## Files
 

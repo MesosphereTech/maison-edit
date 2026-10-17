@@ -1,5 +1,21 @@
 # MAISON ÉDIT · Google AI / Cloud Run deployment
 
+## Public judging release — October 18, 2026
+
+The owner explicitly approved public publication and synchronization of the ten additional review-source files. The original 33-file private GitHub synchronization is commit `851984b136417c194000a5950c499fd3855d4584`. The repository remains private; publication affects only the separate judging service. Music arrangements were confirmed handled by the owner, and the original media/provenance remain unchanged.
+
+- Public service: `maison-edit-review`, project `gen-lang-client-0176200551`, region `asia-east1`.
+- Public URL: https://maison-edit-review-904021583303.asia-east1.run.app (canonical https://maison-edit-review-zerxou757a-de.a.run.app).
+- Ready revision: `maison-edit-review-00001-6n8`, serving 100% of traffic; Cloud Build `12d9f390-058e-4213-8ee3-a878bdf12d10`.
+- Only the review service has `allUsers:roles/run.invoker`. The original service has no public binding, is still revision `maison-edit-private-00007-sns`, and returns unauthenticated 403.
+- Request-based CPU billing, 1 CPU/512 MiB, min zero/max one instance at both service/revision scopes, concurrency four, 60-second timeout, startup CPU boost off, image generation disabled.
+- Existing runtime identity and `GEMINI_API_KEY=maison-edit-gemini-api-key:1` secret reference, with `GEMINI_MODEL=gemini-3.5-flash-lite`. No key payload was read, downloaded or added to Git. No new key, project-level role or billing-tier upgrade was created.
+- `PUBLIC_REVIEW_MODE=true`: 12 AI requests per minute, 200 per review day (midnight Asia/Shanghai), two concurrent AI requests, collectively per server process. Restart resets counters. These are safeguards, not durable quotas or a financial cap. The existing USD 5 project alert budget still covers the project; free/billed usage has not been independently verified.
+
+Verification: unauthenticated root, compiled CSS/JS assets, `/api/health` and `/api/status` returned 200. Status reported the configured public limits. MP3 byte range returned 206 with the correct 32 bytes. A new browser with no Google login or Authorization header loaded the actual public URL, showed instant prewritten browsing with zero provider requests, and sent one real styling question. Its response returned HTTP 200, `mode: "gemini"`, `externalCall: true`, model `gemini-3.5-flash-lite`, no warning; the paragraph was found verbatim in the conversation. It suggested fluid textures and lighter hues to soften the wool blazer. History collapsed to one bubble and minimization generated no further calls. No provider response was mocked for this live check.
+
+Offline checks before publication: 252 tests, production build, staged Node runtime, focused desktop/mobile guide suites, and daily-limit feedback passed. Mocked local HTTP tests prove a daily rejection prevents another provider request. The full general legacy browser suite remains a separately recorded limitation below.
+
 ## Private source synchronization review — October 18, 2026
 
 At review time the GitHub API confirmed `MesosphereTech/maison-edit` remains private, and authenticated `git ls-remote` confirmed main is still `e2e0bb6e367a5b38c00f7cc69265fbfb249fded9`. No commit or push was performed before the owner's requested review. Current frontend source and Gemini adapter match the source snapshot used for revision `maison-edit-private-00007-sns`; public media have no Git changes. The synchronization preparation adds documentation and ignore-rule hardening, explicitly includes build devDependencies in the Dockerfile, and clarifies the existing missing-manifest native build path.

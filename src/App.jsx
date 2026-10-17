@@ -4303,11 +4303,16 @@ function GuidePanel({
             signal: controller.signal,
           });
           if (!r.ok) {
+            const failure = await r.json().catch(() => ({}));
             response = {
               role: "assistant",
               mode: "unavailable",
               warning:
-                r.status === 429 ? "rate_limited" : "provider_unavailable",
+                r.status === 429
+                  ? ["review_daily_limit", "review_busy"].includes(failure.code)
+                    ? failure.code
+                    : "rate_limited"
+                  : "provider_unavailable",
             };
             throw Error("Guide service unavailable");
           }

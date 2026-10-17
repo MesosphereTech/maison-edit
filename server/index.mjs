@@ -4,6 +4,7 @@ import { dirname, extname, resolve, sep } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { InputError, createShoppingGuide, createSceneAdapter, publicAIStatus } from './google-ai.mjs';
 import { createCodexAdapters } from './codex-cli.mjs';
+import { createPublicReviewLimits } from './public-review-limits.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const maxBodyBytes = 16 * 1024;
@@ -32,7 +33,8 @@ export function createAppServer({ env = process.env, fetchImpl = fetch, distDir 
   const codex = codexMode ? createCodexAdapters({ env, ...(catalog ? { catalog } : {}), ...(runCodexImpl ? { runImpl: runCodexImpl } : {}) }) : null;
   const guide = codex?.guide ?? createShoppingGuide({ env, fetchImpl, ...(catalog ? { catalog } : {}) });
   const scene = codex?.scene ?? createSceneAdapter({ env, fetchImpl, ...(catalog ? { catalog } : {}) });
-  const status = () => codex?.status() ?? publicAIStatus(env);
+  const publicLimits = createPublicReviewLimits(env);
+  const status = () => ({ ...(codex?.status() ?? publicAIStatus(env)), ...publicLimits.metadata() });
   const allowedOrigin = originValue(env.GUIDE_ALLOWED_ORIGIN);
   const rates = new Map();
   let activeAI = 0;
@@ -75,6 +77,12 @@ export function createAppServer({ env = process.env, fetchImpl = fetch, distDir 
       if (!['/api/guide', '/api/scene', '/api/analyze'].includes(pathname)) return sendJSON(response, 404, { error: 'API route not found.' });
       if (request.method !== 'POST') return sendJSON(response, 405, { error: 'Use POST.' });
       if (!rateAllowed(request) || activeAI >= (codexMode ? 1 : 4)) return sendJSON(response, 429, { error: 'Please wait before another request.', retryAfterSeconds: 60 });
+      const slot = publicLimits.acquire();
+      if (!slot.allowed) {
+        request.resume();
+        response.setHeader('retry-after', String(slot.retryAfterSeconds));
+        return sendJSON(response, 429, { error: 'AI review requests are temporarily limited.', code: slot.code, retryAfterSeconds: slot.retryAfterSeconds });
+      }
       activeAI++;
       try {
         const body = await readJSON(request);
@@ -83,7 +91,7 @@ export function createAppServer({ env = process.env, fetchImpl = fetch, distDir 
       } catch (error) {
         request.resume();
         return sendJSON(response, error instanceof InputError ? error.status : 500, { error: error instanceof InputError ? error.message : 'Request could not be completed.', code: error instanceof InputError ? error.code : 'server_error' });
-      } finally { activeAI--; }
+      } finally { activeAI--; slot.release(); }
     }
     if (!['GET', 'HEAD'].includes(request.method)) return sendJSON(response, 405, { error: 'Method not allowed.' });
     if (pathname.includes('\u0000') || pathname.includes('\\') || pathname.split('/').some(segment => segment.startsWith('.'))) return sendJSON(response, 404, { error: 'Not found.' });

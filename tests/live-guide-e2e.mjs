@@ -12,7 +12,10 @@ const browser = await chromium.launch({
   headless: true,
 });
 const page = await browser.newPage({
-  viewport: { width: Number(process.env.E2E_WIDTH || 1440), height: Number(process.env.E2E_HEIGHT || 1000) },
+  viewport: {
+    width: Number(process.env.E2E_WIDTH || 1440),
+    height: Number(process.env.E2E_HEIGHT || 1000),
+  },
   reducedMotion: "reduce",
 });
 const errors = [],
@@ -38,6 +41,13 @@ try {
     const body = route.request().postDataJSON();
     calls.push(body);
     const mode = replyMode;
+    if (mode === "daily") {
+      await route.fulfill({
+        status: 429,
+        json: { code: "review_daily_limit" },
+      });
+      return;
+    }
     if (mode === "http-rate") {
       await route.fulfill({ status: 429, json: { error: "Please wait" } });
       return;
@@ -75,7 +85,10 @@ try {
     .locator(".demo-setup[open]")
     .waitFor({ state: "hidden", timeout: 15000 });
   await exitDemoGuide(page);
-  await page.locator(".product-image-button").first().click({ position: { x: 100, y: 100 } });
+  await page
+    .locator(".product-image-button")
+    .first()
+    .click({ position: { x: 100, y: 100 } });
   await page.locator(".modal[data-concierge-current-product]").waitFor();
   const panel = page.locator(".subtitle-concierge:not(.is-minimized)");
   await panel.waitFor();
@@ -197,6 +210,17 @@ try {
     "HTTP quota response did not settle",
   );
   assert.match(await panel.innerText(), /AI quota is unavailable/);
+
+  replyMode = "daily";
+  await panel.locator("#subtitle-message").fill("One more styling idea.");
+  await panel
+    .getByRole("button", { name: "Send subtitle reply", exact: true })
+    .click();
+  await until(
+    async () =>
+      /Today's review AI request allowance/.test(await panel.innerText()),
+    "daily allowance notice missing",
+  );
 
   replyMode = "held";
   await panel.locator("#subtitle-message").fill("Try again now.");
