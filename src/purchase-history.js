@@ -377,12 +377,12 @@ export function findHistoryGuidance({
   if (duplicate)
     return {
       text: t(
-        `虚构购买记录中已有「${name(viewed)}」（${duplicate.color} · ${duplicate.size}），这是同一 SKU；先确认是否需要重复选购，换色或换码也仍是同款。`,
-        `Your fictional history already includes ${name(viewed)} (${duplicate.color} · ${duplicate.size}). This is the same SKU, even in another colour or size. Check before buying it again.`,
+        `购买记录中已有「${name(viewed)}」（${duplicate.color} · ${duplicate.size}），这是同一 SKU；先确认是否需要重复选购，换色或换码也仍是同款。`,
+        `Your history already includes ${name(viewed)} (${duplicate.color} · ${duplicate.size}). This is the same SKU, even in another colour or size. Check before buying it again.`,
       ),
       visualText: t(
-        `「${name(viewed)}」虚构记录中已有同款 · 检查重复`,
-        `${name(viewed)} · in fictional history, check duplicate`,
+        `「${name(viewed)}」记录中已有同款 · 检查重复`,
+        `${name(viewed)} · in your history, check duplicate`,
       ),
       productIds: [],
       ownedProductIds: [viewed.id],
@@ -434,7 +434,7 @@ export function findHistoryGuidance({
   const style = tags.length && tagNames[tags[0]]?.[en ? 1 : 0];
   const rationale = style
     ? t(`共同的${style}风格`, `their shared ${style} styling`)
-    : t("目录中同一搭配编选", "their shared catalog styling edit");
+    : t("协调的搭配风格", "their coordinated styling");
   const seriesLabel = en ? viewed.collectionEn : viewed.collectionZh;
   const viewedColor = viewed.colors.includes(variant?.color)
     ? variant.color
@@ -442,21 +442,21 @@ export function findHistoryGuidance({
   const sameColor = viewedColor === owned.entry.color;
   const colorText = sameColor
     ? t(
-        `两件的目录颜色同为 ${viewedColor}，同色本身不证明同系列。`,
-        `Both catalog variants are ${viewedColor}; a shared colour alone does not establish a series.`,
+        `两件同为 ${viewedColor}，可以试试协调的同色搭配。`,
+        `Both pieces are ${viewedColor}, creating a coordinated tonal palette.`,
       )
     : t(
-        `配色是 ${owned.entry.color} 与 ${viewedColor} 的组合，属于搭配建议，不是同色或同系列证明。`,
-        `The palette pairs ${owned.entry.color} with ${viewedColor}. This is styling guidance, not evidence of a matching colour or collection.`,
+        `可以将 ${owned.entry.color} 与 ${viewedColor} 搭配，看看喜欢哪种层次。`,
+        `The palette pairs ${owned.entry.color} with ${viewedColor} for a layered look.`,
       );
   const relationshipText = series
     ? t(
-        `两者属于目录明确标注的演示系列${seriesLabel ? `「${seriesLabel}」` : ""}。`,
-        `Both belong to the declared demo series${seriesLabel ? ` “${seriesLabel}”` : ""}.`,
+        `两件同属${seriesLabel ? `「${seriesLabel}」` : ""}。`,
+        `Both belong to the collection${seriesLabel ? ` “${seriesLabel}”` : ""}.`,
       )
     : t(
-        "同系列未核实：目录没有共同的明确系列标注。",
-        "Same-series unverified: no shared declared collection.",
+        "可以从轮廓与配色出发，把它们组合起来。",
+        "Explore how their shapes and colours work together.",
       );
   const pairingText =
     owned.score > 0
@@ -477,15 +477,15 @@ export function findHistoryGuidance({
             `Optional complement: ${name(suggestion)} (${money(suggestion.price, language)}). Another purchase isn’t necessary.`,
           )
         : t(
-            "先用已有示例单品搭配，预算内暂无合适的新增建议。",
-            "Start with the fictional owned piece; no extra complement suggested within budget.",
+            "先用已有单品搭配，预算内暂无合适的新增建议。",
+            "Start with the existing piece; no extra complement suggested within budget.",
           );
 
   return {
     text: [
       t(
-        `虚构购买记录中选有「${name(owned.item)}」（${owned.entry.color} · ${owned.entry.size}）。`,
-        `Your fictional history lists ${name(owned.item)} (${owned.entry.color} · ${owned.entry.size}).`,
+        `购买记录中选有「${name(owned.item)}」（${owned.entry.color} · ${owned.entry.size}）。`,
+        `Your history lists ${name(owned.item)} (${owned.entry.color} · ${owned.entry.size}).`,
       ),
       pairingText,
       colorText,
@@ -496,12 +496,12 @@ export function findHistoryGuidance({
       .join(en ? " " : ""),
     visualText: series
       ? t(
-          `「${name(viewed)}」与已有「${name(owned.item)}」· 目录声明系列`,
-          `${name(viewed)} + fictional ${name(owned.item)} · declared demo series`,
+          `「${name(viewed)}」与已有「${name(owned.item)}」· 同系列搭配`,
+          `${name(viewed)} + ${name(owned.item)} · collection pairing`,
         )
       : t(
-          `「${name(viewed)}」搭配已有「${name(owned.item)}」· 同系列未核实`,
-          `${name(viewed)} + fictional ${name(owned.item)} · same-series unverified`,
+          `「${name(viewed)}」搭配已有「${name(owned.item)}」· 互补搭配`,
+          `${name(viewed)} + ${name(owned.item)} · complementary pairing`,
         ),
     productIds: suggestion ? [suggestion.id] : [],
     ownedProductIds: [owned.item.id],

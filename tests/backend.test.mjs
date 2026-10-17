@@ -41,7 +41,7 @@ test('successful Gemini request uses fixed Google endpoint, header key, structur
   assert.deepEqual(result.productIds, ['ME-001', 'ME-002']); assert.equal(result.products[1].price, 1680); assert.equal(result.products[0].stock, 8);
   assert.equal(capture.url, 'https://generativelanguage.googleapis.com/v1beta/models/gemini-test-model:generateContent');
   assert.equal(capture.options.headers['x-goog-api-key'], 'mock-test-only'); assert.equal(capture.options.redirect, 'error');
-  assert.equal(capture.body.generationConfig.responseFormat.text.mimeType, 'application/json');
+  assert.equal(capture.body.generationConfig.responseFormat.text.mimeType, 'APPLICATION_JSON');
   assert.deepEqual(capture.body.generationConfig.responseFormat.text.schema.properties.recommendations.items.properties.productId.enum, ['ME-001', 'ME-002']);
   assert.equal(JSON.stringify(result).includes('mock-test-only'), false);
 });
@@ -159,18 +159,42 @@ test('health/status metadata do not expose keys or claim live calls', () => {
 test('HTTP server serves built SPA, health and strict JSON APIs with origin and path protections', async t => {
   const dir = await mkdtemp(join(tmpdir(), 'maison-backend-'));
   await mkdir(join(dir, 'assets')); await writeFile(join(dir, 'index.html'), '<html>demo</html>'); await writeFile(join(dir, 'assets/app.js'), 'console.log("demo")');
-  const outside = join(tmpdir(), 'maison-outside-test.txt'); await writeFile(outside, 'private'); await symlink(outside, join(dir, 'leak.txt'));
+  const outside = await mkdtemp(join(tmpdir(), 'maison-outside-'));
+  await writeFile(join(outside, 'private.txt'), 'private');
+  await symlink(outside, join(dir, 'leak'), process.platform === 'win32' ? 'junction' : 'dir');
   const server = createAppServer({ env: {}, distDir: dir, catalog, fetchImpl: () => { throw new Error('must not call'); } });
   server.listen(0, '127.0.0.1'); await once(server, 'listening');
-  t.after(async () => { server.closeAllConnections(); await new Promise(resolve => server.close(resolve)); await rm(dir, { recursive: true, force: true }); await rm(outside, { force: true }); });
+  t.after(async () => { server.closeAllConnections(); await new Promise(resolve => server.close(resolve)); await rm(dir, { recursive: true, force: true }); await rm(outside, { recursive: true, force: true }); });
   const base = `http://127.0.0.1:${server.address().port}`;
   const health = await fetch(`${base}/api/health`); assert.equal(health.status, 200); assert.equal((await health.json()).guide, 'demo');
   const index = await fetch(`${base}/some-spa-view`); assert.equal(index.status, 200); assert.equal(await index.text(), '<html>demo</html>');
   const asset = await fetch(`${base}/assets/app.js`); assert.match(asset.headers.get('content-type'), /javascript/);
-  assert.equal((await fetch(`${base}/.env`)).status, 404); assert.equal((await fetch(`${base}/server/index.mjs`)).status, 404); assert.equal((await fetch(`${base}/leak.txt`)).status, 404);
+  assert.equal((await fetch(`${base}/.env`)).status, 404); assert.equal((await fetch(`${base}/server/index.mjs`)).status, 404); assert.equal((await fetch(`${base}/leak/private.txt`)).status, 404);
   const guide = await fetch(`${base}/api/guide`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(request) }); assert.equal(guide.status, 200); assert.equal((await guide.json()).mode, 'demo');
   const badOrigin = await fetch(`${base}/api/guide`, { method: 'POST', headers: { 'content-type': 'application/json', origin: 'https://evil.example' }, body: JSON.stringify(request) }); assert.equal(badOrigin.status, 403);
   const invalid = await fetch(`${base}/api/guide`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: '{bad' }); assert.equal(invalid.status, 400);
   const wrongType = await fetch(`${base}/api/guide`, { method: 'POST', headers: { 'content-type': 'text/plain' }, body: 'text' }); assert.equal(wrongType.status, 415);
   const oversized = await fetch(`${base}/api/guide`, { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify({ message: 'x'.repeat(17000) }) }); assert.equal(oversized.status, 413);
+});
+
+test('HTTP media byte ranges support seeking, suffixes and bounded invalid ranges', async t => {
+  const dir = await mkdtemp(join(tmpdir(), 'maison-range-'));
+  await writeFile(join(dir, 'track.mp3'), '0123456789');
+  const server = createAppServer({ env: {}, distDir: dir });
+  server.listen(0, '127.0.0.1'); await once(server, 'listening');
+  t.after(async () => { server.closeAllConnections(); await new Promise(resolve => server.close(resolve)); await rm(dir, { recursive: true, force: true }); });
+  const url = `http://127.0.0.1:${server.address().port}/track.mp3`;
+  for (const [range, text, contentRange] of [['bytes=2-5','2345','bytes 2-5/10'], ['bytes=7-','789','bytes 7-9/10'], ['bytes=-3','789','bytes 7-9/10'], ['bytes=8-99','89','bytes 8-9/10']]) {
+    const response = await fetch(url, { headers: { range } });
+    assert.equal(response.status, 206); assert.equal(response.headers.get('content-range'), contentRange);
+    assert.equal(response.headers.get('content-type'), 'audio/mpeg'); assert.equal(await response.text(), text);
+  }
+  for (const range of ['bytes=10-', 'bytes=5-2', 'bytes=-0', 'bytes=bad', 'bytes=9007199254740992-']) {
+    const response = await fetch(url, { headers: { range } });
+    assert.equal(response.status, 416); assert.equal(response.headers.get('content-range'), 'bytes */10');
+  }
+  const head = await fetch(url, { method: 'HEAD', headers: { range: 'bytes=2-5' } });
+  assert.equal(head.status, 200); assert.equal(head.headers.get('content-length'), '10'); assert.equal(await head.text(), '');
+  const conditional = await fetch(url, { headers: { range: 'bytes=2-5', 'if-range': '"old"' } });
+  assert.equal(conditional.status, 200); assert.equal(await conditional.text(), '0123456789');
 });

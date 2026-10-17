@@ -96,8 +96,8 @@ export default function TryListPreparation({
               {line.fit?.kind === "shoe" && (
                 <small>
                   {L(
-                    "鞋码仅为虚构模板咨询参考；目录未声明真实鞋码库存。",
-                    "Shoe size is a fictional consultation reference; no catalog shoe-size stock is asserted.",
+                    "到店试穿时，可以一起确认舒适的鞋码。",
+                    "Find your comfortable shoe size when you try them in store.",
                   )}
                 </small>
               )}

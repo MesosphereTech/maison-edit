@@ -1,5 +1,6 @@
 import { createPortal } from "react-dom";
 import { SubtitleConcierge, useBubbleStream } from "./SubtitleConcierge.jsx";
+import { guideFailure } from "./guide-service.js";
 import { conciergeTargets } from "./concierge-visibility.js";
 import { createTryListGuideReply } from "./try-list-guide.js";
 import { useCatalogAttention } from "./useCatalogAttention.jsx";
@@ -34,6 +35,7 @@ import "./revision-personalization.css";
 import { curatedScenarioFor, curatedScenarios } from "./personalized-scenes.js";
 import {
   createGuideDialogueReply,
+  dialogueBank,
   guideSessionSummary,
 } from "./guide-dialogue-bank.js";
 import { sanitizePurchaseHistory } from "./purchase-history.js";
@@ -2160,8 +2162,8 @@ function ProfileModal({
               </div>
               <p className="notice">
                 {L(
-                  "住宅、房间和色调会改变家居排序与 AI 的测试场景。餐厅与书房采用此住宅的客厅参照。实际选家具仍需要量房、核对门宽和商品尺寸。",
-                  "Home, room and palette change home-piece ranking and the AI test context. Dining and study use this home's living-room reference. Real furniture selection still requires verified room, doorway and product measurements.",
+                  "选择房间与喜欢的色调，发现更适合空间的家居搭配。选购前可以量一下摆放位置与门宽，比较家具尺寸。",
+                  "Choose your room and favourite palette to explore home pieces for your space. Measure the intended spot and doorway before choosing furniture.",
                 )}
               </p>
             </div>
@@ -3766,14 +3768,20 @@ function GuidePanel({
     {
       role: "assistant",
       text: L(
-        "你好，可以从眼前这件聊起，也可以告诉我喜欢、避开的颜色、预算或场合。我会记住本次挑选的想法。这是预写对白与目录驱动的本地情境演示。",
-        "Hello. Ask about the piece in front of you, or tell me your likes, colours to avoid, budget or occasion. I’ll keep those in mind during this visit. This is a local contextual demo with prewritten dialogue and catalog facts.",
+        "可以从眼前这件聊起，也可以告诉我喜欢的颜色、预算或场合。我们一起慢慢挑。",
+        "We can start with the piece in front of you, or a colour, budget or occasion you have in mind. Let’s find what feels right for you.",
       ),
     },
   ]);
   const [input, setInput] = useState("");
   const [working, setWorking] = useState(false);
-  const [googleConsent, setGoogleConsent] = useState(false);
+  const [googleConsent, setGoogleConsent] = useState(() => {
+    try {
+      return sessionStorage.getItem("maison-edit-google-consent") === "true";
+    } catch {
+      return false;
+    }
+  });
   const [historyConsent, setHistoryConsent] = useState(false);
   const [companion, setCompanion] = useState(() => {
     try {
@@ -3783,7 +3791,7 @@ function GuidePanel({
       return "active";
     }
   });
-  const [paused, setPaused] = useState(false);
+  const companionRef = useRef(companion);
   const [subtitle, setSubtitle] = useState(null);
   const [mode, setMode] = useState("subtitles");
   const sessionRef = useRef(createConciergeSession());
@@ -3796,12 +3804,18 @@ function GuidePanel({
   const lastDeliberateAt = useRef(-Infinity);
   const generation = useRef(0);
   const updateCompanion = (next) => {
+    companionRef.current = next;
     setCompanion(next);
     try {
       sessionStorage.setItem("maison-edit-companion", next);
     } catch {}
-    // Folding the UI preserves an already requested reply. Incoming copy can
-    // finish in history without opening the shopper's minimized conversation.
+    if (next !== "active") {
+      generation.current++;
+      requestRef.current?.abort();
+      requestRef.current = null;
+      requestProductRef.current = null;
+      setWorking(false);
+    }
   };
   const endpoint =
     import.meta.env.VITE_GUIDE_ENDPOINT ||
@@ -3836,6 +3850,7 @@ function GuidePanel({
   }, [open]);
   useLayoutEffect(() => {
     if (!event || event.contextKey !== contextKey) return;
+    if (companionRef.current !== "active") return;
     // A scan may be superseded before React delivers its event effect.
     // Never let the previous visible card overwrite the newest local focus.
     if (
@@ -3887,7 +3902,6 @@ function GuidePanel({
     }
     currentEvent.current = event;
     if (
-      paused ||
       companion !== "active" ||
       open ||
       activeModal === "onboarding" ||
@@ -3924,6 +3938,18 @@ function GuidePanel({
         inventory: state.inventory,
       });
       Object.assign(reply, contextual);
+      if (activeModal === "product") {
+        const introduction = dialogueBank[event.productId]?.browsing;
+        if (introduction) {
+          const phase = contextual.phase || "click";
+          reply.visualText = [
+            introduction.initial[state.language],
+            phase !== "initial" ? introduction[phase]?.[state.language] : "",
+          ]
+            .filter(Boolean)
+            .join(state.language === "en" ? " " : "");
+        }
+      }
       if (result.accepted && contextual.session)
         dialogueSessionRef.current = contextual.session;
     }
@@ -3978,7 +4004,7 @@ function GuidePanel({
             : line,
         ),
       );
-    } else if (result.accepted) {
+    } else if (result.accepted || event.type === "product_open") {
       setSubtitle({ ...reply, event });
       setMessages((m) => [
         ...m,
@@ -3995,7 +4021,6 @@ function GuidePanel({
     enabled:
       !open &&
       (!activeModal || activeModal === "product") &&
-      !paused &&
       companion === "active" &&
       view !== "merchant",
     contextKey,
@@ -4094,10 +4119,12 @@ function GuidePanel({
   };
   const send = async (text) => {
     const content = (text || input).trim();
-    if (!content || working) return;
+    if (!content || working || companionRef.current !== "active") return;
     lastDeliberateAt.current = Date.now();
     setInput("");
     setMessages((m) => [...m, { role: "user", text: content }]);
+    // Sending is the deliberate transition to AI; browsing never calls it.
+    if (endpoint) setGoogleConsent(true);
     setWorking(true);
     const requestEvent = currentEvent.current;
     const productScoped =
@@ -4110,18 +4137,21 @@ function GuidePanel({
         content,
       );
     const requestSource =
-      productScoped && currentEvent.current?.productId
+      productScoped && requestEvent?.productId
         ? {
-            productId: currentEvent.current.productId,
-            occurrenceId: currentEvent.current.occurrenceId,
+            productId: requestEvent.productId,
+            occurrenceId: requestEvent.occurrenceId,
             contextual: true,
           }
         : null;
     requestProductRef.current = requestSource?.productId || null;
     const token = ++generation.current;
-    const stillCurrent = () => alive.current && token === generation.current;
+    const stillCurrent = () =>
+      alive.current &&
+      token === generation.current &&
+      companionRef.current === "active";
     let response;
-    if (endpoint && googleConsent) {
+    if (endpoint) {
       // Resolve explicit filter intent without changing the page before a reply.
       const currentProduct = byId(
         currentEvent.current?.productId ||
@@ -4231,7 +4261,7 @@ function GuidePanel({
         requestRef.current = controller;
         const timeout = setTimeout(
           () => controller.abort(),
-          openAI ? 150000 : 20000,
+          openAI ? 150000 : 35000,
         );
         let data;
         try {
@@ -4249,7 +4279,9 @@ function GuidePanel({
                 ...messages
                   .filter(
                     (message) =>
-                      !message.proactive &&
+                      message.mode !== "unavailable" &&
+                      (!message.proactive ||
+                        ["gemini", "codex-cli"].includes(message.mode)) &&
                       (historyConsent || !message.ownedProductIds?.length),
                   )
                   .slice(preferenceSummary ? -7 : -8)
@@ -4270,13 +4302,22 @@ function GuidePanel({
             }),
             signal: controller.signal,
           });
-          if (!r.ok) throw Error("Guide service unavailable");
+          if (!r.ok) {
+            response = {
+              role: "assistant",
+              mode: "unavailable",
+              warning:
+                r.status === 429 ? "rate_limited" : "provider_unavailable",
+            };
+            throw Error("Guide service unavailable");
+          }
           data = await r.json();
           if (!stillCurrent()) return;
         } finally {
           clearTimeout(timeout);
         }
-        const local = localReply(content, requestEvent);
+        // Apply explicit shopping preferences locally without replacing live prose.
+        localReply(content, requestEvent);
         response = ["gemini", "codex-cli"].includes(data.mode)
           ? {
               role: "assistant",
@@ -4294,7 +4335,12 @@ function GuidePanel({
               model: data.model,
               proseDisclosure: data.proseDisclosure,
             }
-          : { ...local, warning: data.warning || "not_configured" };
+          : {
+              role: "assistant",
+              mode: "unavailable",
+              text: guideFailure(data.warning, state.language),
+              warning: data.warning || "provider_unavailable",
+            };
         if (["gemini", "codex-cli"].includes(data.mode)) {
           toastIt(
             L(
@@ -4305,12 +4351,13 @@ function GuidePanel({
         }
       } catch {
         if (!stillCurrent()) return;
-        response = localReply(content, requestEvent);
-        response.text =
-          L(
-            "连接暂时不可用，已回到本地演示。",
-            "The guide connection is unavailable. Using the local demo. ",
-          ) + response.text;
+        const warning = response?.warning || "provider_unavailable";
+        response = {
+          role: "assistant",
+          mode: "unavailable",
+          warning,
+          text: guideFailure(warning, state.language),
+        };
       }
     } else {
       await new Promise((r) => setTimeout(r, 320));
@@ -4319,11 +4366,27 @@ function GuidePanel({
     }
     if (!stillCurrent()) return;
     if (requestSource) response.source = requestSource;
+    if (response.mode === "unavailable") {
+      response.source = undefined;
+      response.productIds = [];
+      response.ownedProductIds = [];
+      response.quickReplies = [];
+    }
     setMessages((m) => [...m, response]);
-    setSubtitle({ ...response, event: currentEvent.current });
+    setSubtitle({ ...response, event: requestEvent });
+    requestRef.current = null;
+    requestProductRef.current = null;
     setWorking(false);
-    if (endpoint && googleConsent) serviceStatus.refresh?.();
+    if (endpoint) serviceStatus.refresh?.();
   };
+  const consentControl = endpoint && (
+    <p className="guide-send-notice">
+      {L(
+        "发送消息或点击提问，即由 Gemini 回复，并将对话、当前选款与购物偏好发送给 Google；不附带照片、称呼或身高。浏览介绍使用即时预置内容。",
+        "Send a message or tap a question to chat with Gemini. Your conversation, current pieces and shopping preferences go to Google; photos, names and height are excluded. Browsing introductions are instant, prewritten guidance.",
+      )}
+    </p>
+  );
   const quickReply = (id) => {
     if (id === "history") {
       onEditHistory();
@@ -4389,7 +4452,9 @@ function GuidePanel({
         attention={attention}
         inline={view === "visit" && !activeModal && Boolean(visitCompanionHost)}
         state={companion}
-        paused={paused}
+        providerControls={consentControl}
+        liveEnabled={subtitle?.mode === "gemini"}
+        productMode={activeModal === "product"}
         working={working}
         input={input}
         stream={stream}
@@ -4398,7 +4463,6 @@ function GuidePanel({
         onMode={setMode}
         onInput={setInput}
         onSend={send}
-        onPause={() => setPaused((v) => !v)}
         onMinimize={() => updateCompanion("minimized")}
         onDismiss={() => updateCompanion("minimized")}
         onResume={() => {
@@ -4406,7 +4470,10 @@ function GuidePanel({
           if (resumeDrawer.current) onOpen();
         }}
         onQuick={quickReply}
-        onConversation={onOpen}
+        onConversation={() => {
+          updateCompanion("active");
+          onOpen();
+        }}
         onProduct={onProduct}
       />
     );
@@ -4428,10 +4495,7 @@ function GuidePanel({
           <div className="guide-mode">
             <span className="guide-dot" />
             {endpoint && googleConsent
-              ? L(
-                  "测试连接已启用 · 每条回复标明实际模式",
-                  "Test connection enabled · each reply identifies its actual mode",
-                )
+              ? L("Gemini 导购已开启", "Gemini guidance is enabled")
               : L(
                   "本地情境演示 · 预写对白",
                   "LOCAL CONTEXTUAL DEMO · PREWRITTEN DIALOGUE",
@@ -4507,33 +4571,7 @@ function GuidePanel({
               {L("编辑记录", "Edit history")}
             </button>
           </div>
-          {endpoint && (
-            <label className="checkbox-line ai-consent">
-              <input
-                type="checkbox"
-                checked={googleConsent}
-                onChange={(e) => {
-                  setGoogleConsent(e.target.checked);
-                  if (!e.target.checked) {
-                    setHistoryConsent(false);
-                    generation.current++;
-                    requestRef.current?.abort();
-                    setWorking(false);
-                  }
-                }}
-              />
-              <span>
-                {L(
-                  openAI
-                    ? "允许将本次对话、当前浏览商品与所选颜色尺码、试选商品 ID、分类、风格、预算与所选虚构场景 ID 发送至 OpenAI GPT CLI 测试后端。不发送称呼、手动身高或以前保存的照片，请勿输入敏感信息。"
-                    : "允许把本次对话及其中明确表达的购物偏好、当前商品与所选颜色尺码、试选商品 ID、分类、风格标签与单品预算发送至 Google Gemini，用于导购建议。不附带档案中的照片、称呼或身高，请勿在聊天中输入敏感信息。",
-                  openAI
-                    ? "Allow this conversation, current product and chosen variant, visit-bag product IDs, category, styles, item budget and fictional preset IDs to be sent to the OpenAI GPT CLI test backend. Names, manual height and previously saved photos are not attached. Avoid sensitive details in chat."
-                    : "Allow this conversation and its explicitly stated shopping preferences, current product and chosen variant, visit-bag product IDs, category, style tags and item budget to be sent to Google Gemini for guidance. Profile photos, names and measurements are not attached. Avoid entering sensitive details in chat.",
-                )}
-              </span>
-            </label>
-          )}
+          {consentControl}
           {endpoint && !openAI && googleConsent && (
             <label className="checkbox-line ai-history-consent">
               <input
@@ -4556,8 +4594,8 @@ function GuidePanel({
           )}
           <p className="guide-attention-disclosure">
             {L(
-              "浏览热点由点击、停留指针、键盘焦点及视口中心估计。不是眼动追踪，不使用摄像头；浏览提示使用预写情境对白与本地目录，不触发 AI 请求。",
-              "Browsing attention uses clicks, pointer dwell, keyboard focus and viewport center. No eye tracking or camera. Browsing hints use prewritten contextual dialogue and the local catalog, and never trigger an AI request.",
+              "浏览时立即展示预置商品介绍；发送消息或点击提问后由 Gemini 回复。缩到侧边后停止新内容。不使用摄像头或眼动追踪。",
+              "Browsing shows instant prewritten product introductions. Send a message or tap a question for a Gemini reply. Moving the guide to the side stops new content. No camera or eye tracking.",
             )}
           </p>
           <div
@@ -4579,7 +4617,9 @@ function GuidePanel({
                       ? "OPENAI · GPT CLI TEST"
                       : m.mode === "gemini"
                         ? "GEMINI · LIVE AI"
-                        : L("ÉDIT · 演示导购", "ÉDIT · DEMO GUIDE")}
+                        : m.mode === "unavailable"
+                          ? L("ÉDIT · 暂不可用", "ÉDIT · UNAVAILABLE")
+                          : L("ÉDIT · 演示导购", "ÉDIT · DEMO GUIDE")}
                 </span>
                 <p>{m.text}</p>
                 {m.ownedProductIds?.length > 0 && (
@@ -4628,20 +4668,11 @@ function GuidePanel({
                     })}
                   </div>
                 )}
-                {["gemini", "codex-cli"].includes(m.mode) && (
-                  <span className="microcopy">
-                    {L(
-                      "AI 风格建议可能不准确；商品事实来自虚构演示目录，生成的文字未经独立验证。",
-                      m.proseDisclosure ||
-                        "AI styling suggestions may be inaccurate. Product facts come from the fictional catalog; generated prose is not independently verified.",
-                    )}
-                  </span>
-                )}
                 {m.warning && (
                   <span className="microcopy">
                     {L(
-                      "真实 AI 连接未就绪或未返回可靠结果，已使用本地演示建议。",
-                      "Live AI was unavailable or did not return reliable results. Local demo guidance is shown.",
+                      "本次没有生成 AI 建议。",
+                      "No AI advice was generated for this request.",
                     )}
                   </span>
                 )}

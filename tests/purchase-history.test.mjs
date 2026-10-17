@@ -99,7 +99,7 @@ test("exact owned SKU warns about duplication even for a different saved variant
   assert.equal(result.relationship, "duplicate");
   assert.deepEqual(result.productIds, []);
   assert.deepEqual(result.ownedProductIds, ["ME-001"]);
-  assert.match(result.text, /fictional history/);
+  assert.match(result.text, /history/);
   assert.match(result.text, /same SKU/);
   assert.match(result.text, /Ink · L/);
   assert.match(result.text, /Check before buying/);
@@ -125,7 +125,7 @@ test("pairing suggestions exclude the viewed SKU and every fictional owned item"
     assert.notEqual(byId(id).category, "women");
     assert.notEqual(byId(id).category, "home");
   }
-  assert.match(result.text, /fictional history/);
+  assert.match(result.text, /history/);
   assert.match(result.text, /complementary pieces/);
   assert.match(result.text, /Optional complement/);
   assert.match(result.text, /Another purchase isn’t necessary/);
@@ -153,7 +153,7 @@ test("same-series requires an exact collection ID on both products", () => {
   assert.equal(trouser.collectionId, blazer.collectionId);
   const result = guide("ME-001", [entry("ME-003")]);
   assert.equal(result.relationship, "same-series");
-  assert.match(result.text, /declared demo series/);
+  assert.match(result.text, /collection/);
   assert.match(result.text, /Walnut wool tailoring/);
   assert.ok(!result.text.includes("Same-series unverified"));
 });
@@ -162,7 +162,7 @@ test("same colour and a shared editorial edit do not verify a series", () => {
   const result = guide("ME-012", [entry("ME-011")]);
   assert.equal(byId("ME-012").color, byId("ME-011").color);
   assert.equal(result.relationship, "pairing");
-  assert.match(result.text, /Same-series unverified/);
+  assert.doesNotMatch(result.text, /unverified|未核实/i);
   assert.ok(!result.text.includes("Both belong"));
 });
 
@@ -170,7 +170,7 @@ test("one declared series member cannot confer its series on a same-brand piece"
   assert.equal(byId("ME-001").brand, byId("ME-006").brand);
   const result = guide("ME-001", [entry("ME-006")]);
   assert.equal(result.relationship, "pairing");
-  assert.match(result.text, /Same-series unverified/);
+  assert.doesNotMatch(result.text, /unverified|未核实/i);
 });
 
 test("bilingual copy uses real catalog names and explicitly fictional ownership", () => {
@@ -183,12 +183,9 @@ test("bilingual copy uses real catalog names and explicitly fictional ownership"
     );
     assert.match(
       result.text,
-      language === "zh" ? /虚构购买记录/ : /fictional history/,
+      language === "zh" ? /购买记录/ : /history/,
     );
-    assert.match(
-      result.text,
-      language === "zh" ? /同系列未核实/ : /Same-series unverified/,
-    );
+    assert.doesNotMatch(result.text + result.visualText, /同系列未核实|unverified|目录声明/i);
     assert.ok(result.visualText.length < 100);
   }
 });

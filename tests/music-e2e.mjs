@@ -207,10 +207,12 @@ try {
     );
   }
   browser = await chromium.launch({
-    executablePath: await headless.executablePath(),
+    executablePath: process.env.E2E_CHROMIUM_PATH || await headless.executablePath(),
     headless: true,
+    chromiumSandbox: process.platform === 'win32',
+    ignoreDefaultArgs: process.platform === 'win32' ? ['--disable-extensions', '--disable-component-extensions-with-background-pages', '--unsafely-disable-devtools-self-xss-warnings'] : [],
     args: [
-      ...headless.args.filter((arg) => !arg.startsWith("--autoplay-policy=")),
+      ...(process.platform === 'win32' ? [] : headless.args.filter((arg) => !arg.startsWith("--autoplay-policy="))),
       "--autoplay-policy=no-user-gesture-required",
     ],
   });
@@ -654,12 +656,14 @@ try {
     async () => {
       const ordinaryPage = page;
       const policyBrowser = await chromium.launch({
-        executablePath: await headless.executablePath(),
+        executablePath: process.env.E2E_CHROMIUM_PATH || await headless.executablePath(),
         headless: true,
+        chromiumSandbox: process.platform === 'win32',
+        ignoreDefaultArgs: process.platform === 'win32' ? ['--disable-extensions', '--disable-component-extensions-with-background-pages', '--unsafely-disable-devtools-self-xss-warnings'] : [],
         args: [
-          ...headless.args.filter(
+          ...(process.platform === 'win32' ? [] : headless.args.filter(
             (arg) => !arg.startsWith("--autoplay-policy="),
-          ),
+          )),
           "--autoplay-policy=document-user-activation-required",
         ],
       });

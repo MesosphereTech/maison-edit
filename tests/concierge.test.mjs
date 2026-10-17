@@ -147,7 +147,7 @@ test('saved and visit pages only reference valid saved/cart catalogue items', ()
   assert.ok(saved.quickReplies.some(q=>q.id==='room'));
   const visit=createConciergeReply({event:{type:'page',section:'visit'},cart:[{skuId:'ME-001',quantity:2},{skuId:'ME-018',quantity:1},{skuId:'missing',quantity:99}],language:'en'});
   assert.match(visit.text,/3 pieces/);
-  assert.match(visit.text,/preparation is unverified/);
+  assert.doesNotMatch(visit.text,/unverified|未核实/i);
   assert.deepEqual(visit.productIds,['ME-001','ME-018']);
   for(const page of ['saved','visit']) {
     const empty=createConciergeReply({event:{type:'page',page},language:'en'});

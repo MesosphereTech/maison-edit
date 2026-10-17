@@ -14,7 +14,9 @@ async function fixture(t, options = {}) {
   await writeFile(join(distDir, 'index.html'), '<html>review</html>');
   await writeFile(join(distDir, 'safe.txt'), 'public');
   await writeFile(join(parent, 'outside.txt'), 'private');
-  await symlink(join(parent, 'outside.txt'), join(distDir, 'escape.txt'));
+  // Windows directory junctions exercise the same realpath escape protection
+  // without requiring system-wide symlink privileges.
+  await symlink(parent, join(distDir, 'escape'), process.platform === 'win32' ? 'junction' : 'dir');
   const server = createAppServer({ env: {}, distDir, fetchImpl: () => { throw new Error('No network allowed'); }, ...options });
   server.listen(0, '127.0.0.1'); await once(server, 'listening');
   t.after(async () => { server.closeAllConnections(); await new Promise(resolve => server.close(resolve)); await rm(parent, { recursive: true, force: true }); });
@@ -27,7 +29,7 @@ test('review: static HEAD, encoded hidden paths, symlinks and unknown extension 
   const { base } = await fixture(t);
   const head = await fetch(`${base}/safe.txt`, { method: 'HEAD' });
   assert.equal(head.status, 200); assert.equal(await head.text(), ''); assert.equal(head.headers.get('content-length'), '6');
-  for (const path of ['/escape.txt', '/%2eenv', '/safe.txt%00', '/folder%5cescape.txt', '/missing.js']) {
+  for (const path of ['/escape/outside.txt', '/%2eenv', '/safe.txt%00', '/folder%5cescape.txt', '/missing.js']) {
     const result = await fetch(`${base}${path}`); assert.equal(result.status, 404, path); assert.equal((await result.text()).includes('private'), false);
   }
   const unsupported = await fetch(`${base}/safe.txt`, { method: 'PUT' }); assert.equal(unsupported.status, 405);

@@ -30,8 +30,10 @@ async function launch(policy) {
     executablePath:
       process.env.E2E_CHROMIUM_PATH || (await headless.executablePath()),
     headless: true,
+    chromiumSandbox: process.platform === 'win32',
+    ignoreDefaultArgs: process.platform === 'win32' ? ['--disable-extensions', '--disable-component-extensions-with-background-pages', '--unsafely-disable-devtools-self-xss-warnings'] : [],
     args: [
-      ...headless.args.filter((arg) => !arg.startsWith("--autoplay-policy=")),
+      ...(process.platform === 'win32' ? [] : headless.args.filter((arg) => !arg.startsWith("--autoplay-policy="))),
       `--autoplay-policy=${policy}`,
     ],
     env: { ...process.env, HOME: "/tmp" },
@@ -297,10 +299,20 @@ async function swap(page) {
     );
   const lesson = page.locator(".personalized-scene.is-swap-tutorial");
   await lesson.waitFor();
-  const before = await lesson.getAttribute("data-scene-main");
-  const product = await lesson.getAttribute("data-scene-product");
-  await lesson.locator(".scene-swap-button").click();
-  const scene = page.locator(`[data-scene-product="${product}"]`).first();
+  // A SKU can occur in multiple cards. Keep the exact active lesson node.
+  const scene = await lesson.elementHandle();
+  assert.ok(scene);
+  const before = await scene.getAttribute("data-scene-main");
+  // Click the visible top of the inset without auto-scrolling its tall image.
+  // Scrolling to the image center can transfer tutorial ownership to a new card.
+  await until(() => scene.evaluate(node => {
+    const button = node.querySelector('.scene-swap-button');
+    const bounds = button.getBoundingClientRect();
+    return document.elementFromPoint(bounds.x + bounds.width / 2, bounds.y + Math.min(22, bounds.height / 2))?.closest('.scene-swap-button') === button;
+  }), 'visible guided inset is not clickable');
+  const target = await (await scene.$('.scene-swap-button')).boundingBox();
+  assert.ok(target);
+  await page.mouse.click(target.x + target.width / 2, target.y + Math.min(22, target.height / 2));
   await until(
     async () => (await scene.getAttribute("data-scene-main")) !== before,
     "real guided swap did not change image",

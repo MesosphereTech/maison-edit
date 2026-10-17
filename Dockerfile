@@ -2,12 +2,11 @@
 FROM node:22-alpine AS build
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm ci
+RUN npm ci --include=dev --no-audit --no-fund --fetch-retries=5 --fetch-retry-mintimeout=2000 --fetch-retry-maxtimeout=10000 --fetch-timeout=120000 --maxsockets=4
 COPY index.html vite.config.js ./
 COPY src ./src
 COPY public ./public
 COPY server ./server
-COPY .openai/hosting.json ./.openai/hosting.json
 # A relative endpoint keeps browser requests on the same Cloud Run origin.
 ENV VITE_GUIDE_ENDPOINT=/api/guide
 RUN npm run build

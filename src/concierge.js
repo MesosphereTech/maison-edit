@@ -286,8 +286,8 @@ export function createConciergeReply({
     );
     const text = ids.length
       ? t(
-          `到店袋里有 ${quantity} 件示例选款。下一步可选择到店时间与愿意分享的信息；门店备货尚未核实。`,
-          `Your demo bag has ${quantity} ${quantity === 1 ? "piece" : "pieces"}. Choose a visit time and what to share next; store preparation is unverified.`,
+          `到店袋里有 ${quantity} 件示例选款。下一步可选择到店时间与愿意分享的信息。`,
+          `Your demo bag has ${quantity} ${quantity === 1 ? "piece" : "pieces"}. Choose a visit time and what to share next.`,
         )
       : t(
           "先挑一件想在店里细看的选款，再安排时间。预约与备货状态均为本地演示。",

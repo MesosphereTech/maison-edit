@@ -103,7 +103,24 @@ export function createAppServer({ env = process.env, fetchImpl = fetch, distDir 
       const extension = extname(path).toLowerCase();
       if (!mime[extension]) return sendJSON(response, 404, { error: 'Not found.' });
       const contents = await readFile(path);
-      response.writeHead(200, { 'content-type': mime[extension], 'content-length': contents.length, 'cache-control': extension === '.html' ? 'no-cache' : pathname.startsWith('/assets/') ? 'public, max-age=31536000, immutable' : 'public, max-age=3600' });
+      const headers = { 'content-type': mime[extension], 'content-length': contents.length, 'accept-ranges': 'bytes', 'cache-control': extension === '.html' ? 'no-cache' : pathname.startsWith('/assets/') ? 'public, max-age=31536000, immutable' : 'public, max-age=3600' };
+      // Browsers need byte ranges to seek and finish real MP3 recordings.
+      // Ignore conditional ranges rather than serving an unverified partial file.
+      if (request.method === 'GET' && request.headers.range && !request.headers['if-range']) {
+        const match = /^bytes=(\d*)-(\d*)$/.exec(request.headers.range);
+        let start = 0, end = contents.length - 1;
+        if (match) {
+          start = match[1] ? Number(match[1]) : Math.max(0, contents.length - Number(match[2]));
+          end = match[1] && match[2] ? Math.min(end, Number(match[2])) : end;
+        }
+        if (!match || (!match[1] && (!match[2] || Number(match[2]) === 0)) || !Number.isSafeInteger(start) || !Number.isSafeInteger(end) || start > end || start >= contents.length) {
+          response.writeHead(416, { 'content-range': `bytes */${contents.length}`, 'content-length': 0, 'accept-ranges': 'bytes' });
+          return response.end();
+        }
+        response.writeHead(206, { ...headers, 'content-length': end - start + 1, 'content-range': `bytes ${start}-${end}/${contents.length}` });
+        return response.end(contents.subarray(start, end + 1));
+      }
+      response.writeHead(200, headers);
       response.end(request.method === 'HEAD' ? undefined : contents);
     } catch {
       return sendJSON(response, 503, { error: 'Frontend build unavailable. Run npm run build before starting the server.' });

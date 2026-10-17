@@ -4,17 +4,17 @@ An original, bilingual luxury department-store concept, built as a complete inte
 
 ## Run
 
-Node 22 or newer is recommended (built and tested with Node 24).
+Use Node 22. The Dockerfile uses Node 22 Alpine; the current local checks use Node 22.23.3. A clean checkout needs no `.openai/hosting.json`, `.env` or API key to install, build and run in local demo mode.
 
 ```sh
-npm ci
+npm ci --include=dev
 npm run dev
 # http://127.0.0.1:5173
 npm run build
 npm run preview
 ```
 
-The development script binds loopback because this cloud sandbox does not expose normal network interface enumeration. For an ordinary machine, `npx vite --host 0.0.0.0` can expose the development server on a trusted local network.
+The development server binds loopback. Vite preview serves only the built frontend; use the production Node server below for the frontend and `/api/*` together. Dependencies are locked by `package-lock.json`; build tools are devDependencies and must be included during installation.
 
 Production server, including the optional secure guide adapter:
 
@@ -23,6 +23,8 @@ npm run build
 npm start
 # http://localhost:8080
 ```
+
+Without the optional Sites manifest, `npm run build` writes the Vite frontend to `dist/client`; `npm start` serves it with the Node API. The build script treats only a missing manifest (`ENOENT`) as the native Node/Cloud Run path. An explicitly present, invalid Sites manifest still produces an error. Docker does not copy `.openai/hosting.json`, and `.dockerignore` excludes the entire private configuration directory. Do not upload a private manifest to make a clean build pass. `npm run test:build` verifies the actual built artifact in a staged Node runtime.
 
 ## Implemented end to end
 
@@ -39,9 +41,9 @@ npm start
 - Visit itinerary, pending/ready/alternative preparation states, customer acceptance of merchant-proposed alternatives, cancellation, floor/counter diagram and a textual step-free route alternative.
 - Merchant sandbox with searchable catalog, editable local stock, booking preparation states and alternative proposals. Consumer changes reflect the same local state.
 - Profile and recommendation resets, photo removal, explicit confirmation before clearing all browser demo data.
-- Three real, officially downloaded Suno recordings for private personal, non-commercial testing, with attribution. Default-on playback, track selection, pause/resume, volume, quick mute and honest media-error retry. Browsers that block autoplay wait for the first interaction; saved pause and mute choices are respected. No synthesized fallback.
+- Three real, officially downloaded Suno recordings for private personal, non-commercial testing, with attribution. Default-on playback, track selection, pause/resume, volume, quick mute and honest media-error retry. Browsers that block autoplay wait for the first interaction; pause/mute choices apply during the current visit; a full reload enables music, unmutes it and starts the selected track from the beginning. Tracks advance automatically. No synthesized fallback.
 - Toasts, empty states, reading/loading/error states and reduced-motion handling.
-- Secure optional server-only Gemini guide adapter and a temporary, bounded OpenAI GPT CLI test adapter. Both expose truthful availability, require explicit external-sharing consent, ground product facts in the fictional catalog and fall back to local guidance. See `docs/GOOGLE_DEPLOYMENT.md` and `docs/CODEX_CLI_TEST.md`.
+- Secure optional server-only Gemini guide adapter and a temporary, bounded OpenAI GPT CLI test adapter. The deployed guide uses Gemini for deliberately sent questions under the sharing notice at the composer; browsing introductions stay local. Quota/connection failures show a clear unavailable notice instead of substituting prewritten text as a live answer. Product facts remain grounded in the fictional catalog. The CLI adapter is an optional local test path and is not the deployed provider. See `docs/GOOGLE_DEPLOYMENT.md` and `docs/CODEX_CLI_TEST.md`.
 
 ## Honest demonstration boundaries
 
@@ -53,25 +55,49 @@ No test user uploads are accepted. Default body heights and sizes are illustrati
 
 All profile selections, saved, bag, booking and merchant demo state is local to the current browser under one versioned localStorage key. Default fixture images are static assets, not base64 photographs stored in the profile. It does not sync across devices or users. Clearing site data removes it. A production experience needs authenticated customer and merchant accounts, a database, explicit privacy handling, real scheduling/inventory APIs and authorized integration testing.
 
-The published experience remains a local contextual simulation unless a usable secure backend is discovered or explicitly configured. An endpoint or installed CLI alone does not establish live AI. Live Gemini requires valid owner-supplied server configuration and conversation consent. The temporary GPT CLI adapter uses only trusted fictional preset IDs and catalog data; optional image analysis selects fixed fixture images on the server, never user paths or uploads. Its current live smoke test was blocked during CLI initialization by this runtime’s read-only state, so no real GPT inference or image analysis was produced. The interface distinguishes unverified connection tests, verified replies and unavailable states. Credentials never enter the frontend. Live try-on/room-image generation remains unavailable.
+The full frontend and Node API are privately deployed on Google Cloud Run with real Gemini text guidance verified in a browser. Browsing uses instant prewritten introductions; sending a typed message or a question shortcut automatically requests Gemini after the visible sharing notice. The server receives the key only through Secret Manager. No key is required for a clean local build, and a no-key local server truthfully reports demo availability. Live image generation remains disabled. The optional GPT CLI test adapter is not used by this Cloud Run service; its historical local test limitations are documented separately.
 
 ## Test
 
 ```sh
 npm test
 npm run test:backend
-npm run test:e2e
+npm run test:build
+# Focused real-browser regression, using a local browser executable:
+# E2E_CHROMIUM_PATH=<path-to-chromium> node tests/live-guide-e2e.mjs
 ```
 
-Core and backend tests make no live Google or OpenAI calls and need no credentials. Provider-contract fixtures are synthetic test responses, not evidence of a real provider connection. Browser tests use Playwright and a locally installed headless shell; an ordinary local Chromium executable can be configured where supported. Tests start their own loopback server and verify the complete zero-upload default-selection matrix, profile persistence and privacy migration, consumer/merchant flows, provider-consent and cancellation behavior, bilingual UI and mobile layouts. Screenshots are generated under `artifacts/` (not published as product assets).
+Core and backend tests make no live Google or OpenAI calls and need no credentials. Provider-contract fixtures are synthetic test responses, not evidence of a real provider connection. Browser tests use Playwright and a locally installed headless shell; an ordinary local Chromium executable can be configured where supported. Focused suites cover local-first browsing, deliberate AI chat, quota/cancellation behavior, independent history collapse/minimize and non-overlapping product-guide layouts. The latest recorded application run passed 247/247 and the backend subset passed 56/56. Locale, desktop/mobile guide and staged-runtime checks passed. The legacy general `npm run test:e2e` last passed only 4/24, including failures from obsolete controls and superseded playback expectations; it is not currently a passing release gate, and all remaining failures have not been resolved. Screenshots are generated under `artifacts/` (not published as product assets).
 
 ## Deployment
 
-- Static `dist/` works for a private presentation preview; the guide remains an honest local demo unless a secure API is separately configured.
-- The multi-stage `Dockerfile` and dependency-free Node server are packaged for Google Cloud Run. Google APIs remain unconfigured and are not live-tested here.
-- A Firebase Hosting alternative is described in `docs/GOOGLE_DEPLOYMENT.md`; dynamic requests should go to an authenticated, rate-limited server/Cloud Run service.
-- Private preview hosting is distinct from any competition requirement to deploy on Google infrastructure.
-- No Google Cloud project, service account, key, billing account or Google deployment has been created. The separate private Sites preview serves the frontend only; Google deployment commands in the documentation are instructions for the owner.
+Verified on October 18, 2026 (Asia/Shanghai):
+
+| Item | Current state |
+| --- | --- |
+| Source repository | Private `MesosphereTech/maison-edit` |
+| Google project / region | `gen-lang-client-0176200551` / `asia-east1` |
+| Cloud Run service / revision | `maison-edit-private` / `maison-edit-private-00007-sns` |
+| Cloud URL | https://maison-edit-private-904021583303.asia-east1.run.app |
+| Access | Private, requires Cloud Run IAM; unauthenticated requests return 403 |
+| Application | Vite frontend and Node 22 API served together |
+| Gemini | Real typed browser question verified: HTTP 200, `mode: "gemini"`, `externalCall: true`, model `gemini-3.5-flash-lite` |
+| Secrets | Runtime `GEMINI_API_KEY` from Secret Manager; `GEMINI_MODEL` is a server setting; no key in source/frontend/build |
+| Resources | Request-based CPU, 1 CPU / 512 MiB, minimum zero / maximum one instance |
+| Cost control | USD 5 monthly alert budget; alerts are not a hard spending cap, and free-tier/billed usage has not been independently verified |
+| Image generation / Firebase | Live image generation disabled; no Firebase deployment performed |
+
+The authenticated preview on the deployment owner's machine is `http://127.0.0.1:8081/`, provided by Google's official Cloud Run proxy. It is not a public website or a portable link for other machines. An authorized user can start their own proxy:
+
+```sh
+gcloud run services proxy maison-edit-private --project=gen-lang-client-0176200551 --region=asia-east1 --port=8081
+```
+
+A separate, clean source snapshot passed a fresh locked dependency installation, `npm run build`, all 247 tests and `npm run test:build` without a hosting manifest or credentials. Two interrupted package downloads were retrieved again from the official npm registry and verified against `package-lock.json` integrity. The current local full Docker retry stopped during `npm ci` with `ECONNRESET`; it has not been recorded as a successful fresh Docker rebuild.
+
+The complete Dockerfile previously built successfully in Cloud Build. The current revision was built from the verified complete image plus current frontend/source and Gemini-adapter updates; see `docs/GOOGLE_DEPLOYMENT.md` for build IDs and verification history. The repository Dockerfile is the reproducible full-source path. Static-only hosting does not provide the Node AI backend. Neither source synchronization nor static preview constitutes a new cloud deployment or a public release.
+
+Keep the repository and Cloud Run private. The three Suno Free recordings are included only for private, personal, non-commercial testing; public use requires license verification or replacement. Products, inventory and visits remain demonstration data. Public release, music clearance and competition submission require separate approval. No key should be read, exported or committed during source synchronization.
 
 ## Files
 
@@ -80,7 +106,7 @@ Core and backend tests make no live Google or OpenAI calls and need no credentia
 - `src/presets.js`: shared trusted mappings for ten adults, three homes and room/floorplan assets
 - `src/personalized-scenes.js`, `PersonalizedScene.jsx`, `SceneScenarios.jsx`: exact prepared-scene mapping, curated choices, truthful fallback and large-image / inset-thumbnail swapping
 - `src/StoreMusic.jsx` and `src/store-music.js`: default-on real-recording transport, browser gesture fallback and saved sound preferences
-- `public/personalized-scenes/`: four optimized fictional prepared scenes and bounded provenance manifest
+- `public/personalized-scenes/`: 56 mapped primary-colour prepared scenes, legacy curated anchors and provenance manifests
 - `public/music/`: the three officially downloaded private-test Suno MP3s and provenance
 - `src/StoreOnboarding.jsx` and `src/store-onboarding.css`: required demo setup, native modal containment, draft defaults and responsive editorial layout
 - `src/styles.css`: responsive editorial design and accessible states
@@ -100,8 +126,9 @@ persistent live bubble. New local product hints replace its copy without moving
 the bubble surface; elapsed time does not expire it. Full conversation history
 remains available. A shopper can explicitly fold the conversation to its single
 return control, and scrolling never reopens it. Hover, focus and typed drafts
-remain readable. The centered reply composer and yielding product-sheet layout
-stay available; the visit page instead reserves inline space for its compact
+remain readable. Product inspection reserves a separate, fully readable guide rail on the right
+on desktop/tablet and below the product sheet on phones, with its reply composer.
+The visit page reserves inline space for its compact
 companion and input so the itinerary is never obscured. Reduced motion disables
 the decorative entrance and pixel effects.
 
@@ -118,18 +145,18 @@ Attention is measured from the product image rather than the whole card, so a
 passed image cannot remain current just because its metadata is visible. Stale
 hover timers, superseded event tokens and offscreen passive copy are discarded.
 Distinct targets have no old 45-second attention gate or five-message cap.
-Product opens, saved pieces, selected variants and visit-bag actions retain the
-existing conservative conversational budget. A deliberate reply leaves a short
+Product opens immediately refresh the current SKU introduction. Saved pieces,
+selected variants and visit-bag actions retain their local contextual behavior. A deliberate reply leaves a short
 1.2-second quiet gap. Explicit close/minimize remains closed through scrolling,
-new attention and delayed replies; only the shopper can reopen it. Pause stops
-proactive prompts while leaving deliberate conversation available.
+new attention and delayed replies; only the shopper can reopen it. There is no pause-AI control. History expansion
+returns to one bubble without minimizing the window; the separate minus control
+moves the window to its edge launcher and cancels pending replies.
 
-The centered composer and full conversation share one in-memory transcript, current
-piece, selected variant and the existing optional provider consent. Visual bubbles
-are temporary; the full conversation retains them for the current page session.
+The reply composer and full conversation share one in-memory transcript, current
+piece, selected variant and the disclosed deliberate-send transition to Gemini. The compact surface shows the current reply; the full conversation retains
+earlier replies for the current page session.
 New page/product navigation cancels outstanding replies and clears obsolete visual
-bubbles. Browsing events never trigger an external provider call. If a user opts
-into the disclosed provider connection, a deliberate typed/quick reply may send
+bubbles. Browsing events never trigger an external provider call. A deliberate typed/quick reply under the visible sharing notice may send
 the conversation, catalog product IDs and selected variant along with the existing
 bounded preference/default context. No private photos or microphone are used.
 
@@ -169,13 +196,12 @@ shows optional actionable complements. A SKU already in the selected history
 produces a duplicate warning without a new-product upsell. Only ME-001 and
 ME-003 currently share a declared fictional catalog collection, Walnut wool
 tailoring. Shared brand, color or editorial edit alone never verifies a series.
-Other pairings state that same-series is unverified. All fit, stock and real
+Other pairings use complementary styling language; internal verification notes are not shown to customers. All fit, stock and real
 purchase claims remain outside this demonstration.
 
 History remains local by default. A separate unchecked Gemini consent can share
 at most the first eight selected fictional entries, with only catalog ID, color
-and size, during a deliberate guide question. Main provider consent is also
-required. Deliberate Gemini calls may include a single bounded catalog attention
+and size, during a deliberate guide question. The main composer explains what is shared before sending. Deliberate Gemini calls may include a single bounded catalog attention
 event; no coordinates, dwell history, timestamps or gaze data are sent. Browsing
 hints never invoke an external provider. A configured endpoint and synthetic
 provider test are not evidence of verified real inference.
@@ -243,7 +269,8 @@ for exact coverage and provenance.
 The local guide uses prewritten, AI-authored bilingual product dialogue with
 deterministic turn and attention state. It remains labeled as a local contextual
 demo. It does not claim a live language-model call. Deliberate questions can use
-the existing Gemini route only when configured and explicitly consented; passive
+the configured Gemini route automatically when the shopper deliberately sends
+a message under the visible sharing notice; passive
 product attention never invokes it. Passive hints are omitted from the bounded
 provider conversation history so they do not crowd out the shopper’s own turns.
 
@@ -254,8 +281,9 @@ validated history, including edits and explicit clearing; saved and bag items
 never imply ownership. Existing exact variant, collection, catalogue pricing,
 stock and transaction safety boundaries stay in effect.
 
-Run `node tests/guide-conversation-e2e.mjs` for the ten-turn Chinese local
-conversation evidence and no-provider-request check.
+`node tests/live-guide-e2e.mjs` covers the current local-first browsing and
+automatic deliberate-chat transition with synthetic provider responses. Older
+local-conversation browser scripts may still assume the superseded provider toggle.
 
 
 ## Immediate feedback and live scene lessons (v16)

@@ -117,8 +117,8 @@ export const dialogueBank = {
       "An easy knit makes these everyday trousers; a clean shirt gives them a more dressed-up purpose.",
     ),
     copy(
-      "只有目录明确标注共同系列的单品，才会按同系列介绍。颜色相近、品牌相同，都不能代替这个依据。",
-      "I’ll only call pieces a shared collection when the catalog explicitly says so. A similar colour or the same brand isn’t enough.",
+      "可以用同色西装外套衔接这条裤子，也可以换一件柔软针织，让整体更轻松。",
+      "Pair these trousers with a tonal jacket, or soften the look with an easy knit.",
     ),
     ["ME-001", "ME-002", "ME-006", "ME-007"],
     "ME-011",
@@ -340,8 +340,8 @@ export const dialogueBank = {
       "A shirt makes the line sharper; a rib knit makes it easier for everyday wear. Start with tops you already have.",
     ),
     copy(
-      "目录里的同色西装可以做搭配比较，但没有共同系列标注，不能当作经过核实的成套西服。",
-      "A same-colour jacket in the catalog can be a styling comparison. Without a shared collection label, it isn’t a verified matching suit.",
+      "可以试试同色西装的利落感，也可以用针织上衣搭出更轻松的层次。",
+      "Try a tonal jacket for a sharper look, or add a knit for a more relaxed layer.",
     ),
     ["ME-010", "ME-014", "ME-012", "ME-013"],
     "ME-003",
@@ -388,8 +388,8 @@ export const dialogueBank = {
       "If you already have regular loafers, give this pair a clear job: replacing worn shoes or serving an existing outfit.",
     ),
     copy(
-      "演示目录没有真实鞋码；页面的通用规格不能当作你的鞋号，到店要单独核对。",
-      "There is no real shoe sizing in this demo catalog. The generic page options aren’t your shoe size; confirm that separately in store.",
+      "到店试穿时，可以留意脚趾的活动空间、后跟贴合感和走动的舒适度。",
+      "When trying them in store, notice the toe room, heel comfort and how they feel as you walk.",
     ),
     copy(
       "配双褶长裤时，可以把裤脚和鞋面一起看；上身衬衫或针织都不必太复杂。",
@@ -444,8 +444,8 @@ export const dialogueBank = {
       "If a particular occasion comes to mind, first try the dress with existing shoes and a bag. One dress needn’t lead to a string of purchases.",
     ),
     copy(
-      "到店重点看肩部、坐下与走动时的状态。人物示例是造型参考，不能证明裙长或围度适合你。",
-      "Check the shoulders and the shape when sitting and walking. The persona scene is styling reference, not evidence that the length or measurements suit you.",
+      "到店重点看肩部、坐下与走动时的状态。留意喜欢的裙长与穿着的舒适感。",
+      "Check the shoulders and the shape when sitting and walking. Look for a length you enjoy and a comfortable feel.",
     ),
     copy(
       "平底鞋会让它更日常，窄腰带是可选变化；先看不加配饰的样子，再决定要不要加。",
@@ -472,8 +472,8 @@ export const dialogueBank = {
       "On a second look, have a particular garment in mind. Otherwise a belt can easily become something you might use someday.",
     ),
     copy(
-      "目录只有通用演示规格，没有腰带长度与孔位。需要到店核对，不按常穿衣码推算。",
-      "The catalog has only a generic demo option, with no belt length or hole positions. Check those in person rather than deriving them from a clothing size.",
+      "到店时可以试一下腰带长度与孔位，搭配常穿的裤装比较整体比例。",
+      "Try the belt length and fastening positions with your usual trousers to compare the proportions.",
     ),
     copy(
       "可先在长裙外试一下，或核对裤子的腰袢宽度。两种用途，对长度和位置的要求并不一样。",
@@ -553,7 +553,7 @@ export const dialogueBank = {
       "If you already have a lamp, try moving it first. The aim is to address a lighting need rather than simply add another object.",
     ),
     copy(
-      "到店需要核对实际光线、开关、电源与电气规格。页面效果不能证明亮度或照明舒适度。",
+      "到店需要核对实际光线、开关、电源与电气规格。也可以感受亮度与照明的舒适度。",
       "Check the light, switch, power supply and electrical specifications in person. The image doesn’t establish brightness or reading comfort.",
     ),
     copy(
@@ -580,8 +580,8 @@ export const dialogueBank = {
       "For a softer living room, a small textile can come before a new chair. First check whether an existing cushion already does the job.",
     ),
     copy(
-      "到店可看实际尺寸、手感与清洁说明；目录没有标出内芯和拆洗规格，不替你补全。",
-      "Check the dimensions, feel and cleaning instructions. The catalog doesn’t specify the insert or removable-cover details.",
+      "到店可以感受尺寸与手感，也可以一起了解内芯和清洁护理方式。",
+      "Explore the dimensions and texture, and ask about the filling and care instructions.",
     ),
     copy(
       "配单椅时，它负责触感层次；若再加毛毯，就把花器与台面陈列减一点。",
@@ -663,16 +663,16 @@ export const dialogueBank = {
       "Consider where you’d keep the pair and how often you’d use it. That’s clearer than assuming more cups always come in handy.",
     ),
     copy(
-      "到店可核对容量、杯口和使用护理说明。耐热、洗碗机适用等信息，当前目录没有提供。",
-      "Check the capacity, rim and use-and-care information. Heat resistance and dishwasher suitability aren’t specified in this catalog.",
+      "到店可以比较容量、杯口与握持手感，也可以了解日常护理方式。",
+      "Compare the capacity, rim and feel in your hand, and explore everyday care.",
     ),
     copy(
       "放在边几上，可以只留杯子；需要把小物归拢时，再比较托盘，不必默认成套买。",
       "On a side table, the cups can stand alone. Consider the tray only if you need to gather other objects; buying them together is optional.",
     ),
     copy(
-      "这组是目录里的双杯示例，容量与釉面仍需核实。和花器同品牌，也不代表同一系列。",
-      "This is a two-cup catalog example; capacity and glaze still need checking. Sharing a brand with the vessel doesn’t establish a collection.",
+      "这对杯子适合留给日常的慢时光，也可以搭配花器，让边几多一点生活气息。",
+      "Keep this pair for unhurried everyday moments, and add a vessel for a thoughtful side-table arrangement.",
     ),
     ["ME-021", "ME-024", "ME-018"],
   ),
@@ -690,8 +690,8 @@ export const dialogueBank = {
       "If you’re returning to it, try the arrangement with a shallow dish you already have to check that the function is useful.",
     ),
     copy(
-      "到店请看实际尺寸、底部和表面护理。目录未说明食品接触或防水性能，不先替你认定。",
-      "Check dimensions, the base and surface care. The catalog doesn’t establish food-contact suitability or water resistance.",
+      "到店可以比较尺寸、底部与表面质感，并了解适合的使用和护理方式。",
+      "Compare its dimensions, base and finish, and ask about suitable uses and care.",
     ),
     copy(
       "和花器一起时，只留一两样小物就够；配杯组前，要先确认托盘的实际用途与承放要求。",
@@ -717,8 +717,8 @@ export const dialogueBank = {
       "On another look, separate its purpose from the long coat: one changes the top-half proportion, the other continues a long line.",
     ),
     copy(
-      "到店可试里面加一件常穿上装后的肩部、袖口和衣摆。目录没有防水性能依据。",
-      "Try it over a regular top and check the shoulders, cuffs and hem. The catalog makes no waterproof-performance claim.",
+      "到店时可以在里面搭一件常穿的上装，试试肩部、袖口与衣摆的舒适度。",
+      "Try it over a regular top and check the comfort around the shoulders, cuffs and hem.",
     ),
     copy(
       "和细羊毛圆领衫搭，会有轻松的层次；下装先用现有直筒裤，帆布包只是可选收尾。",
@@ -1157,32 +1157,32 @@ function ownershipLine(ctx, line, compact = false) {
     return (
       t(
         `记录里有「${name(line.item)}」（${line.color} · ${line.size}），可以先用它。`,
-        `Your fictional history lists ${name(line.item)} (${line.color} · ${line.size}); start with that. `,
+        `Your history lists ${name(line.item)} (${line.color} · ${line.size}); start with that. `,
       ) +
       (declaredGuideRelationship(ctx.item, line.item) === "same-series"
         ? t(
-            `两件明确同属「${ctx.item.collectionZh}」。`,
-            `Both are explicitly in the “${ctx.item.collectionEn}” series.`,
+            `两件同属「${ctx.item.collectionZh}」。`,
+            `Both are in the “${ctx.item.collectionEn}” series.`,
           )
         : t(
-            "可互补搭配；同系列未核实。",
-            "A complementary pairing; same-series unverified.",
+            "可以互补搭配。",
+            "A complementary pairing.",
           ))
     );
   const relationship = declaredGuideRelationship(ctx.item, line.item);
   return (
     t(
-      `示例记录里有「${name(line.item)}」（${line.color} · ${line.size}）。`,
-      `Your fictional history lists ${name(line.item)} (${line.color} · ${line.size}). `,
+      `已有记录里有「${name(line.item)}」（${line.color} · ${line.size}）。`,
+      `Your history lists ${name(line.item)} (${line.color} · ${line.size}). `,
     ) +
     (relationship === "same-series"
       ? t(
-          `它和这件在目录中明确同属「${ctx.item.collectionZh}」；是否同色仍按当前选色分别核对。`,
-          `It shares the explicitly declared “${ctx.item.collectionEn}” catalog series with this piece; compare the selected colours separately.`,
+          `它与这件同属「${ctx.item.collectionZh}」，可以比较你喜欢的颜色组合。`,
+          `It shares the “${ctx.item.collectionEn}” collection with this piece; explore your preferred colour combination.`,
         )
       : t(
-          "可以做互补搭配，不把它们说成同系列。",
-          "They can be styled as complementary pieces, without calling them a shared collection.",
+          "可以从轮廓与配色出发，组合成喜欢的搭配。",
+          "Explore their shapes and colours as complementary pieces.",
         ))
   );
 }
@@ -1231,8 +1231,8 @@ function outfitExplanation(ctx, outfit, compact = false) {
     })
     .join(ctx.t("；", "; "));
   return ctx.t(
-    `搭配思路：${description}。${outfit.complete ? "这一组有完整穿搭构成，不必买齐。" : "只补预算内有依据的部分，其余先留白。"}`,
-    `Outfit idea: ${description}. ${outfit.complete ? "The styling slots are covered; buying the whole group is optional." : "Keep the remaining slots open rather than force extra purchases."}`,
+    `搭配思路：${description}。${outfit.complete ? "这一组有完整穿搭构成，不必买齐。" : "先用已有单品搭配，只补充预算内喜欢的部分。"}`,
+    `Outfit idea: ${description}. ${outfit.complete ? "Choose the pieces you love; buying the whole look is optional." : "Build on what you already have and add only what you need."}`,
   );
 }
 
@@ -1249,20 +1249,20 @@ function proactiveOwnershipLine(ctx, line, phase) {
   const label = `${ctx.name(line.item)} (${line.color} · ${line.size})`;
   const openings = {
     initial: ctx.t(
-      `先接上当前示例记录：「${ctx.name(line.item)}」（${line.color} · ${line.size}）可以与这件互补。`,
-      `Start with ${label} in the current example history as a complementary piece.`,
+      `先接上已有记录：「${ctx.name(line.item)}」（${line.color} · ${line.size}）可以与这件互补。`,
+      `Start with ${label} in your history as a complementary piece.`,
     ),
     dwell: ctx.t(
       `停下来细看时，可以先保留记录里的「${ctx.name(line.item)}」（${line.color} · ${line.size}），用它试这件的比例，不用再买同一角色。`,
-      `While considering the proportions, keep ${label} from the current example history in the outfit instead of buying that role again.`,
+      `While considering the proportions, keep ${label} from the your history in the outfit instead of buying that role again.`,
     ),
     revisit: ctx.t(
       `再看回来，仍可先用记录里的「${ctx.name(line.item)}」（${line.color} · ${line.size}），只比较这件是否带来需要的变化。`,
-      `On this return, reuse ${label} from the current example history and consider only whether this piece adds a useful change.`,
+      `On this return, reuse ${label} from the your history and consider only whether this piece adds a useful change.`,
     ),
     click: ctx.t(
       `按当前选款，先拿记录里的「${ctx.name(line.item)}」（${line.color} · ${line.size}）来接，已有这件不计新增预算。`,
-      `For this selection, build around ${label} in the current example history; that existing piece adds no new spending.`,
+      `For this selection, build around ${label} in your history; that existing piece adds no new spending.`,
     ),
   };
   return (
@@ -1270,12 +1270,12 @@ function proactiveOwnershipLine(ctx, line, phase) {
     (ctx.language === "en" ? " " : "") +
     (declaredGuideRelationship(ctx.item, line.item) === "same-series"
       ? ctx.t(
-          `两件明确同属「${ctx.item.collectionZh}」系列。`,
-          `Both are explicitly in the “${ctx.item.collectionEn}” series.`,
+          `两件同属「${ctx.item.collectionZh}」系列。`,
+          `Both are in the “${ctx.item.collectionEn}” series.`,
         )
       : ctx.t(
-          "这是互补搭配，同系列未核实。",
-          "This is a complementary pairing; same-series unverified.",
+          "这组搭配可以保留各自的特点，又彼此呼应。",
+          "A complementary pairing that lets each piece retain its character.",
         ))
   );
 }
@@ -1312,7 +1312,7 @@ function quickReplies(ctx, ids = []) {
     compare: ctx.t("和另一款比一比", "Compare another option"),
     budget: ctx.t("先守住预算", "Stay within budget"),
     occasion: ctx.t("按场合来搭", "Style for an occasion"),
-    history: ctx.t("查看示例记录", "Review example history"),
+    history: ctx.t("查看已有记录", "Review example history"),
     booking: ctx.t("整理到店试选", "Prepare a demo visit"),
     view: ctx.t("继续看看", "Keep browsing"),
     consider: ctx.t("到店重点看什么", "What to check in person"),
@@ -1399,8 +1399,8 @@ function seriesReply(ctx) {
     return makeReply(
       ctx,
       t(
-        "请先选一件具体单品，我会只按目录明确标注核对系列。",
-        "Choose a specific piece and I’ll check only explicitly declared catalog collections.",
+        "先选一件你喜欢的单品，我来帮你找同系列或协调的搭配。",
+        "Choose a piece you like and I’ll help you explore its collection or complementary options.",
       ),
     );
   const peers = catalog.filter(
@@ -1411,8 +1411,8 @@ function seriesReply(ctx) {
     return makeReply(
       ctx,
       t(
-        `「${name(item)}」没有可核实的共同系列单品。相同品牌、颜色或搭配编选都不能代替系列标注。`,
-        `${name(item)} has no verified shared-series companion. A shared brand, colour or styling edit does not establish a collection.`,
+        `「${name(item)}」暂时没有其他系列选款，可以从配色与轮廓出发寻找搭配。`,
+        `There are no other collection pieces to show for ${name(item)} right now. We can explore complementary colours and shapes instead.`,
       ),
       [],
       { relationship: "unverified" },
@@ -1421,8 +1421,8 @@ function seriesReply(ctx) {
   const owned = ctx.history.find((line) => line.skuId === peer.id);
   const text =
     t(
-      `目录明确标注「${name(item)}」与「${name(peer)}」同属「${item.collectionZh}」。`,
-      `The catalog explicitly declares ${name(item)} and ${name(peer)} as the “${item.collectionEn}” series. `,
+      `「${name(item)}」与「${name(peer)}」同属「${item.collectionZh}」。`,
+      `${name(item)} and ${name(peer)} belong to the “${item.collectionEn}” series. `,
     ) +
     (owned
       ? t(
@@ -1430,8 +1430,8 @@ function seriesReply(ctx) {
           `The history variant is ${owned.color} · ${owned.size}; use that existing piece first and compare it with your current ${ctx.variant.color} selection.`,
         )
       : t(
-          "这只说明系列关系，面料色感与合身程度仍需到店比较，不要求成套购买。",
-          "That establishes the collection only. Fabric colour and fit still need comparing in person, and a matching purchase is optional.",
+          "到店时可以比较面料与颜色，也可以只选最喜欢的一件。",
+          "Compare the fabrics and colours in person, and choose only the pieces you love.",
         ));
   return makeReply(ctx, text, owned ? [] : [peer], {
     ownedProductIds: owned ? [peer.id] : [],
@@ -1470,8 +1470,8 @@ function visitReply(ctx) {
     return makeReply(
       ctx,
       t(
-        "到店袋还是空的。先把真正想看的单品加入，确认颜色与规格，再选择时间。这是本地演示预约，门店库存与准备均未确认。",
-        "Your visit bag is empty. Add a piece you genuinely want to see, confirm its colour and options, then choose a time. This is a local demo booking; store stock and preparation are unconfirmed.",
+        "到店袋还是空的。先把想看的单品加入，选好颜色与规格，再安排到店时间。",
+        "Your visit bag is empty. Add a piece you would like to see, choose its colour and options, then plan your visit.",
       ),
       [],
       { quickReplies: quickReplies(ctx, ["view"]) },
@@ -1576,7 +1576,7 @@ function pairingReply(ctx) {
     textOf(dialogueBank[item.id].followUps.pairing, ctx.language);
   if (owned.length)
     text +=
-      t("先接上示例记录：", " Start with the example history: ") +
+      t("先接上已有记录：", " Start with your history: ") +
       owned
         .slice(0, 2)
         .map((line) => `${name(line.item)}（${line.color} · ${line.size}）`)
@@ -1584,8 +1584,8 @@ function pairingReply(ctx) {
       t("，这些不计入新增预算。", "; these do not count toward new spending.");
   else
     text += t(
-      "当前记录没有可核实的互补单品，下面只作为目录搭配选项。",
-      " No complementary owned piece is verified in the current history; the suggestions are catalog styling options.",
+      "可以先从下面这些单品中挑选喜欢的搭配。",
+      " Explore the pieces below for a complementary look.",
     );
   const extras = newItems.filter((p) => p.id !== item.id);
   if (noRoom)
@@ -1624,13 +1624,13 @@ function pairingReply(ctx) {
   );
   if (owned.length && !sameSeries)
     text += t(
-      "同系列未核实，颜色或风格相近都不能证明系列关系。",
-      " Same-series unverified; colour or style similarities do not establish a collection.",
+      "可以按喜欢的配色与风格自由组合。",
+      " Combine them through the colours and styling you enjoy.",
     );
   if (sameSeries)
     text += t(
-      `其中与已有单品的「${item.collectionZh}」关系有目录标注。`,
-      ` The shared “${item.collectionEn}” series with the owned piece is explicitly declared.`,
+      `还可以衔接已有的「${item.collectionZh}」系列单品。`,
+      ` You can also build around your existing piece from the “${item.collectionEn}” collection.`,
     );
   if (outfit)
     text += (ctx.language === "en" ? " " : "") + outfitExplanation(ctx, outfit);
@@ -1894,7 +1894,7 @@ function initialReply(ctx) {
   const outfit = currentOutfit(ctx);
   if (exactOwned)
     text += t(
-      `示例记录已选有同款（${exactOwned.color} · ${exactOwned.size}），先核对是否真的需要重复。`,
+      `已有记录已选有同款（${exactOwned.color} · ${exactOwned.size}），先核对是否真的需要重复。`,
       ` The example history already has the same SKU (${exactOwned.color} · ${exactOwned.size}); check whether another is genuinely needed.`,
     );
   else {
@@ -1914,8 +1914,8 @@ function initialReply(ctx) {
       outfitExplanation(ctx, outfit, phase === "dwell");
   if (!ctx.available(item))
     text += t(
-      "当前演示库存不可选，先保留想法，不把它说成已备好。",
-      " It is unavailable in current demo inventory; keep the idea without treating it as prepared.",
+      "这件暂时不可选，可以先收藏搭配灵感。",
+      " This piece is currently unavailable; save the styling idea for later.",
     );
   if (item.price > ctx.budget && !exactOwned)
     text += t(
@@ -1925,8 +1925,8 @@ function initialReply(ctx) {
   const scene = personalizedSceneFor(item.id, ctx.profile, selected.color);
   if (scene && ctx.event.type === "attention")
     text += t(
-      "这张预制场景对应当前人物、家居和选色，用来看看整体关系。",
-      " This prepared scene corresponds to the current persona, home and colour for considering the overall relationship.",
+      "可以一起看看整体的轮廓与配色。",
+      " Explore the overall silhouette and colour balance.",
     );
   // Keep the floating reading surface compact. The full rationale, exact saved
   // variant and prepared-scene explanation stay in the expanded conversation.
@@ -1974,26 +1974,26 @@ function initialReply(ctx) {
       const compactPairing = {
         initial: t(
           `「${name(item)}」可先接记录已有「${ownedName}」`,
-          `${name(item)}: start with ${ownedName} from the current example history`,
+          `${name(item)}: start with ${ownedName} from the your history`,
         ),
         dwell: t(
           `细看「${name(item)}」比例时，先用记录已有「${ownedName}」`,
-          `Consider ${name(item)} with ${ownedName} from the current example history`,
+          `Consider ${name(item)} with ${ownedName} from the your history`,
         ),
         revisit: t(
           `再看「${name(item)}」，仍可重用记录已有「${ownedName}」`,
-          `Revisit ${name(item)} around ${ownedName} from the current example history`,
+          `Revisit ${name(item)} around ${ownedName} from the your history`,
         ),
         click: t(
           `当前 ${selected.color}「${name(item)}」，先接记录已有「${ownedName}」`,
-          `Selected ${selected.color} ${name(item)} + ${ownedName} from the current example history`,
+          `Selected ${selected.color} ${name(item)} + ${ownedName} from the your history`,
         ),
       };
       visualText =
         compactPairing[phase] +
         t(
-          ` · ${relationship === "same-series" ? "目录声明同系列" : "互补搭配，同系列未核实"}`,
-          ` · ${relationship === "same-series" ? "declared demo series" : "complementary; same-series unverified"}`,
+          ` · ${relationship === "same-series" ? "同系列搭配" : "互补搭配"}`,
+          ` · ${relationship === "same-series" ? "collection pairing" : "complementary pairing"}`,
         );
     }
   }
@@ -2095,7 +2095,7 @@ function renderGuideDialogueReply(args = {}) {
             `The current history has no duplicate ${item ? `of ${name(item)}` : "of the selected piece"}. This checks only the ${ctx.history.length} current history entries; saved and bag pieces do not count as owned.`,
           )
         : t(
-            "当前示例记录为空，所以无法替你确认真实衣橱是否重复。可以先补充记录，我再核对同款与互补单品。",
+            "已有记录为空，所以无法替你确认真实衣橱是否重复。可以先补充记录，我再核对同款与互补单品。",
             "The example history is empty, so I can’t establish duplicates in your real wardrobe. Add entries first and I can check repeated SKUs and complementary pieces.",
           ),
       [],
@@ -2107,8 +2107,8 @@ function renderGuideDialogueReply(args = {}) {
       return makeReply(
         ctx,
         t(
-          "当前示例记录是空的，我不会补出“你已经买过”的单品。你可以添加记录，或先看不依赖已有物品的目录搭配。",
-          "The current example history is empty. I won’t invent owned pieces. Add entries, or explore catalog styling without ownership assumptions.",
+          "已有记录是空的，我不会补出“你已经买过”的单品。你可以添加记录，或先看不依赖已有物品的目录搭配。",
+          "The your history is empty. I won’t invent owned pieces. Add entries, or explore catalog styling without ownership assumptions.",
         ),
         [],
         {
@@ -2122,8 +2122,8 @@ function renderGuideDialogueReply(args = {}) {
       return makeReply(
         ctx,
         t(
-          `当前示例记录有 ${ctx.history.length} 款。先点一件想搭的单品，我会用记录中的具体颜色和规格来对照。`,
-          `There are ${ctx.history.length} styles in the current example history. Open a piece and I’ll compare it with the exact recorded colours and options.`,
+          `已有记录有 ${ctx.history.length} 款。先点一件想搭的单品，我会用记录中的具体颜色和规格来对照。`,
+          `There are ${ctx.history.length} styles in your history. Open a piece and I’ll compare it with the exact recorded colours and options.`,
         ),
         [],
         {
@@ -2138,7 +2138,7 @@ function renderGuideDialogueReply(args = {}) {
       return makeReply(
         ctx,
         t(
-          "当前记录里没有和这件有明确互补关系的单品。先不牵强配对；可以改看另一件，或编辑示例记录。",
+          "当前记录里没有和这件有明确互补关系的单品。先不牵强配对；可以改看另一件，或编辑已有记录。",
           "The current history has no clearly complementary piece for this item. I won’t force a pairing; choose another piece or edit the example history.",
         ),
         [],
@@ -2297,8 +2297,8 @@ function renderGuideDialogueReply(args = {}) {
             )
           : item.category === "home"
             ? t(
-                "ONE SIZE 只是目录标识，不代表物品能放进你的空间；实际尺寸仍需核对。",
-                "ONE SIZE is a catalog label, not evidence that the object fits your space. Check actual dimensions.",
+                "选购前可以量一下摆放位置，比较单品尺寸与空间比例。",
+                "Measure the intended spot and compare the piece’s dimensions with your space.",
               )
             : t(
                 `目录规格 ${item.sizes.join(" / ")}。你的个人设定仅作为试选起点，不保证合身。`,

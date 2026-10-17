@@ -3,10 +3,25 @@ import assert from 'node:assert/strict';
 import { readFile, lstat, readdir } from 'node:fs/promises';
 import { resolve, dirname, join, sep } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
+import { spawnSync } from 'node:child_process';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const output = resolve(root, 'dist');
-const hosting = JSON.parse(await readFile(join(output, '.openai/hosting.json'), 'utf8'));
+let hosting = null;
+try { hosting = JSON.parse(await readFile(join(output, '.openai/hosting.json'), 'utf8')); }
+catch (error) { if (error.code !== 'ENOENT') throw error; }
+if (!hosting) {
+  await assertFilesOnly(output);
+  assert.match(await readFile(join(output, 'client/index.html'), 'utf8'), /<div id="root"><\/div>/);
+  const result = spawnSync(process.execPath, ['--test', 'tests/backend-runtime-packaging.test.mjs'], {
+    cwd: root, encoding: 'utf8', timeout: 30000,
+    env: { PATH: process.env.PATH || '', SystemRoot: process.env.SystemRoot || '', TEMP: process.env.TEMP || '', TMP: process.env.TMP || '', MAISON_PACKAGING_BUILD_DIR: output }
+  });
+  assert.equal(result.error, undefined, result.error?.message);
+  assert.equal(result.status, 0, result.stdout + result.stderr);
+  console.log(JSON.stringify({ ok: true, target: 'node-cloud-run', frontend: 'dist/client', stagedRuntime: 'passed', providerCalls: 0, published: false }));
+  process.exit(0);
+}
 const source = JSON.parse(await readFile(join(root, '.openai/hosting.json'), 'utf8'));
 assert.equal(hosting.project_id, source.project_id); assert.equal(hosting.static, undefined);
 assert.equal(hosting.d1, null); assert.equal(hosting.r2, null);

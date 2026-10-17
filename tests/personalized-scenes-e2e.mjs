@@ -340,7 +340,7 @@ try {
               await page
                 .locator(".subtitle-bubble:not(.is-retiring) .bubble-text")
                 .allTextContents()
-            ).some((text) => /same-series unverified/i.test(text)),
+            ).some((text) => /complementary pairing/i.test(text)),
           "grounded short guide missing",
         );
         const current = page
@@ -359,9 +359,9 @@ try {
         const text = await page
           .getByRole("log", { name: "Conversation history", exact: true })
           .innerText();
-        assert.match(text, /fictional history lists/);
-        assert.match(text, /palette|catalog variants/);
-        assert.match(text, /same-series unverified/i);
+        assert.match(text, /history lists/);
+        assert.match(text, /palette|Both pieces/);
+        assert.doesNotMatch(text, /same-series unverified|目录声明/i);
         assert.ok(!text.includes("Both belong to the declared demo series"));
         return { history: (await state()).purchaseHistory, guideText: text };
       },
@@ -563,7 +563,7 @@ try {
               .locator(".subtitle-bubble:not(.is-retiring)")
               .allTextContents()
           ).some((text) =>
-            text.toLowerCase().includes("same-series unverified"),
+            text.toLowerCase().includes("complementary"),
           ),
         "variant-specific history line missing",
       );

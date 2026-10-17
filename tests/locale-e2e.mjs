@@ -65,9 +65,11 @@ try {
     }
   }
   browser = await chromium.launch({
-    executablePath: await headless.executablePath(),
+    executablePath: process.env.E2E_CHROMIUM_PATH || await headless.executablePath(),
     headless: true,
-    args: headless.args,
+    args: process.platform === 'win32' ? [] : headless.args,
+    chromiumSandbox: process.platform === 'win32',
+    ignoreDefaultArgs: process.platform === 'win32' ? ['--disable-extensions', '--disable-component-extensions-with-background-pages', '--unsafely-disable-devtools-self-xss-warnings'] : [],
     env: { ...process.env, HOME: "/tmp" },
   });
   const context = await browser.newContext({

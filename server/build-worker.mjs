@@ -1,4 +1,6 @@
-/** Build the existing frontend and its same-origin Sites Worker API. Never reads runtime credentials. */
+/** Build the Node frontend, or the optional Sites Worker when its manifest exists.
+ * A clean checkout needs no hosting manifest, runtime credentials or provider call.
+ */
 import { mkdtemp, mkdir, readFile, writeFile, rm } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { dirname, join, resolve } from 'node:path';
@@ -10,9 +12,19 @@ const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const review = process.argv.length === 3 && process.argv[2] === '--review';
 if (process.argv.length > 2 && !review) throw new Error('Use no arguments for production output, or --review for a temporary candidate.');
 const output = review ? await mkdtemp(join(tmpdir(), 'maison-sites-worker-')) : join(root, 'dist');
-const hosting = JSON.parse(await readFile(join(root, '.openai/hosting.json'), 'utf8'));
-if (!hosting.project_id) throw new Error('Keep the existing Site project ID before building.');
-if (hosting.static) throw new Error('The Sites Worker manifest must not declare static-only hosting.');
+let hosting = null;
+try { hosting = JSON.parse(await readFile(join(root, '.openai/hosting.json'), 'utf8')); }
+catch (error) { if (error.code !== 'ENOENT') throw error; }
+if (hosting && !hosting.project_id) throw new Error('Keep the existing Site project ID before building.');
+if (hosting?.static) throw new Error('The Sites Worker manifest must not declare static-only hosting.');
+// Native Node/Cloud Run builds do not need an account-specific Sites manifest.
+// An existing Sites manifest still selects the original Worker build below.
+if (!hosting) {
+  if (!review) await rm(output, { recursive: true, force: true });
+  await buildFrontend({ root, build: { outDir: join(output, 'client'), emptyOutDir: true } });
+  console.log(JSON.stringify({ output, reviewOnly: review, target: 'node-cloud-run', published: false, liveAI: false }));
+  process.exit(0);
+}
 const workerHosting = { ...hosting };
 workerHosting.d1 ??= null; workerHosting.r2 ??= null;
 // Remove the previous build only. Source, runtime state and environment settings are untouched.

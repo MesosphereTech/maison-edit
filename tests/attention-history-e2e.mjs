@@ -317,7 +317,7 @@ try {
             .then((n) => n > 0),
         "history bubble missing",
       );
-      assert.match(await bubbles().last().innerText(), /declared demo series/);
+      assert.match(await bubbles().last().innerText(), /collection pairing/);
       assert.match(
         await bubbles().last().innerText(),
         /(?:fictional|current example) history/i,

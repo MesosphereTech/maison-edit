@@ -9,3 +9,17 @@ tests
 docs
 artifacts
 screenshots
+.openai
+.firebase
+*.pem
+*.key
+*.p12
+*.pfx
+*service-account*.json
+application_default_credentials.json
+.npmrc
+.netrc
+*service_account*.json
+credentials.json
+id_rsa
+id_ed25519

@@ -10,6 +10,7 @@ export function useConciergePlacement({
   composerRef,
   inputRef,
   avoidPageControls,
+  productMode = false,
   held,
   revision,
 }) {
@@ -48,6 +49,19 @@ export function useConciergePlacement({
       const sheet = document.querySelector(
         ".modal[data-concierge-current-product]",
       );
+      if (productMode && sheet) {
+        // The product sheet reserves a dedicated rail; never fade or float
+        // the guide over the image, variants or store-list actions.
+        for (const key of ["top", "bottom", "left", "right"])
+          aside.style[key] = "";
+        composer.style.top = "";
+        aside.dataset.yieldPlacement = "product-rail";
+        aside.style.setProperty(
+          "--subtitle-available-height",
+          width < 900 ? "130px" : `${Math.max(140, height - 270)}px`,
+        );
+        return;
+      }
       const margin = width < 600 ? 14 : 20;
       const composerTop = Math.round(
         Math.min(
@@ -231,6 +245,6 @@ export function useConciergePlacement({
       window.removeEventListener("keydown", navigationKey);
       window.removeEventListener("resize", schedule);
     };
-  }, [active, avoidPageControls, revision, held, yielding]);
-  return yielding;
+  }, [active, avoidPageControls, productMode, revision, held, yielding]);
+  return productMode ? false : yielding;
 }

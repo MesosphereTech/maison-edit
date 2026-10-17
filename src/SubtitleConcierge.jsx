@@ -16,6 +16,7 @@ import "./subtitle-history.css";
 import "./attention-particles.css";
 import "./concierge-collapse.css";
 import "./inline-concierge.css";
+import "./product-concierge.css";
 import {
   BUBBLE_EXIT_MS,
   retireBubbles,
@@ -218,14 +219,15 @@ export function SubtitleConcierge({
   transcript = [],
   attention,
   state,
-  paused,
+  providerControls,
+  liveEnabled = false,
+  productMode = false,
   working,
   input,
   mode,
   onMode,
   onInput,
   onSend,
-  onPause,
   onMinimize,
   onDismiss,
   onResume,
@@ -366,6 +368,7 @@ export function SubtitleConcierge({
     composerRef,
     inputRef,
     avoidPageControls,
+    productMode,
     held: historyExpanded || focusWithin || hovered,
     revision: `${historyExpanded ? "history" : "current"}:${input ? "typing" : "idle"}:${stream.bubbles.map((b) => `${b.id}:${b.text}`).join("|")}`,
   });
@@ -466,11 +469,7 @@ export function SubtitleConcierge({
         id: `line-${index}`,
         remaining: Infinity,
       }))
-    : stream.bubbles.filter(
-        (bubble) =>
-          bubble.retiring ||
-          bubble.id === stream.bubbles.filter((b) => !b.retiring).at(-1)?.id,
-      );
+    : stream.bubbles.filter((bubble) => !bubble.retiring).slice(-1);
   const currentBubbleId = visible
     .filter((bubble) => !bubble.retiring)
     .at(-1)?.id;
@@ -520,7 +519,7 @@ export function SubtitleConcierge({
         ref={asideRef}
         inert={leaving || undefined}
         aria-hidden={leaving || undefined}
-        className={`subtitle-concierge ${inline ? "is-inline" : ""} ${leaving ? "is-leaving" : ""} ${historyExpanded ? "is-history-expanded" : ""} ${stream.scrolling && !historyExpanded && !focusWithin && !hovered ? "is-scrolling" : ""} ${yielding ? "is-yielding" : ""}`}
+        className={`subtitle-concierge ${productMode ? "is-product-guide" : ""} ${inline ? "is-inline" : ""} ${leaving ? "is-leaving" : ""} ${historyExpanded ? "is-history-expanded" : ""} ${stream.scrolling && !historyExpanded && !focusWithin && !hovered ? "is-scrolling" : ""} ${yielding ? "is-yielding" : ""}`}
         aria-label={L("字幕导购", "Subtitle concierge")}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
@@ -532,8 +531,8 @@ export function SubtitleConcierge({
         onKeyDown={(event) => {
           if (event.key === "Escape") {
             event.stopPropagation();
-            if (historyExpanded) rememberHistoryPosition();
-            onMinimize();
+            if (historyExpanded) toggleHistory();
+            else onMinimize();
           }
         }}
       >
@@ -543,36 +542,31 @@ export function SubtitleConcierge({
           </span>
           <div className="subtitle-controls">
             <button
-              onClick={onPause}
-              aria-pressed={paused}
+              type="button"
+              onClick={toggleHistory}
+              aria-expanded={historyExpanded}
+              aria-controls={historyId}
               aria-label={L(
-                paused ? "恢复主动字幕" : "暂停主动字幕",
-                paused
-                  ? "Resume proactive subtitles"
-                  : "Pause proactive subtitles",
+                historyExpanded ? "收起对话历史" : "展开对话历史",
+                historyExpanded
+                  ? "Collapse conversation history"
+                  : "Show conversation history",
               )}
               title={L(
-                paused ? "恢复主动字幕" : "暂停主动字幕",
-                paused
-                  ? "Resume proactive subtitles"
-                  : "Pause proactive subtitles",
+                historyExpanded ? "回到单个气泡" : "展开上下文",
+                historyExpanded
+                  ? "Return to one bubble"
+                  : "Expand conversation context",
               )}
             >
-              {paused ? "▷" : "Ⅱ"}
+              {historyExpanded ? "⌄" : "⌃"}
             </button>
             <button
               onClick={onMinimize}
-              aria-label={L("最小化字幕", "Minimize subtitles")}
-              title={L("最小化字幕", "Minimize subtitles")}
+              aria-label={L("缩到侧边", "Move guide to the side")}
+              title={L("缩到侧边", "Move guide to the side")}
             >
               −
-            </button>
-            <button
-              onClick={onMinimize}
-              aria-label={L("关闭字幕陪伴", "Dismiss subtitle concierge")}
-              title={L("关闭字幕陪伴", "Dismiss subtitle concierge")}
-            >
-              ×
             </button>
           </div>
         </div>
@@ -584,8 +578,7 @@ export function SubtitleConcierge({
             <button
               type="button"
               onClick={() => {
-                rememberHistoryPosition();
-                onMinimize();
+                toggleHistory();
               }}
               aria-label={L("收起对话历史", "Collapse conversation history")}
             >
@@ -655,14 +648,7 @@ export function SubtitleConcierge({
                   <button
                     className="bubble-dismiss"
                     onClick={onMinimize}
-                    aria-label={L(
-                      bubble.role === "user"
-                        ? "收起这条用户气泡"
-                        : "收起这条导购气泡",
-                      bubble.role === "user"
-                        ? "Dismiss user bubble"
-                        : "Dismiss guide bubble",
-                    )}
+                    aria-label={L("缩到侧边", "Move guide to the side")}
                   >
                     ×
                   </button>
@@ -690,7 +676,9 @@ export function SubtitleConcierge({
                           ? "ÉDIT · GPT CLI TEST"
                           : bubble.mode === "gemini"
                             ? "ÉDIT · GEMINI"
-                            : L("ÉDIT · 本地演示", "ÉDIT · LOCAL DEMO")}
+                            : bubble.mode === "unavailable"
+                              ? L("ÉDIT · 暂不可用", "ÉDIT · UNAVAILABLE")
+                              : L("ÉDIT · 本地导购", "ÉDIT · LOCAL GUIDE")}
                       <span className="bubble-history-cue" aria-hidden="true">
                         {historyExpanded ? "↓" : "↑"}
                       </span>
@@ -710,7 +698,10 @@ export function SubtitleConcierge({
                           )}
                           L={L}
                           attentionToken={attention?.token}
-                          immediate={Boolean(bubble.source?.passive)}
+                          immediate={
+                            bubble.mode !== "gemini" &&
+                            bubble.mode !== "codex-cli"
+                          }
                         />
                       )}
                     </span>
@@ -724,7 +715,9 @@ export function SubtitleConcierge({
                           ? "ÉDIT · GPT CLI TEST"
                           : bubble.mode === "gemini"
                             ? "ÉDIT · GEMINI"
-                            : L("ÉDIT · 本地演示", "ÉDIT · LOCAL DEMO")}
+                            : bubble.mode === "unavailable"
+                              ? L("ÉDIT · 暂不可用", "ÉDIT · UNAVAILABLE")
+                              : L("ÉDIT · 本地导购", "ÉDIT · LOCAL GUIDE")}
                     </span>
                     <p>{bubble.text}</p>
                   </>
@@ -798,6 +791,14 @@ export function SubtitleConcierge({
             </button>
           </div>
         )}
+        {working && (
+          <p className="subtitle-thinking" role="status">
+            {L("ÉDIT 正在构思…", "ÉDIT is considering…")}
+          </p>
+        )}
+        {providerControls && (
+          <div className="subtitle-provider-controls">{providerControls}</div>
+        )}
         <form
           className="subtitle-composer"
           ref={composerRef}
@@ -827,14 +828,7 @@ export function SubtitleConcierge({
           </button>
         </form>
         <div className="subtitle-footnote">
-          <span>
-            {paused
-              ? L("主动字幕已暂停", "PROACTIVE SUBTITLES PAUSED")
-              : L(
-                  "本地演示 · 随你浏览，持续陪伴",
-                  "LOCAL DEMO · HERE AS YOU BROWSE",
-                )}
-          </span>
+          <span>{liveEnabled ? "GEMINI" : L("本地导购", "LOCAL GUIDE")}</span>
           <button onClick={onConversation}>{L("对话", "Conversation")}</button>
           <button
             onClick={() => onMode(mode === "voice" ? "subtitles" : "voice")}

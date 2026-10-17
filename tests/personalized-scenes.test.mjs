@@ -168,9 +168,9 @@ test("fresh demo history has exact variants and only grounded curated-scene rela
         assert.match(result.text, /Walnut wool tailoring/);
         continue;
       }
-      assert.match(result.text, /fictional history/);
-      assert.match(result.text, /palette|catalog variants/);
-      assert.match(result.text, /Same-series unverified/);
+      assert.match(result.text, /history/);
+      assert.match(result.text, /palette|Both pieces/);
+      assert.doesNotMatch(result.text, /unverified|未核实/i);
       assert.ok(
         history.some((entry) => result.ownedProductIds.includes(entry.skuId)),
       );
@@ -187,7 +187,7 @@ test("seeded history explains the declared walnut series without inferring colle
   assert.equal(result.relationship, "same-series");
   assert.deepEqual(result.ownedProductIds, ["ME-003"]);
   assert.match(result.text, /Walnut wool tailoring/);
-  assert.match(result.text, /shared colour alone does not establish a series/);
+  assert.doesNotMatch(result.text + result.visualText, /unverified|does not establish/i);
 });
 test("fresh or pre-history profiles seed once; explicit empty and edited histories survive reload", () => {
   assert.ok(restoreState(null).state.purchaseHistory.length);

@@ -1,0 +1,116 @@
+/* Product inspection reserves real space for the guide and its composer. */
+body:has(> .subtitle-concierge.is-product-guide:not(.is-minimized))
+  .overlay:has(.modal[data-concierge-current-product]) {
+  padding: 20px 358px 20px 20px;
+  align-items: center;
+}
+body:has(> .subtitle-concierge.is-product-guide:not(.is-minimized))
+  .modal[data-concierge-current-product] {
+  width: 100%;
+  max-height: calc(100dvh - 40px);
+}
+body > aside.subtitle-concierge.is-product-guide:not(.is-minimized) {
+  top: 50%;
+  bottom: auto;
+  left: auto;
+  right: 16px;
+  transform: translateY(-50%);
+  width: 322px;
+  max-height: calc(100dvh - 40px);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px;
+  border: 1px solid #c8b79d;
+  border-radius: 16px;
+  background: #f8f4ecfa;
+  box-shadow: 0 8px 30px #33272318;
+  pointer-events: auto;
+}
+.subtitle-concierge.is-product-guide .subtitle-bubbles {
+  overflow-y: auto;
+  max-height: min(55dvh, var(--subtitle-available-height));
+  flex-shrink: 1;
+}
+.subtitle-concierge.is-product-guide .subtitle-bubble {
+  opacity: 1;
+  padding: 12px 25px 12px 12px;
+}
+.subtitle-concierge.is-product-guide .subtitle-bubble .bubble-text {
+  font-size: 14px;
+  line-height: 1.65;
+  display: block;
+  -webkit-line-clamp: unset;
+}
+.subtitle-concierge.is-product-guide .subtitle-composer {
+  position: relative;
+  inset: auto;
+  transform: none;
+  width: 100%;
+  flex-shrink: 0;
+}
+.subtitle-concierge.is-product-guide .subtitle-composer input {
+  padding: 12px;
+}
+.guide-send-notice {
+  margin: 0;
+  font-size: 9px;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+.subtitle-provider-controls {
+  padding: 5px 8px;
+}
+@media (max-width: 899px) {
+  body:has(> .subtitle-concierge.is-product-guide:not(.is-minimized))
+    .overlay:has(.modal[data-concierge-current-product]) {
+    padding: 10px 10px 300px;
+    align-items: flex-start;
+  }
+  body:has(> .subtitle-concierge.is-product-guide:not(.is-minimized))
+    .overlay
+    .modal[data-concierge-current-product] {
+    max-height: calc(100dvh - 310px);
+  }
+  body > aside.subtitle-concierge.is-product-guide:not(.is-minimized) {
+    top: auto;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    transform: none;
+    width: auto;
+    max-width: none;
+    max-height: 280px;
+    gap: 3px;
+    padding: 8px 10px;
+  }
+  .subtitle-concierge.is-product-guide .subtitle-heading {
+    padding-bottom: 2px;
+  }
+  .subtitle-concierge.is-product-guide .subtitle-bubbles {
+    max-height: 112px;
+  }
+  .subtitle-concierge.is-product-guide .subtitle-bubble {
+    padding: 7px 23px 7px 10px;
+  }
+  .subtitle-concierge.is-product-guide .subtitle-bubble .bubble-text {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-top: 3px;
+  }
+  .subtitle-concierge.is-product-guide .bubble-replies {
+    margin-top: 4px;
+  }
+  .subtitle-concierge.is-product-guide .bubble-owned-reference {
+    display: none;
+  }
+  .subtitle-concierge.is-product-guide .subtitle-provider-controls {
+    padding: 0 4px;
+  }
+  .subtitle-concierge.is-product-guide .guide-send-notice {
+    font-size: 8px;
+  }
+  .subtitle-concierge.is-product-guide .subtitle-footnote {
+    padding-top: 0;
+  }
+}

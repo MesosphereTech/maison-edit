@@ -126,7 +126,7 @@ test("each proactive phase names the actual owned complement without waiting for
     assert.ok(value.ownedProductIds.includes("ME-003"));
     assert.match(value.text, /long-line trouser/);
     assert.match(value.visualText, /long-line trouser/);
-    assert.match(value.text, /explicitly in/);
+    assert.match(value.text, /Walnut wool tailoring/);
     assert.equal(value.relationship, "same-series");
     assert.ok(
       value.outfit.components.every((component) => byId(component.productId)),
@@ -149,7 +149,7 @@ test("empty and unrelated history never becomes an owned pairing or declared ser
     assert.notEqual(result.relationship, "same-series");
     assert.doesNotMatch(
       result.visualText,
-      /current example history|declared demo series/,
+      /your history|collection/,
     );
   }
 });
@@ -268,7 +268,7 @@ test("legacy concierge also uses fresh history and keeps empty history distinct 
     purchaseHistory: [entry("ME-003")],
   });
   assert.ok(owned.ownedProductIds.includes("ME-003"));
-  assert.match(owned.text, /declared demo series/);
+  assert.match(owned.text, /collection/);
   const empty = createConciergeReply({
     ...args,
     history: [],
