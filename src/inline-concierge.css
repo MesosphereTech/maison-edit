@@ -1,0 +1,212 @@
+/* The visit is a reading experience. Its companion gets real document space,
+   rather than covering a hero, route, product or booking action. */
+.visit-companion-host {
+  margin: 0 0 30px;
+  position: relative;
+}
+.visit-companion-host:empty {
+  display: none;
+}
+.visit-companion-host .subtitle-concierge.is-inline {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  max-width: none;
+  z-index: 2;
+  transform: none;
+  animation: none;
+  transition: none;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(250px, 390px);
+  gap: 5px 28px;
+  padding: 16px 20px;
+  border: 1px solid #d9cbb6;
+  background: #f7f2e9;
+  border-radius: 14px;
+  pointer-events: auto;
+}
+.visit-companion-host .subtitle-concierge.is-inline .subtitle-heading {
+  grid-column: 1;
+  padding: 0;
+  opacity: 1;
+  pointer-events: auto;
+}
+.visit-companion-host .subtitle-concierge.is-inline .subtitle-heading button {
+  pointer-events: auto;
+}
+.visit-companion-host .subtitle-concierge.is-inline .subtitle-heading > span {
+  padding-left: 0;
+  background: transparent;
+}
+.visit-companion-host .subtitle-concierge.is-inline .subtitle-bubbles {
+  grid-column: 1;
+  grid-row: 2;
+  max-height: none;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+}
+.visit-companion-host
+  .subtitle-concierge.is-inline:not(.is-history-expanded)
+  .subtitle-bubble {
+  padding: 0 26px 0 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  opacity: 1;
+}
+.visit-companion-host
+  .subtitle-concierge.is-inline:not(.is-history-expanded)
+  .bubble-text {
+  font-size: 12px;
+  line-height: 1.6;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.visit-companion-host
+  .subtitle-concierge.is-inline:not(.is-history-expanded)
+  :is(
+    .bubble-author,
+    .bubble-current-subject,
+    .bubble-replies,
+    .bubble-piece,
+    .bubble-owned-reference,
+    .bubble-dismiss
+  ) {
+  display: none;
+}
+.visit-companion-host .subtitle-concierge.is-inline .subtitle-composer {
+  position: relative;
+  inset: auto;
+  top: auto;
+  left: auto;
+  transform: none;
+  width: 100%;
+  min-width: 0;
+  height: 48px;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  align-self: center;
+  opacity: 1;
+  margin: 0;
+  box-shadow: none;
+}
+.visit-companion-host .subtitle-concierge.is-inline .subtitle-composer input {
+  font-size: 13px;
+}
+.visit-companion-host .subtitle-concierge.is-inline .subtitle-footnote {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  margin: 0;
+  padding: 4px 0 0;
+  opacity: 1;
+  pointer-events: auto;
+}
+.visit-companion-host .subtitle-concierge.is-inline .subtitle-footnote button {
+  pointer-events: auto;
+}
+.visit-companion-host
+  .subtitle-concierge.is-inline.is-history-expanded
+  .subtitle-history {
+  max-height: 280px;
+  overflow-y: auto;
+}
+.visit-companion-host .subtitle-concierge.is-inline .subtitle-history-heading {
+  grid-column: 1 / -1;
+}
+.visit-companion-host .subtitle-concierge.is-inline.is-minimized {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  min-height: 44px;
+}
+.visit-companion-host .subtitle-concierge.is-inline .subtitle-resume {
+  width: auto;
+  min-height: 44px;
+  flex-direction: row;
+  gap: 9px;
+  padding: 7px 15px;
+  animation: none;
+}
+@media (max-width: 650px) {
+  .visit-companion-host {
+    margin-bottom: 22px;
+  }
+  .visit-companion-host .subtitle-concierge.is-inline {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 6px;
+    padding: 12px 14px;
+  }
+  .visit-companion-host .subtitle-concierge.is-inline .subtitle-composer {
+    grid-column: 1;
+    grid-row: 3;
+    height: 44px;
+  }
+  .visit-companion-host .subtitle-concierge.is-inline .subtitle-footnote {
+    grid-row: 4;
+  }
+  .visit-companion-host
+    .subtitle-concierge.is-inline
+    .subtitle-footnote
+    > span {
+    display: none;
+  }
+  .visit-companion-host
+    .subtitle-concierge.is-inline
+    .subtitle-controls
+    button {
+    min-width: 28px;
+    height: 28px;
+  }
+}
+
+/* Keep case and sound controls in a reserved top utility strip on this reading
+   page. Their existing DOM/audio instance stays mounted and keeps playing. */
+.visit-page .visit-utility-reserve {
+  height: 44px;
+  margin-bottom: 14px;
+}
+.storefront-shell:has(.visit-page) > .case-switch-button {
+  position: absolute;
+  top: var(--visit-utility-top, 153px);
+  bottom: auto;
+  left: 4.5%;
+  transform: none;
+  margin: 0;
+  min-height: 44px;
+  box-shadow: none;
+}
+.storefront-shell:has(.visit-page) > .floating-tools {
+  position: absolute;
+  top: var(--visit-utility-top, 153px);
+  bottom: auto;
+  right: 4.5%;
+  left: auto;
+  width: auto;
+}
+@media (max-width: 650px) {
+  .storefront-shell:has(.visit-page) > .case-switch-button {
+    left: 20px;
+    gap: 5px;
+    padding: 7px 10px;
+    font-size: 10px;
+    max-width: calc(50vw - 28px);
+  }
+  .storefront-shell:has(.visit-page) > .case-switch-button small {
+    display: none;
+  }
+  .storefront-shell:has(.visit-page) > .floating-tools {
+    right: 20px;
+  }
+  .storefront-shell:has(.visit-page) > .floating-tools .music-control {
+    width: 148px;
+    max-width: calc(50vw - 26px);
+  }
+}

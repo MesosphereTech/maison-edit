@@ -1,0 +1,46 @@
+{
+  "name": "maison-edit-demo",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "node server/build-worker.mjs",
+    "build:review": "node server/build-worker.mjs --review",
+    "test:build": "node server/validate-worker-build.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test tests/*.test.mjs",
+    "test:e2e": "node tests/e2e.mjs",
+    "guide:server": "node server/index.mjs",
+    "start": "node server/index.mjs",
+    "test:backend": "node --test tests/backend*.test.mjs",
+    "test:concierge": "node tests/concierge-e2e.mjs",
+    "test:scenes": "node tests/personalized-scenes-e2e.mjs",
+    "test:music": "node tests/music-e2e.mjs",
+    "test:revision": "node tests/revision-personalization-e2e.mjs",
+    "test:persistent": "node tests/persistent-bubble-e2e.mjs",
+    "test:reopen": "node tests/concierge-reopen-e2e.mjs",
+    "test:outfits": "node tests/compact-outfit-e2e.mjs",
+    "test:gifts": "node tests/gift-packaging-e2e.mjs",
+    "test:try-list": "node tests/try-list-e2e.mjs",
+    "test:visit-workspace": "node tests/visit-ai-workspace-e2e.mjs",
+    "test:locale": "node tests/locale-e2e.mjs",
+    "test:journey": "node tests/guided-journey-e2e.mjs",
+    "test:guide-queue": "node tests/guide-queue-exits-e2e.mjs",
+    "test:four-cases": "node tests/four-case-locale-e2e.mjs",
+    "test:visit-fallbacks": "node tests/visit-fitting-fallback-e2e.mjs",
+    "test:music-onboarding": "node tests/music-onboarding-e2e.mjs"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@sparticuz/chromium": "^153.0.0",
+    "@vitejs/plugin-react": "^4.5.0",
+    "esbuild": "0.25.12",
+    "playwright": "^1.64.1",
+    "prettier": "^3.9.10",
+    "vite": "^6.3.5"
+  }
+}

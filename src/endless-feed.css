@@ -1,0 +1,69 @@
+.endless-feed {
+  overflow-anchor: none;
+}
+.feed-repeat-note {
+  color: var(--muted, #7b675c);
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 0 0 26px;
+  max-width: 760px;
+}
+.endless-feed-page {
+  padding-bottom: 48px;
+}
+.feed-window-spacer {
+  width: 100%;
+  pointer-events: none;
+}
+.feed-load-status {
+  font-size: 11px;
+  line-height: 1.8;
+  color: #8a7667;
+  margin-top: 14px;
+}
+.feed-pause {
+  grid-column: 1 / -1;
+  min-width: 0;
+}
+.feed-pause .visit-editorial {
+  margin-top: 0;
+}
+.feed-pause .site-footer {
+  padding: 44px 5% 38px;
+}
+.feed-pause-next {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 14px;
+  align-items: center;
+  padding: 25px 5%;
+  background: #ece5da;
+  border-top: 1px solid #d7cbbb;
+}
+.feed-pause-next p {
+  color: #66534c;
+  font-size: 13px;
+  line-height: 1.8;
+}
+.feed-pause-next button {
+  white-space: nowrap;
+}
+@media (max-width: 700px) {
+  .endless-feed-page {
+    padding-bottom: 30px;
+  }
+  .feed-pause .site-footer {
+    padding: 34px 22px;
+  }
+  .feed-repeat-note {
+    font-size: 12px;
+    margin-bottom: 22px;
+  }
+}
+/* A finite one-result list still needs enough reading room for its final
+   product controls to scroll above the fixed conversation and music dock. */
+.endless-feed.is-single-result > .feed-end {
+  min-height: max(260px, 45dvh);
+  justify-content: flex-start;
+}

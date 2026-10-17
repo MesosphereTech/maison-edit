@@ -1,0 +1,661 @@
+{
+  "schemaVersion": 1,
+  "project": "MAISON ÉDIT",
+  "generatedAt": "2026-10-16T04:48:23.328661+00:00",
+  "generator": "OpenAI built-in image_gen",
+  "generationMode": "reference-guided synthetic lifestyle generation",
+  "synthetic": true,
+  "realPersonalData": false,
+  "allPeopleAdults": true,
+  "fitVerified": false,
+  "physicalProductVerified": false,
+  "notice": "AI-generated fictional styling scenes. Pictured components are visually reviewed against demo catalog appearance references. Illustrative only; not verified physical products, fit, size, material, color calibration or availability. Small uncertain components are suggestions only. Existing 56 individual-product scenes are preserved.",
+  "assetCount": 7,
+  "apparelSkuCoverage": [
+    "ME-001",
+    "ME-002",
+    "ME-003",
+    "ME-005",
+    "ME-006",
+    "ME-009",
+    "ME-010",
+    "ME-011",
+    "ME-012",
+    "ME-014",
+    "ME-015",
+    "ME-025",
+    "ME-026"
+  ],
+  "assets": [
+    {
+      "id": "woman-tailoring-city-v1",
+      "fileName": "woman-tailoring-city-v1.webp",
+      "src": "/outfit-scenes/woman-tailoring-city-v1.webp",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "personaReference": "/test-fixtures/personas/everyday-woman-45.jpg",
+      "personaReferenceSha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d",
+      "sceneType": "outfit",
+      "sceneLocation": "city-arcade",
+      "titleEn": "Walnut tailoring, city morning",
+      "anchorSkuIds": [
+        "ME-001",
+        "ME-002",
+        "ME-003"
+      ],
+      "picturedComponents": [
+        {
+          "skuId": "ME-001",
+          "color": "Walnut",
+          "catalogImage": "/images/blazer.webp",
+          "referenceSha256": "f641f7ea1b811c57c986c01907c98adaaf0d5c2b644f445d6b607234627696fe",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-002",
+          "color": "Ivory",
+          "catalogImage": "/images/shirt.webp",
+          "referenceSha256": "59fadb220680f14de85d0ad9cc5b583ae7c0e2f4786af881b538ab234bb59b3a",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-003",
+          "color": "Walnut",
+          "catalogImage": "/images/trouser.webp",
+          "referenceSha256": "91aa6271fe46c2575a75c3bb84ebd41ccb00aa4d29701ab06bbda6d4cddf16ca",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-004",
+          "color": "Burgundy",
+          "catalogImage": "/images/bag.webp",
+          "referenceSha256": "813624b649a0ebfd162ca01415ea0f206fc24c607a9778b5955efcd9d5df973b",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-007",
+          "color": "Burgundy",
+          "catalogImage": "/images/shoe.webp",
+          "referenceSha256": "1ebec0b1fc2cd7f9f4c600794014f70e5bfd2a8ead24c493b8887d087216b080",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        }
+      ],
+      "suggestedComponents": [
+        {
+          "skuId": "ME-008",
+          "color": "Brass",
+          "catalogImage": "/images/jewelry.webp",
+          "referenceSha256": "25771c47afae012cf9f04caf1a6f49f9453ed92d9d4985bb4de4097e0040c33b",
+          "picturedVerified": false,
+          "status": "suggested-only",
+          "reason": "Small geometry is uncertain in the generated image."
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Create one premium luxury department-store editorial lifestyle photograph, portrait 2:3, full body head to sole with generous clean margins. All input people are fictional synthetic adults; use input 1 as the exact consistent 45-year-old woman's identity, natural shoulder-length dark hair, face, age, everyday adult build, warm expression. Input 2 is a labeled catalog reference board: ME-001 Walnut two-button sculpted blazer, ME-002 Ivory silk collared shirt, ME-003 Walnut high-waist straight wide trousers, ME-004 Burgundy top-handle flap bag, ME-007 Burgundy almond-toe ballet flats, ME-008 Brass sculptural teardrop earrings. Reproduce these exact visible reference construction and colors, do not substitute generic different designs. She wears a complete coordinated outfit: open walnut blazer over ivory shirt tucked into walnut trousers, burgundy flats both fully visible, holds bag naturally at her side, small earrings visible but restrained. Standing relaxed by a refined limestone city arcade on a quiet elegant European shopping street in soft morning light, warm neutral architectural background softly out of focus. An attainable sophisticated everyday woman, not a youthful fashion model; preserve realistic build and skin texture from identity. Understated Harrods/Galeries Lafayette-level editorial art direction, subtle walking stance, high-end natural photography, no beauty retouching identity drift. No text, labels, logos, watermarks, storefront names, collage, borders, packshot inset, extra people, extra jewelry, belt or accessories. Keep head, hands, trouser hems and both shoes unobscured. The final is an AI fashion visualization, not a fit measurement.",
+      "generationInputs": {
+        "referenceBoard": "docs/outfit-provenance/woman-tailoring-city-v1-references.jpg",
+        "referenceBoardSha256": "dccdc569869f3da8c7c38bda6f6bc76a868ee9df0f458bbc799a90bce21cba48",
+        "referenceBoardMethod": "Resized catalog product references tiled on a labeled JPEG board for generation input. Product designs and colors were not intentionally altered. No generated output was composited or retouched."
+      },
+      "originalGeneration": {
+        "fileName": "exec-5bc0a41f-2af5-40c5-a6ce-e8067480af1e.png",
+        "mimeType": "image/png",
+        "sha256": "64ed4447e6b8b413e5ce2feb5ec43603f7bfbef5b04281713df27f894c62a913"
+      },
+      "output": {
+        "mimeType": "image/webp",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 191848,
+        "sha256": "b87c6cbbc5994c41cb9689f5b6a64f15030be7460b3f345c521808d4a135bdfa",
+        "conversion": "RGB WebP quality 89 method 6; no crop, compositing or retouching after generation."
+      },
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Complete walnut blazer/shirt/trouser outfit, burgundy bag and flats visible. Mature persona face preserved. Small earrings appear but exact sculptural geometry is not sufficiently clear to label as a verified pictured SKU.",
+      "claims": {
+        "realPersonalData": false,
+        "fictionalAdult": true,
+        "exactPhysicalProduct": false,
+        "verifiedFit": false,
+        "measuredBody": false,
+        "exactMaterial": false,
+        "exactColorCalibration": false
+      }
+    },
+    {
+      "id": "man-tailoring-city-v1",
+      "fileName": "man-tailoring-city-v1.webp",
+      "src": "/outfit-scenes/man-tailoring-city-v1.webp",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "personaReference": "/test-fixtures/personas/relaxed-man-50.jpg",
+      "personaReferenceSha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b",
+      "sceneType": "outfit",
+      "sceneLocation": "city-cafe-courtyard",
+      "titleEn": "Ink tailoring, an easy city day",
+      "anchorSkuIds": [
+        "ME-010",
+        "ME-011",
+        "ME-012"
+      ],
+      "picturedComponents": [
+        {
+          "skuId": "ME-012",
+          "color": "Ink",
+          "catalogImage": "/images/blazer-ink.webp",
+          "referenceSha256": "63173ffeb36ccd91fc9df3e824c0f40360c1f040347194a890ba2f22ffa40006",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-010",
+          "color": "Chalk",
+          "catalogImage": "/images/shirt-cotton.webp",
+          "referenceSha256": "698570b5666fbe5095f3b7e7d1a54950c1e3458737a84a3ed70dad9ed46928a8",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-011",
+          "color": "Ink",
+          "catalogImage": "/images/trouser-ink.webp",
+          "referenceSha256": "b11c55f492a939607f40b4e4e83c361e413e2cf24ce85438e60bb6c6044ef718",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-013",
+          "color": "Walnut",
+          "catalogImage": "/images/shoe-suede.webp",
+          "referenceSha256": "8ea86e44800434db615fea7b9e5dd150becdbd01399682f6484e66263bb2351f",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-016",
+          "color": "Walnut",
+          "catalogImage": "/images/belt.webp",
+          "referenceSha256": "4a91fccd7a7c69f5dd5294c466887eacabc04ac4638794fbe039df2c9cfa84d7",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        }
+      ],
+      "suggestedComponents": [],
+      "prompt": "Use case: photorealistic-natural. Create one premium luxury department-store editorial lifestyle photograph, portrait 2:3, full body head to sole with generous clean margins. All input people are fictional synthetic adults. Input 1 is the exact consistent 50-year-old man's identity: mature East Asian face, short slightly salt-and-pepper dark hair, natural everyday sturdy build and slight middle-age softness, warm expression; preserve his age, facial structure and realistic body. Input 2 is a labeled board of catalog appearance references. Dress him in ME-012 Ink navy softly tailored two-button wool blazer worn unbuttoned, ME-010 Chalk-white stand/band collar cotton long-sleeve shirt tucked in, ME-011 Ink navy double-pleat straight wide wool trousers, ME-013 Walnut brown suede simple unadorned loafers, ME-016 narrow Walnut brown leather belt with simple small rectangular brass buckle visible between the open blazer fronts. Full coordinating work outfit, trouser cuffs and both loafers fully visible. He stands casually, one hand resting near a trouser pocket, on a quiet stone-paved contemporary city courtyard beside pale architectural columns and a discreet cafe entrance, softly blurred. Refined natural daylight, understated Galeries Lafayette/Harrods-level editorial art direction, warm-neutral stone against ink tailoring, believable authentic life moment. Product colors, collar, pleat construction, shoes and buckle follow the references closely. No invented decorations or logos. No text, labels, watermarks, collage, borders, packshot inset, extra people, extra jewelry, watches, bags, ties, other accessories. No glamorized thin young model; keep same adult person. Keep head, hands, trouser hems and both shoes entirely in frame. AI fashion visualization, not verified physical fit.",
+      "generationInputs": {
+        "referenceBoard": "docs/outfit-provenance/man-tailoring-city-v1-references.jpg",
+        "referenceBoardSha256": "17d4276a34acfb74f83d75aba20968af18389ef208302f634c50a2d674c53f51",
+        "referenceBoardMethod": "Resized catalog product references tiled on a labeled JPEG board for generation input. Product designs and colors were not intentionally altered. No generated output was composited or retouched."
+      },
+      "originalGeneration": {
+        "fileName": "exec-4d113cf9-054b-4bb6-8a0d-b9dee392658c.png",
+        "mimeType": "image/png",
+        "sha256": "3c8691d082c477a8040f05111fb2280580fde996dd8d727212bf10178c336eed"
+      },
+      "output": {
+        "mimeType": "image/webp",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 183360,
+        "sha256": "dc4bb28b42ee9ed127d4f7e4de984c290890e3f9b7078623a8c0ccc5ac977da6",
+        "conversion": "RGB WebP quality 89 method 6; no crop, compositing or retouching after generation."
+      },
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Ink two-button jacket, chalk band-collar shirt, ink trousers, walnut suede loafers and narrow walnut belt with simple brass buckle visible. Mature everyday-build identity preserved; trouser pleats partially obscured by jacket and hands.",
+      "claims": {
+        "realPersonalData": false,
+        "fictionalAdult": true,
+        "exactPhysicalProduct": false,
+        "verifiedFit": false,
+        "measuredBody": false,
+        "exactMaterial": false,
+        "exactColorCalibration": false
+      }
+    },
+    {
+      "id": "woman-weekend-courtyard-v1",
+      "fileName": "woman-weekend-courtyard-v1.webp",
+      "src": "/outfit-scenes/woman-weekend-courtyard-v1.webp",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "personaReference": "/test-fixtures/personas/everyday-woman-45.jpg",
+      "personaReferenceSha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d",
+      "sceneType": "outfit",
+      "sceneLocation": "museum-courtyard",
+      "titleEn": "A light layer for the weekend",
+      "anchorSkuIds": [
+        "ME-025",
+        "ME-026"
+      ],
+      "picturedComponents": [
+        {
+          "skuId": "ME-025",
+          "color": "Oat",
+          "catalogImage": "/images/coat-cropped.webp",
+          "referenceSha256": "74f85f9e5af1b9e438fc2204894d53bc153d070f5419136c2b4ff79cef9083af",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-026",
+          "color": "Blue",
+          "catalogImage": "/images/knit-blue.webp",
+          "referenceSha256": "d4ef6a358b040a8f356a170945edcd9468c429494a9c516b771a10ade916ea2c",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-003",
+          "color": "Walnut",
+          "catalogImage": "/images/trouser.webp",
+          "referenceSha256": "91aa6271fe46c2575a75c3bb84ebd41ccb00aa4d29701ab06bbda6d4cddf16ca",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-007",
+          "color": "Burgundy",
+          "catalogImage": "/images/shoe.webp",
+          "referenceSha256": "1ebec0b1fc2cd7f9f4c600794014f70e5bfd2a8ead24c493b8887d087216b080",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-027",
+          "color": "Oat",
+          "catalogImage": "/images/bag-canvas.webp",
+          "referenceSha256": "ad689cccbf85083dfdabc46a31bc17ebff589cb0dfd4246f5f354f81e9dbd626",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        }
+      ],
+      "suggestedComponents": [],
+      "prompt": "Use case: photorealistic-natural. Produce one refined luxury department-store editorial lifestyle photograph, portrait 2:3, complete full-body head to soles with comfortable margins. All people are fictional synthetic adults. Input 1 is the exact consistent identity reference, preserve mature face, age, hairstyle, realistic everyday body proportions and natural skin texture. Input 2 is a labeled catalog-reference board; reproduce listed garments, color and design closely. The board is an input only: output one coherent photograph, no boards or insets. No text, logos, labels, watermarks, collage, borders, extra people, invented embellishments or extra accessories. Understated Harrods/Galeries Lafayette art direction, believable warm everyday expression, natural sophisticated styling. Keep head, hands, garment hems and both shoes fully visible. This is an illustrative synthetic styling visualization, not verified physical fit. The subject is the same 45-year-old woman in input 1, not a younger or slimmer fashion model. She wears ME-025 Oat cropped cotton trench with notched collar, shoulder tabs, six dark buttons and sleeve straps, worn open so ME-026 pale Blue simple round-neck knit is clearly visible; ME-003 Walnut high-waisted straight wide trousers; ME-007 Burgundy plain almond-toe leather ballet flats. Carries ME-027 Oat plain cotton canvas rectangular day tote by both long straps at her side. No earrings or belt. Easy smart weekend outfit on the paved garden courtyard of a quiet art museum, pale stone entrance, soft green planting and subtle autumn afternoon sunlight in background. Relaxed standing pose slightly turning toward camera, all clothes and canvas bag unobscured.",
+      "generationInputs": {
+        "referenceBoard": "docs/outfit-provenance/woman-weekend-courtyard-v1-references.jpg",
+        "referenceBoardSha256": "cdb749ed69958c90cf2cbc3f4a92f6a0364b92d1578856fc94f07aac95f2da3a",
+        "referenceBoardMethod": "Resized catalog product references tiled on a labeled JPEG board for generation input. Product designs and colors were not intentionally altered. No generated output was composited or retouched."
+      },
+      "originalGeneration": {
+        "fileName": "exec-febd447c-a384-48ba-8ba4-3e595420a51f.png",
+        "mimeType": "image/png",
+        "sha256": "36fdfd74e8a56d76dd47a67c8f66f579c62a1dbd5052f46bb260c0b5edc90285"
+      },
+      "output": {
+        "mimeType": "image/webp",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 220810,
+        "sha256": "6663abc991a0f5225ad55885e5801d88908ff0eaa13eaf08292ac076f5693478",
+        "conversion": "RGB WebP quality 89 method 6; no crop, compositing or retouching after generation."
+      },
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Cropped coat construction, pale blue knit, walnut trousers, burgundy flats and plain oat canvas tote visible. Full body, mature persona face preserved.",
+      "claims": {
+        "realPersonalData": false,
+        "fictionalAdult": true,
+        "exactPhysicalProduct": false,
+        "verifiedFit": false,
+        "measuredBody": false,
+        "exactMaterial": false,
+        "exactColorCalibration": false
+      }
+    },
+    {
+      "id": "man-knit-cafe-v1",
+      "fileName": "man-knit-cafe-v1.webp",
+      "src": "/outfit-scenes/man-knit-cafe-v1.webp",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "personaReference": "/test-fixtures/personas/relaxed-man-50.jpg",
+      "personaReferenceSha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b",
+      "sceneType": "outfit",
+      "sceneLocation": "outdoor-cafe",
+      "titleEn": "A quieter weekend",
+      "anchorSkuIds": [
+        "ME-014"
+      ],
+      "picturedComponents": [
+        {
+          "skuId": "ME-014",
+          "color": "Oat",
+          "catalogImage": "/images/knit-rib.webp",
+          "referenceSha256": "a77287da6ed02c79cb3b59dc432c351ed0f67505a419be118e0be1c243fa9030",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-011",
+          "color": "Ink",
+          "catalogImage": "/images/trouser-ink.webp",
+          "referenceSha256": "b11c55f492a939607f40b4e4e83c361e413e2cf24ce85438e60bb6c6044ef718",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-013",
+          "color": "Walnut",
+          "catalogImage": "/images/shoe-suede.webp",
+          "referenceSha256": "8ea86e44800434db615fea7b9e5dd150becdbd01399682f6484e66263bb2351f",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-027",
+          "color": "Oat",
+          "catalogImage": "/images/bag-canvas.webp",
+          "referenceSha256": "ad689cccbf85083dfdabc46a31bc17ebff589cb0dfd4246f5f354f81e9dbd626",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        }
+      ],
+      "suggestedComponents": [
+        {
+          "skuId": "ME-016",
+          "color": "Walnut",
+          "catalogImage": "/images/belt.webp",
+          "referenceSha256": "4a91fccd7a7c69f5dd5294c466887eacabc04ac4638794fbe039df2c9cfa84d7",
+          "picturedVerified": false,
+          "status": "suggested-only",
+          "reason": "Covered by sweater; not visible."
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Produce one refined luxury department-store editorial lifestyle photograph, portrait 2:3, complete full-body head to soles with comfortable margins. All people are fictional synthetic adults. Input 1 is the exact consistent identity reference, preserve mature face, age, hairstyle, realistic everyday body proportions and natural skin texture. Input 2 is a labeled catalog-reference board; reproduce listed garments, color and design closely. The board is an input only: output one coherent photograph, no boards or insets. No text, logos, labels, watermarks, collage, borders, extra people, invented embellishments or extra accessories. Understated Harrods/Galeries Lafayette art direction, believable warm everyday expression, natural sophisticated styling. Keep head, hands, garment hems and both shoes fully visible. This is an illustrative synthetic styling visualization, not verified physical fit. The subject is the same 50-year-old man in input 1, mature East Asian face with short salt-and-pepper dark hair, slight middle-age body softness, warm reserved expression. He wears ME-014 Oat fine-rib round-neck sweater untucked, ME-011 Ink navy double-pleat straight wool trousers, ME-013 Walnut suede plain unadorned low loafers. Holds ME-027 Oat plain canvas rectangular tote with long handles naturally by his right side. The belt shown on reference board is optional under the sweater, do not force it into view or invent hardware. No jacket, shirt collar, jewelry, watch or other accessories. He stands beside a quiet outdoor cafe terrace after a morning walk, dark metal bistro tables, warm pale-stone wall, restrained greenery, daylight and a soft street background. Fullbody relaxed pose with both shoes clearly visible and tote uncropped. A refined attainable weekend wardrobe, not a thin young model.",
+      "generationInputs": {
+        "referenceBoard": "docs/outfit-provenance/man-knit-cafe-v1-references.jpg",
+        "referenceBoardSha256": "dab3e1f9a645cb5ab2f6cb86dbf125a2c0449bf2a4fc66fff6ebd274cd19e3d5",
+        "referenceBoardMethod": "Resized catalog product references tiled on a labeled JPEG board for generation input. Product designs and colors were not intentionally altered. No generated output was composited or retouched."
+      },
+      "originalGeneration": {
+        "fileName": "exec-2ebc386d-8ac5-406c-b572-2b8fe7e321a6.png",
+        "mimeType": "image/png",
+        "sha256": "03978380d45900df37721db7204a19c6b87ebde9ea4865c6eba8b31e30d20971"
+      },
+      "output": {
+        "mimeType": "image/webp",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 269726,
+        "sha256": "4a8e8a4fa8d71bbde038723a3681ee21928511caf0278b7f17ef3228b60fc798",
+        "conversion": "RGB WebP quality 89 method 6; no crop, compositing or retouching after generation."
+      },
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Oat rib knit, ink trousers, walnut suede loafers and oat canvas tote visible. Belt covered by untucked sweater so it is not labelled as pictured. Same mature everyday adult identity preserved.",
+      "claims": {
+        "realPersonalData": false,
+        "fictionalAdult": true,
+        "exactPhysicalProduct": false,
+        "verifiedFit": false,
+        "measuredBody": false,
+        "exactMaterial": false,
+        "exactColorCalibration": false
+      }
+    },
+    {
+      "id": "woman-dress-dinner-v1",
+      "fileName": "woman-dress-dinner-v1.webp",
+      "src": "/outfit-scenes/woman-dress-dinner-v1.webp",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "personaReference": "/test-fixtures/personas/everyday-woman-45.jpg",
+      "personaReferenceSha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d",
+      "sceneType": "outfit",
+      "sceneLocation": "restaurant-garden",
+      "titleEn": "Terracotta at dusk",
+      "anchorSkuIds": [
+        "ME-015"
+      ],
+      "picturedComponents": [
+        {
+          "skuId": "ME-015",
+          "color": "Terracotta",
+          "catalogImage": "/images/dress.webp",
+          "referenceSha256": "3d961934228ae23c2e8090238417f8e18bb275093cb3454895ec3843f7ef752a",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-004",
+          "color": "Burgundy",
+          "catalogImage": "/images/bag.webp",
+          "referenceSha256": "813624b649a0ebfd162ca01415ea0f206fc24c607a9778b5955efcd9d5df973b",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-007",
+          "color": "Burgundy",
+          "catalogImage": "/images/shoe.webp",
+          "referenceSha256": "1ebec0b1fc2cd7f9f4c600794014f70e5bfd2a8ead24c493b8887d087216b080",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        }
+      ],
+      "suggestedComponents": [
+        {
+          "skuId": "ME-008",
+          "color": "Brass",
+          "catalogImage": "/images/jewelry.webp",
+          "referenceSha256": "25771c47afae012cf9f04caf1a6f49f9453ed92d9d4985bb4de4097e0040c33b",
+          "picturedVerified": false,
+          "status": "suggested-only",
+          "reason": "Small geometry is uncertain in the generated image."
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Produce one premium luxury department-store lifestyle editorial photograph, portrait 2:3 full-body head to soles with comfortable margins, natural high-end photography. Input 1 is the exact identity reference for a fictional synthetic 45-year-old woman; preserve her mature East Asian face, shoulder-length dark hair, everyday realistic body proportions, age, warm reserved smile and natural skin texture. No slim young model substitution. Input 2 is a labeled board of exact catalog garment appearance references. Reproduce only the specified garment designs and colors closely. The board is input only; final output is one coherent lifestyle photo. Sophisticated quiet Harrods/Galeries Lafayette-level art direction, complete coordinating outfit, no home interior. Every garment hem and both shoes fully visible, bag visible and unobscured. No text, labels, logos, watermarks, collage, borders, packshot inset, extra people, extra accessories or invented decorations. This is a synthetic styling demonstration, no fit guarantees. Dress her in ME-015 Terracotta natural-textured linen column maxi dress with broad shoulder straps, round-square neckline, fitted waist and long gently A-line skirt exactly as reference; ME-007 Burgundy plain almond-toe ballet flats; carry ME-004 Burgundy structured leather arc top-handle bag with curved flap and simple small brass clasp. Add small ME-008 Brass concave sculptural teardrop earrings from the reference board only. She stands in an elegant restaurant garden courtyard at early evening, pale-stone path, a discreet dinner terrace and olive trees in softly blurred background, warm ambient golden-hour daylight and a few subtle lamps. A believable refined dinner occasion, not a studio shoot, relaxed standing three-quarter pose looking toward camera. Keep feet clearly in frame.",
+      "generationInputs": {
+        "referenceBoard": "docs/outfit-provenance/woman-dress-dinner-v1-references.jpg",
+        "referenceBoardSha256": "f952bf65fa471a2c28912bea2af802cac06e7dd96bd4a9d774a4d7a72aba6372",
+        "referenceBoardMethod": "Resized catalog product references tiled on a labeled JPEG board for generation input. Product designs and colors were not intentionally altered. No generated output was composited or retouched."
+      },
+      "originalGeneration": {
+        "fileName": "exec-9cb913ad-6088-4d6e-96c2-c70e08ab6ba9.png",
+        "mimeType": "image/png",
+        "sha256": "b78a68126bd1d50b367d629f30ce7770aaa3913b79389cf6f562b50b28eff3cd"
+      },
+      "output": {
+        "mimeType": "image/webp",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 310640,
+        "sha256": "d7e96bf6a02d03350e8abeda8ec3314768d609b7929c4a60229cc8ae0e2ecea2",
+        "conversion": "RGB WebP quality 89 method 6; no crop, compositing or retouching after generation."
+      },
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Terracotta wide-strap waist-seam dress, burgundy bag and burgundy ballet flats visible. Same mature adult; no fit claim. Earrings visible but small sculptural details remain uncertain.",
+      "claims": {
+        "realPersonalData": false,
+        "fictionalAdult": true,
+        "exactPhysicalProduct": false,
+        "verifiedFit": false,
+        "measuredBody": false,
+        "exactMaterial": false,
+        "exactColorCalibration": false
+      }
+    },
+    {
+      "id": "woman-knit-skirt-cafe-v1",
+      "fileName": "woman-knit-skirt-cafe-v1.webp",
+      "src": "/outfit-scenes/woman-knit-skirt-cafe-v1.webp",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "personaReference": "/test-fixtures/personas/everyday-woman-45.jpg",
+      "personaReferenceSha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d",
+      "sceneType": "outfit",
+      "sceneLocation": "cafe-exterior",
+      "titleEn": "Cashmere and satin, a slower morning",
+      "anchorSkuIds": [
+        "ME-005",
+        "ME-006"
+      ],
+      "picturedComponents": [
+        {
+          "skuId": "ME-006",
+          "color": "Oat",
+          "catalogImage": "/images/knit.webp",
+          "referenceSha256": "fbc99ef7808ab2557c0ae033f540ed0625591ce2120f6edabccff0e15e94ceec",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-005",
+          "color": "Champagne",
+          "catalogImage": "/images/skirt.webp",
+          "referenceSha256": "d791a9abf7670fb351c9e2d2bc0c374096d09e3cd1f47f0d77b6c090bb1bb669",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-004",
+          "color": "Burgundy",
+          "catalogImage": "/images/bag.webp",
+          "referenceSha256": "813624b649a0ebfd162ca01415ea0f206fc24c607a9778b5955efcd9d5df973b",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-007",
+          "color": "Burgundy",
+          "catalogImage": "/images/shoe.webp",
+          "referenceSha256": "1ebec0b1fc2cd7f9f4c600794014f70e5bfd2a8ead24c493b8887d087216b080",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        }
+      ],
+      "suggestedComponents": [
+        {
+          "skuId": "ME-008",
+          "color": "Brass",
+          "catalogImage": "/images/jewelry.webp",
+          "referenceSha256": "25771c47afae012cf9f04caf1a6f49f9453ed92d9d4985bb4de4097e0040c33b",
+          "picturedVerified": false,
+          "status": "suggested-only",
+          "reason": "Small geometry is uncertain in the generated image."
+        }
+      ],
+      "prompt": "Use case: photorealistic-natural. Produce one premium luxury department-store lifestyle editorial photograph, portrait 2:3 full-body head to soles with comfortable margins, natural high-end photography. Input 1 is the exact identity reference for a fictional synthetic 45-year-old woman; preserve her mature East Asian face, shoulder-length dark hair, everyday realistic body proportions, age, warm reserved smile and natural skin texture. No slim young model substitution. Input 2 is a labeled board of exact catalog garment appearance references. Reproduce only the specified garment designs and colors closely. The board is input only; final output is one coherent lifestyle photo. Sophisticated quiet Harrods/Galeries Lafayette-level art direction, complete coordinating outfit, no home interior. Every garment hem and both shoes fully visible, bag visible and unobscured. No text, labels, logos, watermarks, collage, borders, packshot inset, extra people, extra accessories or invented decorations. This is a synthetic styling demonstration, no fit guarantees. Dress her in ME-006 Oat plain fine cashmere round-neck long-sleeve sweater with rib cuffs/hem, worn softly at the waist; ME-005 Champagne satin bias-cut midi skirt with simple unadorned narrow waistband and fluid gently flared hem, exactly as reference, below calf ending above ankles; ME-007 Burgundy simple almond-toe ballet flats. Hold ME-004 Burgundy structured leather top-handle curved-flap bag with small plain brass clasp at her side. Add the small ME-008 Brass concave sculptural teardrop earrings from reference board. She stands just outside an elegant quiet Parisian-style cafe, dark wood cafe frontage, stone paving, a couple of unoccupied bistro chairs in soft background. Soft overcast morning light highlights the matte sweater and subtle satin skirt sheen. Full length realistic candid luxury editorial, natural everyday mature woman.",
+      "generationInputs": {
+        "referenceBoard": "docs/outfit-provenance/woman-knit-skirt-cafe-v1-references.jpg",
+        "referenceBoardSha256": "6641079ecd1bddc68d2cc4d46706cea31ef6be1b4962ef81fbb22c906796df78",
+        "referenceBoardMethod": "Resized catalog product references tiled on a labeled JPEG board for generation input. Product designs and colors were not intentionally altered. No generated output was composited or retouched."
+      },
+      "originalGeneration": {
+        "fileName": "exec-f4890a65-dc6a-4890-9b31-fd7e9941f422.png",
+        "mimeType": "image/png",
+        "sha256": "d2864406b321a542fef8fbd20d29953d8052149db75baf381c36232319865d9c"
+      },
+      "output": {
+        "mimeType": "image/webp",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 211938,
+        "sha256": "980b8fca1ee84f7a0d6e683d576955acb620ee8961d72ad7a058887f45570834",
+        "conversion": "RGB WebP quality 89 method 6; no crop, compositing or retouching after generation."
+      },
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Oat round-neck knit, champagne fluid satin midi skirt, burgundy bag and flats visible. Full body and reference adult identity preserved. Earrings visible but small sculptural details remain uncertain.",
+      "claims": {
+        "realPersonalData": false,
+        "fictionalAdult": true,
+        "exactPhysicalProduct": false,
+        "verifiedFit": false,
+        "measuredBody": false,
+        "exactMaterial": false,
+        "exactColorCalibration": false
+      }
+    },
+    {
+      "id": "woman-coat-street-v1",
+      "fileName": "woman-coat-street-v1.webp",
+      "src": "/outfit-scenes/woman-coat-street-v1.webp",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "personaReference": "/test-fixtures/personas/everyday-woman-45.jpg",
+      "personaReferenceSha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d",
+      "sceneType": "outfit",
+      "sceneLocation": "autumn-city-street",
+      "titleEn": "A camel coat in the city",
+      "anchorSkuIds": [
+        "ME-009"
+      ],
+      "picturedComponents": [
+        {
+          "skuId": "ME-009",
+          "color": "Camel",
+          "catalogImage": "/images/coat.webp",
+          "referenceSha256": "919597ddb24fb67b213c263bc96452b9598fe20c9f0fe756e94ba7f1cd0d2cf9",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-002",
+          "color": "Ivory",
+          "catalogImage": "/images/shirt.webp",
+          "referenceSha256": "59fadb220680f14de85d0ad9cc5b583ae7c0e2f4786af881b538ab234bb59b3a",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-003",
+          "color": "Walnut",
+          "catalogImage": "/images/trouser.webp",
+          "referenceSha256": "91aa6271fe46c2575a75c3bb84ebd41ccb00aa4d29701ab06bbda6d4cddf16ca",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-004",
+          "color": "Burgundy",
+          "catalogImage": "/images/bag.webp",
+          "referenceSha256": "813624b649a0ebfd162ca01415ea0f206fc24c607a9778b5955efcd9d5df973b",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        },
+        {
+          "skuId": "ME-007",
+          "color": "Burgundy",
+          "catalogImage": "/images/shoe.webp",
+          "referenceSha256": "1ebec0b1fc2cd7f9f4c600794014f70e5bfd2a8ead24c493b8887d087216b080",
+          "picturedVerified": true,
+          "status": "visually-reviewed-appearance-reference"
+        }
+      ],
+      "suggestedComponents": [],
+      "prompt": "Use case: photorealistic-natural. Produce one premium luxury department-store lifestyle editorial photograph, portrait 2:3 full-body head to soles with comfortable margins, natural high-end photography. Input 1 is the exact identity reference for a fictional synthetic 45-year-old woman; preserve her mature East Asian face, shoulder-length dark hair, everyday realistic body proportions, age, warm reserved smile and natural skin texture. No slim young model substitution. Input 2 is a labeled board of exact catalog garment appearance references. Reproduce only the specified garment designs and colors closely. The board is input only; final output is one coherent lifestyle photo. Sophisticated quiet Harrods/Galeries Lafayette-level art direction, complete coordinating outfit, no home interior. Every garment hem and both shoes fully visible, bag visible and unobscured. No text, labels, logos, watermarks, collage, borders, packshot inset, extra people, extra accessories or invented decorations. This is a synthetic styling demonstration, no fit guarantees. Dress her in ME-009 Camel long tailored wrap coat with wide notched lapels, simple same-fabric wide belt and rectangular fabric-covered buckle, long straight sleeves and side welt pockets, closely reproduce reference design. Belt fastened loosely at the waist, upper neckline gently open to reveal ME-002 Ivory silk collared shirt; ME-003 Walnut straight wide trousers visible below coat; ME-007 Burgundy plain almond-toe ballet flats; holds ME-004 Burgundy structured leather arc top-handle flap bag with small brass clasp. No jewelry. She stands on a calm tree-lined city boulevard in late autumn near understated pale-stone townhouse architecture, dry pavement, soft warm overcast daylight, subtle leaves in blurred background. Natural relaxed three-quarter stance, sophisticated city day outfit. Complete coat hem, trouser legs and both flats visible.",
+      "generationInputs": {
+        "referenceBoard": "docs/outfit-provenance/woman-coat-street-v1-references.jpg",
+        "referenceBoardSha256": "d7a1ea15e3c3c262af405c334e327b49c16df92c993b5271951af1b73dab82e6",
+        "referenceBoardMethod": "Resized catalog product references tiled on a labeled JPEG board for generation input. Product designs and colors were not intentionally altered. No generated output was composited or retouched."
+      },
+      "originalGeneration": {
+        "fileName": "exec-65006a71-30be-4263-8042-3544b647d9ef.png",
+        "mimeType": "image/png",
+        "sha256": "afe39eceae2f0cad0b1d5ef63941d635fb79534850c57e88b0b410fe62194fbe"
+      },
+      "output": {
+        "mimeType": "image/webp",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 196636,
+        "sha256": "76c49877d97f178369e69b7b0eb7142fb0666bfe0e4122672e1945fe273b7b6a",
+        "conversion": "RGB WebP quality 89 method 6; no crop, compositing or retouching after generation."
+      },
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Camel wrap coat with wide notched lapels, fabric belt and rectangular buckle closely follows reference. Ivory shirt neckline, walnut trousers, burgundy bag and both burgundy flats visible. Shirt is partially covered; coat and shirt components are described as styling visualization.",
+      "claims": {
+        "realPersonalData": false,
+        "fictionalAdult": true,
+        "exactPhysicalProduct": false,
+        "verifiedFit": false,
+        "measuredBody": false,
+        "exactMaterial": false,
+        "exactColorCalibration": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+[
+  {
+    "id": "atrium",
+    "sourceUrl": "https://suno.com/song/1b5b61ba-744c-4855-9311-c297ec7d8e30",
+    "localPath": "/music/atrium.mp3",
+    "durationSeconds": 238.008,
+    "fileBytes": 5816745,
+    "sha256": "c5d4c84efd127998875526a8df83f7b3b9bc56dc16a2ff70137b8522563fd6bb",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "48000",
+          "channels": 2,
+          "bit_rate": "194559"
+        },
+        {
+          "codec_name": "mjpeg"
+        }
+      ],
+      "format": {
+        "duration": "238.008000",
+        "size": "5816745"
+      }
+    },
+    "levels": [
+      "[Parsed_volumedetect_0 @ 0x7fb77c003140] mean_volume: -17.5 dB",
+      "[Parsed_volumedetect_0 @ 0x7fb77c003140] max_volume: -0.1 dB"
+    ],
+    "retrievedAt": "2026-10-15T16:48:53.700260Z",
+    "method": "Official Suno song More options → Download → MP3 → Download; dialog confirmed already unlocked; documented browser download event and path.",
+    "use": "User’s private personal, non-commercial testing only. AI-generated with Suno.",
+    "audioAuditioned": false
+  },
+  {
+    "id": "gallery",
+    "sourceUrl": "https://suno.com/song/155e1c48-c301-4a5f-879a-61ff7eec3bf5",
+    "localPath": "/music/gallery.mp3",
+    "durationSeconds": 233.256,
+    "fileBytes": 5655074,
+    "sha256": "259b73f11251fec7769cc1080b1ca804f6f28a2658c92bcba57701346148bdf9",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "48000",
+          "channels": 2,
+          "bit_rate": "193116"
+        },
+        {
+          "codec_name": "mjpeg"
+        }
+      ],
+      "format": {
+        "duration": "233.256000",
+        "size": "5655074"
+      }
+    },
+    "levels": [
+      "[Parsed_volumedetect_0 @ 0x7f7e24003140] mean_volume: -16.6 dB",
+      "[Parsed_volumedetect_0 @ 0x7f7e24003140] max_volume: 0.0 dB"
+    ],
+    "retrievedAt": "2026-10-15T16:48:53.700260Z",
+    "method": "Official Suno song More options → Download → MP3 → Download; dialog confirmed already unlocked; documented browser download event and path.",
+    "use": "User’s private personal, non-commercial testing only. AI-generated with Suno.",
+    "audioAuditioned": false
+  },
+  {
+    "id": "salon",
+    "sourceUrl": "https://suno.com/song/34d0229f-a8b2-41f2-8698-867970fbf188",
+    "localPath": "/music/salon.mp3",
+    "durationSeconds": 183.216,
+    "fileBytes": 4469660,
+    "sha256": "04b288729e27402baddc937a277e29c542b73335ce9451350492f95197ce333e",
+    "probe": {
+      "programs": [],
+      "stream_groups": [],
+      "streams": [
+        {
+          "codec_name": "mp3",
+          "sample_rate": "48000",
+          "channels": 2,
+          "bit_rate": "194010"
+        },
+        {
+          "codec_name": "mjpeg"
+        }
+      ],
+      "format": {
+        "duration": "183.216000",
+        "size": "4469660"
+      }
+    },
+    "levels": [
+      "[Parsed_volumedetect_0 @ 0x7f3380003140] mean_volume: -16.6 dB",
+      "[Parsed_volumedetect_0 @ 0x7f3380003140] max_volume: 0.0 dB"
+    ],
+    "retrievedAt": "2026-10-15T16:48:53.700260Z",
+    "method": "Official Suno song More options → Download → MP3 → Download; dialog confirmed already unlocked; documented browser download event and path.",
+    "use": "User’s private personal, non-commercial testing only. AI-generated with Suno.",
+    "audioAuditioned": false
+  }
+]

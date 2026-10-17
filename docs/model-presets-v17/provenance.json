@@ -1,0 +1,671 @@
+{
+  "version": 17,
+  "generationTool": "built-in imagegen",
+  "paidThirdPartyGeneration": false,
+  "assetCount": 9,
+  "productionBytes": 1295044,
+  "generatedSceneCount": 7,
+  "identityPortraitCount": 2,
+  "sourcePolicy": "Original generation PNGs and reference boards are retained in ignored artifacts/model-presets-v17; tracked provenance is outside public. Existing source images are preserved.",
+  "disclosure": "All new people and scenes are synthetic adult styling concepts, not real customers, physical product photography, body measurement or fit verification. Heights and sizes are fictional templates.",
+  "coverage": [
+    {
+      "scenarioId": "claire-city-edit",
+      "personaId": "claire-model-32",
+      "mappedPieces": 13,
+      "uniqueOutfitScenes": 5,
+      "skuIds": [
+        "ME-015",
+        "ME-009",
+        "ME-006",
+        "ME-025",
+        "ME-001",
+        "ME-002",
+        "ME-003",
+        "ME-004",
+        "ME-005",
+        "ME-007",
+        "ME-008",
+        "ME-026",
+        "ME-027"
+      ],
+      "otherProductPolicy": "Original product concept only. No older-person scenes reused. Opposite-department apparel can use the other new adult model through explicit gift-model context."
+    },
+    {
+      "scenarioId": "julian-city-edit",
+      "personaId": "julian-model-34",
+      "mappedPieces": 7,
+      "uniqueOutfitScenes": 2,
+      "skuIds": [
+        "ME-014",
+        "ME-012",
+        "ME-010",
+        "ME-013",
+        "ME-027",
+        "ME-011",
+        "ME-016"
+      ],
+      "otherProductPolicy": "Original product concept only. No older-person scenes reused. Opposite-department apparel can use the other new adult model through explicit gift-model context."
+    }
+  ],
+  "assets": [
+    {
+      "id": "v17-claire-tailoring",
+      "kind": "full-outfit",
+      "personaId": "claire-model-32",
+      "homeId": "warm-family",
+      "primarySkuIds": [
+        "ME-001",
+        "ME-002",
+        "ME-003"
+      ],
+      "picturedComponents": [
+        {
+          "skuId": "ME-001",
+          "color": "Walnut"
+        },
+        {
+          "skuId": "ME-002",
+          "color": "Ivory"
+        },
+        {
+          "skuId": "ME-003",
+          "color": "Walnut"
+        },
+        {
+          "skuId": "ME-004",
+          "color": "Burgundy"
+        },
+        {
+          "skuId": "ME-007",
+          "color": "Burgundy"
+        },
+        {
+          "skuId": "ME-008",
+          "color": "Brass"
+        }
+      ],
+      "output": {
+        "path": "public/personalized-scenes/v17-claire-tailoring.webp",
+        "sha256": "4d4891a8b871b8ddd41d8cf81fd5a03d002aa42828ec209b54efe3caaaaf6fe0",
+        "bytes": 123928,
+        "width": 960,
+        "height": 1440,
+        "format": "WEBP"
+      },
+      "reviewStatus": "visually-reviewed",
+      "reviewChecks": [
+        "consistent fictional adult identity",
+        "face and natural anatomy",
+        "head-to-toe framing",
+        "catalog primary colors",
+        "catalog apparel silhouettes",
+        "shoes present"
+      ],
+      "claims": {
+        "synthetic": true,
+        "exactPhysicalProduct": false,
+        "verifiedFit": false,
+        "verifiedMeasurements": false
+      },
+      "generation": {
+        "prompt": "Use case: photorealistic-natural. Premium department-store editorial, a SINGLE vertical 2:3 full-length photo with head, hands and both shoes fully visible. Generate a new original fictional adult fashion model, a beautiful Western white woman aged 32, refined face, hazel eyes, natural fair skin, long softly waved dark chestnut hair with centre part, healthy realistic slender proportions, subtle warm smile. Her name is Claire but show NO text. Scene: calmly walking under an elegant pale limestone Paris-style city arcade, muted greenery and soft morning daylight, authentic skin, wool and silk textures, natural beautiful editorial photography. The reference is a catalog-pixel board of six EXACT garments and accessories, labeled 1-6. Reproduce all six design silhouettes, construction and hues on her: 1 walnut/taupe-brown two-button sculpted wool blazer; 2 ivory silk pointed-collar blouse visible inside; 3 walnut high-waisted wide straight-leg trousers; 4 deep burgundy structured curved-top bag with short top handle and small brass clasp held naturally in her left hand; 5 deep burgundy minimal ballet flats on feet; 6 small sculptural brass leaf earrings, ear unobscured on one side. Fasten blazer at waist while revealing blouse. Keep bag, face, anatomy and whole outfit easy to see. Do not copy the product-board layout. No additional people, lettering, brand, logo, watermark, collage, cropped feet, heels, jeans or black suit.",
+        "references": [
+          {
+            "path": "artifacts/model-presets-v17/reference-boards/claire-tailoring.png",
+            "sha256": "b57726e3b44b83b058a0d95d901d8ce5e572374aace966c6abb3c6e6538544aa",
+            "bytes": 3060254,
+            "width": 2400,
+            "height": 1700,
+            "format": "PNG"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v17-claire-coat",
+      "kind": "full-outfit",
+      "personaId": "claire-model-32",
+      "homeId": "warm-family",
+      "primarySkuIds": [
+        "ME-009"
+      ],
+      "picturedComponents": [
+        {
+          "skuId": "ME-009",
+          "color": "Camel"
+        },
+        {
+          "skuId": "ME-002",
+          "color": "Ivory"
+        },
+        {
+          "skuId": "ME-003",
+          "color": "Walnut"
+        },
+        {
+          "skuId": "ME-004",
+          "color": "Burgundy"
+        },
+        {
+          "skuId": "ME-007",
+          "color": "Burgundy"
+        }
+      ],
+      "output": {
+        "path": "public/personalized-scenes/v17-claire-coat.webp",
+        "sha256": "7adcc0fa0b5065ed964c262dbc26a7e6d4eeed028a74d45c2ce645007e3cbd86",
+        "bytes": 178834,
+        "width": 960,
+        "height": 1440,
+        "format": "WEBP"
+      },
+      "reviewStatus": "visually-reviewed",
+      "reviewChecks": [
+        "consistent fictional adult identity",
+        "face and natural anatomy",
+        "head-to-toe framing",
+        "catalog primary colors",
+        "catalog apparel silhouettes",
+        "shoes present"
+      ],
+      "claims": {
+        "synthetic": true,
+        "exactPhysicalProduct": false,
+        "verifiedFit": false,
+        "verifiedMeasurements": false
+      },
+      "generation": {
+        "prompt": "Use case: identity-preserve. Create a SINGLE vertical 2:3 full-length high-end photorealistic department-store fashion editorial. Reference 1 is the exact fictional adult Western white female model Claire aged 32: preserve her SAME refined face, hazel eyes, fair natural skin, long centre-part chestnut waves and realistic slender adult proportions. Change outfit and location only, vary pose naturally with relaxed believable hands and expression. Reference 2 is a board of EXACT catalog product pixels, labeled in order. Reproduce all product silhouettes, textures and exact colors. All five product-board items: 1 camel long wool belted coat worn OPEN with its belt loosely tied behind to reveal 2 ivory silk pointed-collar blouse; 3 walnut/taupe high-waisted straight trousers; 4 deep burgundy structured curved-top leather handbag with short handle and brass clasp held in one hand; 5 deep burgundy minimal ballet flats. Scene: walking on a quiet tree-lined city boulevard with autumn gold foliage and pale limestone facades, gentle fall daylight. Coat must remain camel with broad lapels and straight below-knee silhouette, blouse and trousers visible. Frame head-to-toe with feet and outfit unobscured, generous breathing room, authentic skin and fabric texture, natural sophisticated photography. Do NOT reproduce the board as a collage. No additional people, brands, letters, watermark, false text, heels, sneakers, cropped head or feet, distorted anatomy.",
+        "references": [
+          {
+            "path": "artifacts/model-presets-v17/sources/claire-tailoring-source.png",
+            "sha256": "ff185b25aad6fd162710a41ea28f4a4b354d60f4ba4721cec3476ce340abd519",
+            "bytes": 2290567,
+            "width": 1024,
+            "height": 1536,
+            "format": "PNG"
+          },
+          {
+            "path": "artifacts/model-presets-v17/reference-boards/claire-coat.png",
+            "sha256": "eba1f5c26d087d059812fbe2e8ccb5a327eef7eb4f32331c07cf952aa8155d45",
+            "bytes": 1922576,
+            "width": 2100,
+            "height": 1500,
+            "format": "PNG"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v17-claire-dress",
+      "kind": "full-outfit",
+      "personaId": "claire-model-32",
+      "homeId": "warm-family",
+      "primarySkuIds": [
+        "ME-015",
+        "ME-008"
+      ],
+      "picturedComponents": [
+        {
+          "skuId": "ME-015",
+          "color": "Terracotta"
+        },
+        {
+          "skuId": "ME-004",
+          "color": "Burgundy"
+        },
+        {
+          "skuId": "ME-007",
+          "color": "Burgundy"
+        },
+        {
+          "skuId": "ME-008",
+          "color": "Brass"
+        }
+      ],
+      "output": {
+        "path": "public/personalized-scenes/v17-claire-dress.webp",
+        "sha256": "26c874e1b8ac2eabfd253f8ce95511d90be765cfbfe07304e8c10a0ee477d5c1",
+        "bytes": 215808,
+        "width": 960,
+        "height": 1440,
+        "format": "WEBP"
+      },
+      "reviewStatus": "visually-reviewed",
+      "reviewChecks": [
+        "consistent fictional adult identity",
+        "face and natural anatomy",
+        "head-to-toe framing",
+        "catalog primary colors",
+        "catalog apparel silhouettes",
+        "shoes present"
+      ],
+      "claims": {
+        "synthetic": true,
+        "exactPhysicalProduct": false,
+        "verifiedFit": false,
+        "verifiedMeasurements": false
+      },
+      "generation": {
+        "prompt": "Use case: identity-preserve. Create a SINGLE vertical 2:3 full-length high-end photorealistic department-store fashion editorial. Reference 1 is the exact fictional adult Western white female model Claire aged 32: preserve her SAME refined face, hazel eyes, fair natural skin, long centre-part chestnut waves and realistic slender adult proportions. Change outfit and location only, vary pose naturally with relaxed believable hands and expression. Reference 2 is a board of EXACT catalog product pixels, labeled in order. Reproduce all product silhouettes, textures and exact colors. All four product-board items: 1 terracotta/rust sleeveless linen column midi dress, wide shoulder straps, soft squared neckline, natural fitted waist and gently flared skirt; 2 deep burgundy structured curved-top leather bag with short handle and brass clasp held in one hand; 3 deep burgundy minimal ballet flats; 4 sculptural brass leaf earrings. Scene: standing naturally in an elegant courtyard restaurant with terracotta pots, flowering greenery, woven bistro chairs and gentle early evening warm light. No coat or cardigan. Entire terracotta dress and both burgundy flats clearly visible. Frame head-to-toe with feet and outfit unobscured, generous breathing room, authentic skin and fabric texture, natural sophisticated photography. Do NOT reproduce the board as a collage. No additional people, brands, letters, watermark, false text, heels, sneakers, cropped head or feet, distorted anatomy.",
+        "references": [
+          {
+            "path": "artifacts/model-presets-v17/sources/claire-tailoring-source.png",
+            "sha256": "ff185b25aad6fd162710a41ea28f4a4b354d60f4ba4721cec3476ce340abd519",
+            "bytes": 2290567,
+            "width": 1024,
+            "height": 1536,
+            "format": "PNG"
+          },
+          {
+            "path": "artifacts/model-presets-v17/reference-boards/claire-dress.png",
+            "sha256": "322a5767b3a5ba9748825960172f9e73c00dcde6290177b321c5b95ffcc7a553",
+            "bytes": 1583236,
+            "width": 2100,
+            "height": 1500,
+            "format": "PNG"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v17-claire-knit-skirt",
+      "kind": "full-outfit",
+      "personaId": "claire-model-32",
+      "homeId": "warm-family",
+      "primarySkuIds": [
+        "ME-005",
+        "ME-006"
+      ],
+      "picturedComponents": [
+        {
+          "skuId": "ME-006",
+          "color": "Oat"
+        },
+        {
+          "skuId": "ME-005",
+          "color": "Champagne"
+        },
+        {
+          "skuId": "ME-004",
+          "color": "Burgundy"
+        },
+        {
+          "skuId": "ME-007",
+          "color": "Burgundy"
+        }
+      ],
+      "output": {
+        "path": "public/personalized-scenes/v17-claire-knit-skirt.webp",
+        "sha256": "00606a6eaa276bf292265f38b072b136e1dada3fd1850b2945d72db37c5beb85",
+        "bytes": 152908,
+        "width": 960,
+        "height": 1440,
+        "format": "WEBP"
+      },
+      "reviewStatus": "visually-reviewed",
+      "reviewChecks": [
+        "consistent fictional adult identity",
+        "face and natural anatomy",
+        "head-to-toe framing",
+        "catalog primary colors",
+        "catalog apparel silhouettes",
+        "shoes present"
+      ],
+      "claims": {
+        "synthetic": true,
+        "exactPhysicalProduct": false,
+        "verifiedFit": false,
+        "verifiedMeasurements": false
+      },
+      "generation": {
+        "prompt": "Use case: identity-preserve. Create a SINGLE vertical 2:3 full-length high-end photorealistic department-store fashion editorial. Reference 1 is the exact fictional adult Western white female model Claire aged 32: preserve her SAME refined face, hazel eyes, fair natural skin, long centre-part chestnut waves and realistic slender adult proportions. Change outfit and location only, vary pose naturally with relaxed believable hands and expression. Reference 2 is a board of EXACT catalog product pixels, labeled in order. Reproduce all product silhouettes, textures and exact colors. All four product-board items: 1 oat cashmere crewneck sweater with fine smooth knit and ribbed cuffs, softly tucked at front; 2 champagne bias-cut satin midi skirt with subtle lustre and softly flared hem; 3 deep burgundy structured curved-top bag with short handle and brass clasp held naturally; 4 deep burgundy minimal ballet flats. Scene: inside a sophisticated wood-front café with pale oak, soft wall sconces, quiet ivory plaster and window light. Full champagne skirt and both shoes visible. No coat, jeans or black skirt. Frame head-to-toe with feet and outfit unobscured, generous breathing room, authentic skin and fabric texture, natural sophisticated photography. Do NOT reproduce the board as a collage. No additional people, brands, letters, watermark, false text, heels, sneakers, cropped head or feet, distorted anatomy.",
+        "references": [
+          {
+            "path": "artifacts/model-presets-v17/sources/claire-tailoring-source.png",
+            "sha256": "ff185b25aad6fd162710a41ea28f4a4b354d60f4ba4721cec3476ce340abd519",
+            "bytes": 2290567,
+            "width": 1024,
+            "height": 1536,
+            "format": "PNG"
+          },
+          {
+            "path": "artifacts/model-presets-v17/reference-boards/claire-knit-skirt.png",
+            "sha256": "f7b0f6f5500290fbf4ac66f2f1803a7349361e24ba394c76b63a9a201612b00b",
+            "bytes": 1684463,
+            "width": 2100,
+            "height": 1500,
+            "format": "PNG"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v17-claire-weekend",
+      "kind": "full-outfit",
+      "personaId": "claire-model-32",
+      "homeId": "warm-family",
+      "primarySkuIds": [
+        "ME-025",
+        "ME-026",
+        "ME-027"
+      ],
+      "picturedComponents": [
+        {
+          "skuId": "ME-025",
+          "color": "Oat"
+        },
+        {
+          "skuId": "ME-026",
+          "color": "Blue"
+        },
+        {
+          "skuId": "ME-003",
+          "color": "Walnut"
+        },
+        {
+          "skuId": "ME-007",
+          "color": "Burgundy"
+        },
+        {
+          "skuId": "ME-027",
+          "color": "Oat"
+        }
+      ],
+      "output": {
+        "path": "public/personalized-scenes/v17-claire-weekend.webp",
+        "sha256": "c2d3d0413bff56373daf64c514ed93604a836844fc8c873e08102ecb2529ace4",
+        "bytes": 198988,
+        "width": 960,
+        "height": 1440,
+        "format": "WEBP"
+      },
+      "reviewStatus": "visually-reviewed",
+      "reviewChecks": [
+        "consistent fictional adult identity",
+        "face and natural anatomy",
+        "head-to-toe framing",
+        "catalog primary colors",
+        "catalog apparel silhouettes",
+        "shoes present"
+      ],
+      "claims": {
+        "synthetic": true,
+        "exactPhysicalProduct": false,
+        "verifiedFit": false,
+        "verifiedMeasurements": false
+      },
+      "generation": {
+        "prompt": "Use case: identity-preserve. Create a SINGLE vertical 2:3 full-length high-end photorealistic department-store fashion editorial. Reference 1 is the exact fictional adult Western white female model Claire aged 32: preserve her SAME refined face, hazel eyes, fair natural skin, long centre-part chestnut waves and realistic slender adult proportions. Change outfit and location only, vary pose naturally with relaxed believable hands and expression. Reference 2 is a board of EXACT catalog product pixels, labeled in order. Reproduce all product silhouettes, textures and exact colors. All five product-board items: 1 oat cropped double-breasted trench with epaulettes and brown buttons worn OPEN, 2 pale powder-blue wool crewneck knit visible underneath, 3 walnut/taupe high-waisted straight trousers, 4 deep burgundy minimal ballet flats, 5 natural oat plain canvas tote with two handles on one shoulder. Scene: standing in a lush stone garden courtyard, pale stone path, hydrangeas and olive tree, soft weekend morning light. Short trench hem above hip must be visibly cropped, blue knit visible, not long camel coat. Both shoes and bag fully visible. Frame head-to-toe with feet and outfit unobscured, generous breathing room, authentic skin and fabric texture, natural sophisticated photography. Do NOT reproduce the board as a collage. No additional people, brands, letters, watermark, false text, heels, sneakers, cropped head or feet, distorted anatomy.",
+        "references": [
+          {
+            "path": "artifacts/model-presets-v17/sources/claire-tailoring-source.png",
+            "sha256": "ff185b25aad6fd162710a41ea28f4a4b354d60f4ba4721cec3476ce340abd519",
+            "bytes": 2290567,
+            "width": 1024,
+            "height": 1536,
+            "format": "PNG"
+          },
+          {
+            "path": "artifacts/model-presets-v17/reference-boards/claire-weekend.png",
+            "sha256": "ad94540f7c0a991adf8c92c5791fee9bd1f2ad4527ab6e2f1f208fa95e6ae8ef",
+            "bytes": 2107244,
+            "width": 2100,
+            "height": 1500,
+            "format": "PNG"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v17-julian-tailoring",
+      "kind": "full-outfit",
+      "personaId": "julian-model-34",
+      "homeId": "compact-city",
+      "primarySkuIds": [
+        "ME-010",
+        "ME-011",
+        "ME-012",
+        "ME-016"
+      ],
+      "picturedComponents": [
+        {
+          "skuId": "ME-012",
+          "color": "Ink"
+        },
+        {
+          "skuId": "ME-010",
+          "color": "Chalk"
+        },
+        {
+          "skuId": "ME-011",
+          "color": "Ink"
+        },
+        {
+          "skuId": "ME-013",
+          "color": "Walnut"
+        },
+        {
+          "skuId": "ME-016",
+          "color": "Walnut"
+        }
+      ],
+      "output": {
+        "path": "public/personalized-scenes/v17-julian-tailoring.webp",
+        "sha256": "189d6c04011b3037ea8d9904f4a5dd291af1da73a1354de26381f7585e8cf8dc",
+        "bytes": 166328,
+        "width": 960,
+        "height": 1440,
+        "format": "WEBP"
+      },
+      "reviewStatus": "visually-reviewed",
+      "reviewChecks": [
+        "consistent fictional adult identity",
+        "face and natural anatomy",
+        "head-to-toe framing",
+        "catalog primary colors",
+        "catalog apparel silhouettes",
+        "shoes present"
+      ],
+      "claims": {
+        "synthetic": true,
+        "exactPhysicalProduct": false,
+        "verifiedFit": false,
+        "verifiedMeasurements": false
+      },
+      "generation": {
+        "prompt": "Use case: photorealistic-natural. Asset type: premium department store editorial, vertical 2:3 full-length photograph, head to toe with both shoes fully visible and generous breathing room. Generate a new original fictional adult fashion model, a handsome Black man of African descent aged 34 with rich deep-brown skin, a refined symmetrical face, close-cropped tightly curled black hair, neatly trimmed short stubble beard, healthy athletic but realistic proportions, relaxed confident warm expression. His name is Julian, but put NO text in the image. Scene: standing naturally outside an elegant limestone city café, muted olive plants, softly lit arched doorway, high-end quiet luxury campaign with authentic skin, suede and wool texture. Reference images 1-5 are catalog product pixels, not styling suggestions: reproduce exact silhouettes and colors on him: 1 ink navy relaxed two-button wool blazer with patch pockets worn open, 2 chalk white band-collar cotton shirt tucked in with band collar clear, 3 ink navy pleated straight wool trousers, 4 walnut-brown minimal suede loafers on feet, 5 walnut-brown leather belt with small rectangular brass buckle clearly visible at waist. Natural hands, one lightly resting near pocket while other hangs freely. Preserve exact navy, chalk and walnut hues. No tie, pointed shirt collar, sneakers, black leather shoes, watch or branded extras. No other people, brands, text, watermark, collage or product grid.",
+        "references": [
+          {
+            "path": "public/images/blazer-ink.webp",
+            "sha256": "63173ffeb36ccd91fc9df3e824c0f40360c1f040347194a890ba2f22ffa40006",
+            "bytes": 290102,
+            "width": 1254,
+            "height": 1254,
+            "format": "WEBP"
+          },
+          {
+            "path": "public/images/shirt-cotton.webp",
+            "sha256": "698570b5666fbe5095f3b7e7d1a54950c1e3458737a84a3ed70dad9ed46928a8",
+            "bytes": 73180,
+            "width": 1254,
+            "height": 1254,
+            "format": "WEBP"
+          },
+          {
+            "path": "public/images/trouser-ink.webp",
+            "sha256": "b11c55f492a939607f40b4e4e83c361e413e2cf24ce85438e60bb6c6044ef718",
+            "bytes": 148252,
+            "width": 1254,
+            "height": 1254,
+            "format": "WEBP"
+          },
+          {
+            "path": "public/images/shoe-suede.webp",
+            "sha256": "8ea86e44800434db615fea7b9e5dd150becdbd01399682f6484e66263bb2351f",
+            "bytes": 229564,
+            "width": 1254,
+            "height": 1254,
+            "format": "WEBP"
+          },
+          {
+            "path": "public/images/belt.webp",
+            "sha256": "4a91fccd7a7c69f5dd5294c466887eacabc04ac4638794fbe039df2c9cfa84d7",
+            "bytes": 114912,
+            "width": 1254,
+            "height": 1254,
+            "format": "WEBP"
+          }
+        ]
+      }
+    },
+    {
+      "id": "v17-julian-knit",
+      "kind": "full-outfit",
+      "personaId": "julian-model-34",
+      "homeId": "compact-city",
+      "primarySkuIds": [
+        "ME-014",
+        "ME-013",
+        "ME-027"
+      ],
+      "picturedComponents": [
+        {
+          "skuId": "ME-014",
+          "color": "Oat"
+        },
+        {
+          "skuId": "ME-011",
+          "color": "Ink"
+        },
+        {
+          "skuId": "ME-013",
+          "color": "Walnut"
+        },
+        {
+          "skuId": "ME-027",
+          "color": "Oat"
+        }
+      ],
+      "output": {
+        "path": "public/personalized-scenes/v17-julian-knit.webp",
+        "sha256": "d04870ac0595df4695f976fa00d1e32a61194e72da1c4fbaebed0865994a3bc8",
+        "bytes": 152478,
+        "width": 960,
+        "height": 1440,
+        "format": "WEBP"
+      },
+      "reviewStatus": "visually-reviewed",
+      "reviewChecks": [
+        "consistent fictional adult identity",
+        "face and natural anatomy",
+        "head-to-toe framing",
+        "catalog primary colors",
+        "catalog apparel silhouettes",
+        "shoes present"
+      ],
+      "claims": {
+        "synthetic": true,
+        "exactPhysicalProduct": false,
+        "verifiedFit": false,
+        "verifiedMeasurements": false
+      },
+      "generation": {
+        "prompt": "Use case: identity-preserve. Make a SINGLE new vertical 2:3 full-length photorealistic luxury editorial of the EXACT same fictional adult Black male model aged 34 from reference image 1: preserve his face, deep brown skin, short curls, neat stubble, realistic athletic proportions and warm expression. Change his outfit and scene only. Reference 2 is a board of exact catalog product pixels labeled 1-4. Dress him in all FOUR: 1 oat fine-rib crewneck knit sweater, 2 ink navy pleated straight wool trousers, 3 walnut-brown minimal suede loafers, 4 large natural oat canvas tote with two plain handles held in left hand. NO blazer, shirt, belt visible, tie, watch or other accessories. Scene: standing relaxed in an airy contemporary café interior with pale oak, ivory walls, soft green plants and warm window light, sophisticated neutral setting, full body including both shoes and tote in frame, natural hands and realistic face, fabric and suede texture. Preserve catalog colors and construction exactly, sweater must show fine vertical ribs and a ribbed crew neckline. Do not copy board composition. No other people, text, logo, watermark, collage or cut-off feet.",
+        "references": [
+          {
+            "path": "artifacts/model-presets-v17/sources/julian-tailoring-source.png",
+            "sha256": "02f84d8f605275af2881ce928f4208b17892c2b329a90864e0c003f9f60cce9b",
+            "bytes": 2541977,
+            "width": 1024,
+            "height": 1536,
+            "format": "PNG"
+          },
+          {
+            "path": "artifacts/model-presets-v17/reference-boards/julian-knit.png",
+            "sha256": "e705eebd7cf884c136aafb23c22afb5a4c6dab05e7a8b1ecd19970a4a5a8708b",
+            "bytes": 1861782,
+            "width": 2100,
+            "height": 1500,
+            "format": "PNG"
+          }
+        ]
+      }
+    },
+    {
+      "id": "claire-portrait",
+      "kind": "identity-portrait",
+      "personaId": "claire-model-32",
+      "output": {
+        "path": "public/model-presets/claire-portrait.webp",
+        "sha256": "13c30d697309fb75d1de31a31a30192328e3e984b9e27c0d6d16ef07d95325a3",
+        "bytes": 56638,
+        "width": 960,
+        "height": 1440,
+        "format": "WEBP"
+      },
+      "reviewStatus": "visually-reviewed",
+      "reviewChecks": [
+        "same identity as fashion scenes",
+        "adult subject",
+        "natural face and anatomy",
+        "full body, hands and shoes visible"
+      ],
+      "claims": {
+        "synthetic": true,
+        "verifiedMeasurements": false
+      },
+      "generation": {
+        "prompt": "Use case: identity-preserve. Create a SINGLE vertical 2:3 premium photorealistic studio full-body model reference portrait. Preserve the exact identity, face, hair, complexion and adult build of the fictional adult white Western female model Claire aged 32, hazel eyes, fair natural skin, long centre-part chestnut waves, beautiful refined face, realistic slender healthy proportions in the attached image. Replace outfit with a simple fitted ivory cotton crew-neck T-shirt and straight pale stone trousers, clean understated flat taupe shoes, no jewelry or bag. Standing naturally facing camera, arms comfortably at sides with hands visible, subtle friendly smile, feet shoulder width, head to toe fully in frame with generous margin above head and below shoes. Seamless warm pale limestone studio backdrop with gentle soft daylight and a subtle natural floor shadow. Beautiful human skin texture, correct anatomy, honest proportions, realistic premium campaign quality, neutral calm styling. No other people, brands, text, logo, watermark, collage or measurements.",
+        "references": [
+          {
+            "path": "artifacts/model-presets-v17/sources/claire-tailoring-source.png",
+            "sha256": "ff185b25aad6fd162710a41ea28f4a4b354d60f4ba4721cec3476ce340abd519",
+            "bytes": 2290567,
+            "width": 1024,
+            "height": 1536,
+            "format": "PNG"
+          }
+        ]
+      }
+    },
+    {
+      "id": "julian-portrait",
+      "kind": "identity-portrait",
+      "personaId": "julian-model-34",
+      "output": {
+        "path": "public/model-presets/julian-portrait.webp",
+        "sha256": "9b4309f71a983672e370eebe1c61391b591a39c364b715216a2a783c371dc81b",
+        "bytes": 49134,
+        "width": 960,
+        "height": 1440,
+        "format": "WEBP"
+      },
+      "reviewStatus": "visually-reviewed",
+      "reviewChecks": [
+        "same identity as fashion scenes",
+        "adult subject",
+        "natural face and anatomy",
+        "full body, hands and shoes visible"
+      ],
+      "claims": {
+        "synthetic": true,
+        "verifiedMeasurements": false
+      },
+      "generation": {
+        "prompt": "Use case: identity-preserve. Create a SINGLE vertical 2:3 premium photorealistic studio full-body model reference portrait. Preserve the exact identity, face, hair, complexion and adult build of the fictional adult Black male model Julian aged 34, deep brown skin, close-cropped black curls, neat short stubble beard, handsome refined face, realistic healthy athletic proportions in the attached image. Replace outfit with a simple fitted ivory cotton crew-neck T-shirt and straight pale stone trousers, clean understated flat taupe shoes, no jewelry or bag. Standing naturally facing camera, arms comfortably at sides with hands visible, subtle friendly smile, feet shoulder width, head to toe fully in frame with generous margin above head and below shoes. Seamless warm pale limestone studio backdrop with gentle soft daylight and a subtle natural floor shadow. Beautiful human skin texture, correct anatomy, honest proportions, realistic premium campaign quality, neutral calm styling. No other people, brands, text, logo, watermark, collage or measurements.",
+        "references": [
+          {
+            "path": "artifacts/model-presets-v17/sources/julian-tailoring-source.png",
+            "sha256": "02f84d8f605275af2881ce928f4208b17892c2b329a90864e0c003f9f60cce9b",
+            "bytes": 2541977,
+            "width": 1024,
+            "height": 1536,
+            "format": "PNG"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "date_utc": "2026-10-16",
+  "unit_tests": { "passed": 209, "failed": 0, "command": "npm test" },
+  "production_build": "passed",
+  "worker_validation": "passed; same project, zero provider calls",
+  "close_reopen_matrix": {
+    "passed": 8,
+    "widths": [1440, 1024, 390, 320],
+    "motion": ["normal", "reduced"],
+    "product_open_checks": 48,
+    "close_context_checks": 72,
+    "pending_reply_checks": 8,
+    "incoming_message_checks": 8,
+    "screenshots": 32
+  },
+  "gift_matrix": { "passed": 6, "widths": [1440, 390, 320], "motion": ["normal", "reduced"] },
+  "try_list_matrix": { "passed": 4, "widths": [1440, 1024, 390, 320] },
+  "guided_tour": { "passed": 3, "widths": [1440, 390, 320], "real_actions": ["add", "review", "plan visit"] },
+  "compact_outfit_matrix": { "passed": 8, "widths": [1440, 1024, 390, 320], "profiles": 2 },
+  "motion_regression": { "normal_widths": [1440, 390, 320], "reduced_motion": "passed", "actual_merchandise_frames": [1440, 390] },
+  "catalog_scene_regression": { "selected_case": "warm-everyday: all 28", "result": "passed", "full_suite_rerun": false },
+  "notes": [
+    "No payment, real booking, external store contact or model-provider request was performed.",
+    "Ready acknowledgement is an explicit local demo merchant action; gift sizes never inherit buyer size.",
+    "A final mobile live-rail correction preserves the opening words. Focused mobile normal-flow and history-anchor rechecks accompany the handoff.",
+    "Build retains the existing non-blocking Vite chunk-size warning."
+  ]
+}

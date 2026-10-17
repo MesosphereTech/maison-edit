@@ -1,0 +1,66 @@
+{
+  "generated_at_utc": "2026-10-16T05:40:48Z",
+  "mode": "Built-in image_gen.imagegen; no external paid API",
+  "purpose": "MAISON \u00c9DIT retail demonstration gift-packaging selector assets",
+  "disclosure": "Conceptual AI-generated product-only gift packaging photographs. No actual SKU, product availability, certification, paid service, fulfillment, or sustainability claims. Blank gift cards contain no text.",
+  "assets": [
+    {
+      "id": "ivory-silk",
+      "public_path": "/gift-packaging/ivory-silk.webp",
+      "size_px": [
+        800,
+        800
+      ],
+      "bytes": 49612,
+      "sha256": "7d70a8819addd365b9166cb41b1250a87203de58441a5dfa9976897c1da43d59",
+      "source_path": "/workspace/scratch/15f65e6b91cc/generated_images/exec-d8f4c15c-fbad-4b6a-8e46-9ab4ac15bf54.png",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "source_sha256": "f62ca7383603532b6ee3b9752dcf8c296b4b58232a92e1b689b12d62d6fb9528",
+      "prompt": "Use case: product-mockup. Asset type: premium department-store gift-packaging option photograph for a compact selector. Primary request: one elegant warm ivory rigid rectangular gift box, beautifully tied with a wide deep burgundy silk ribbon and a luxurious neat sculptural bow. Product-only still life with no people. Scene: pale warm ivory plaster tabletop and seamless cream backdrop. Composition: square editorial close-up, slightly elevated three-quarter view, entire box and bow comfortably visible with generous 15 percent clear margins, central subject occupying about two thirds of frame. Fine tactile paper, natural silk sheen, carefully crafted corners. Soft directional morning studio light from upper left, delicate grounded shadows, warm refined understated luxury, believable high-end catalog photography. Palette: warm ivory, rich oxblood burgundy, subtle warm brass tonal glow. A small blank cream gift card may sit near the box with no text. Constraints: no lettering, logos, monograms, brands, watermark, human hands, extra packaging, background clutter, flowers, printed patterns or pricing. Make a single final image.",
+      "visual_review": "Approved after viewing full-resolution source and optimized WebP contact-sheet pixels: coherent warm-ivory editorial lighting, clear distinct wrapping material, one box, full bow, blank card, no people or text, no logos or fabricated marks.",
+      "crop_guidance": "Square image; preserve full square if possible. Centered box with bow and blank card. If selector is wide, use contain rather than aggressive cover cropping."
+    },
+    {
+      "id": "floral-accent",
+      "public_path": "/gift-packaging/floral-accent.webp",
+      "size_px": [
+        800,
+        800
+      ],
+      "bytes": 104806,
+      "sha256": "5e24c2689a6668eca790c89c4f12e48615d39df7efa7e4a86d5e6edf8cf6f88c",
+      "source_path": "/workspace/scratch/15f65e6b91cc/generated_images/exec-5076fc1e-b8f8-4e56-86ef-53bac35c5a5e.png",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "source_sha256": "419ff86e3ee29e77f2bb51bc6fa37d73509ee71105c953ab7184dc256e279f2a",
+      "prompt": "Use case: product-mockup. Asset type: premium department-store gift-packaging option photograph for a compact selector. Primary request: one elegant cream textured rectangular gift box wrapped with slender warm champagne cotton ribbon, a restrained small arrangement of tasteful dried ivory flowers and delicate burgundy amaranthus stems tucked beneath its bow. This is refined luxury floral gift wrapping, not a bouquet; the gift box remains the clear hero. Product-only still life with no people. Scene: pale warm ivory plaster tabletop and seamless cream backdrop. Composition: square editorial close-up, slightly elevated three-quarter view, entire box and bow and floral accent comfortably visible with generous 15 percent clear margins, central subject occupying about two thirds of frame. Fine tactile cream paper, elegant artisanal details, natural dried botanical texture. Soft directional morning studio light from upper left, delicate grounded shadows, warm refined understated luxury, believable high-end catalog photography. Palette: warm ivory, champagne, deep burgundy botanical accents, muted warm brass tonal glow. A small completely blank cream gift card rests next to the box. Constraints: no lettering, logos, monograms, brands, watermark, human hands, additional boxes, background clutter, busy printed patterns or pricing. Make a single final image.",
+      "visual_review": "Approved after viewing full-resolution source and optimized WebP contact-sheet pixels: coherent warm-ivory editorial lighting, clear distinct wrapping material, one box, full bow, blank card, no people or text, no logos or fabricated marks.",
+      "crop_guidance": "Square image; preserve full square if possible. Centered box with bow and blank card. If selector is wide, use contain rather than aggressive cover cropping."
+    },
+    {
+      "id": "recycled-cotton",
+      "public_path": "/gift-packaging/recycled-cotton.webp",
+      "size_px": [
+        800,
+        800
+      ],
+      "bytes": 90336,
+      "sha256": "226d0550bbfb2abd4a270aa0fd8570e31c04f35c7ec5bc9cfcd4c637cadeccc1",
+      "source_path": "/workspace/scratch/15f65e6b91cc/generated_images/exec-9f0641f0-07f6-456e-ab7c-6801be43a90a.png",
+      "source_size_px": [
+        1254,
+        1254
+      ],
+      "source_sha256": "5bcd4725a06d2e2004a8b8eeebf6b7db46e37c9d480f5220c334a782fbbb025a",
+      "prompt": "Use case: product-mockup. Asset type: premium department-store gift-packaging option photograph for a compact selector. Primary request: one beautifully and precisely wrapped rectangular present in premium light warm tan kraft paper with subtle natural recycled-paper flecks and a broad unbleached ivory cotton ribbon tied in an elegant relaxed bow. Product-only still life with no people. Scene: pale warm ivory plaster tabletop and seamless cream backdrop. Composition: square editorial close-up, slightly elevated three-quarter view, entire present and bow comfortably visible with generous 15 percent clear margins, central subject occupying about two thirds of frame. Crisp folded paper corners, very fine tactile paper texture, soft woven cotton fibers, handcrafted but luxurious finish. Soft directional morning studio light from upper left, delicate grounded shadows, warm refined understated luxury, believable high-end catalog photography. Palette: light warm kraft, ivory, muted brass-like golden light. A small completely blank cream gift card tied under the ribbon. Constraints: no lettering, logos, monograms, brands, watermark, sustainability icons, certification symbols, human hands, flowers, additional boxes, background clutter, printed patterns or pricing. Make a single final image.",
+      "visual_review": "Approved after viewing full-resolution source and optimized WebP contact-sheet pixels: coherent warm-ivory editorial lighting, clear distinct wrapping material, one box, full bow, blank card, no people or text, no logos or fabricated marks.",
+      "crop_guidance": "Square image; preserve full square if possible. Centered box with bow and blank card. If selector is wide, use contain rather than aggressive cover cropping."
+    }
+  ],
+  "reviewed_at_utc": "2026-10-16T05:41:39Z"
+}

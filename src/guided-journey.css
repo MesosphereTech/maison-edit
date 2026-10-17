@@ -1,0 +1,28 @@
+.guided-journey-travel {
+  position: fixed;
+  z-index: 1003;
+  left: 50%;
+  top: 82px;
+  transform: translateX(-50%);
+  width: min(400px, calc(100vw - 32px));
+  padding: 13px 17px;
+  border: 1px solid #cdb89e;
+  border-radius: 6px;
+  background: #faf5eef5;
+  box-shadow: 0 8px 32px #2c201d25;
+  color: #542b35;
+  display: grid;
+  gap: 8px;
+  text-align: center;
+  font: 14px/1.5 var(--serif);
+}
+.guided-journey-travel button {
+  font: 10px/1.5 var(--sans);
+  color: #75645b;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  min-height: 28px;
+}
+.guided-demo-panel[data-guided-step="visit"] .guided-exit {
+  min-height: 30px;
+}

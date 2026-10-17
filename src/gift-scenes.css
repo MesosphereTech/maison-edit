@@ -1,0 +1,108 @@
+.gift-model-note {
+  position: absolute;
+  z-index: 2;
+  left: 14px;
+  top: 53px;
+  max-width: 61%;
+  background: #fff9eeeb;
+  color: #6b4249;
+  padding: 7px 9px;
+  pointer-events: none;
+  box-shadow: 0 2px 12px #553b2b09;
+  text-align: left;
+}
+.gift-model-note strong {
+  display: block;
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 1.1px;
+  line-height: 1.5;
+}
+.gift-model-note > span {
+  display: block;
+  font-size: 7px;
+  line-height: 1.5;
+  color: #8e7968;
+  margin-top: 2px;
+}
+.gift-scene-packaging {
+  position: absolute;
+  z-index: 2;
+  right: 13px;
+  bottom: 14px;
+  width: 28%;
+  max-width: 130px;
+  aspect-ratio: 1 / 1;
+  border: 2px solid #fff9ee;
+  background: #e9e0d2;
+  box-shadow: 0 3px 12px #38231926;
+  pointer-events: none;
+}
+.personalized-scene .gift-scene-packaging > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  mix-blend-mode: normal;
+}
+.gift-scene-packaging > span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff9eeeb;
+  text-align: center;
+  padding: 3px 2px;
+  color: #7c5b45;
+  font-size: 6px;
+  letter-spacing: 0.6px;
+  line-height: 1.5;
+}
+.detail-visual .gift-model-note {
+  top: 18px;
+  left: 18px;
+  max-width: 62%;
+}
+.detail-visual .gift-scene-packaging {
+  max-width: 160px;
+  width: 29%;
+  bottom: 45px;
+}
+.detail-visual .gift-model-note strong {
+  font-size: 10px;
+}
+.detail-visual .gift-model-note > span {
+  font-size: 8px;
+}
+@media (max-width: 600px) {
+  .gift-model-note {
+    top: 45px;
+    left: 10px;
+    padding: 5px 6px;
+  }
+  .gift-model-note strong {
+    font-size: 7px;
+  }
+  .gift-model-note > span {
+    font-size: 6px;
+  }
+  .gift-scene-packaging {
+    right: 10px;
+    bottom: 10px;
+    width: 29%;
+  }
+  .detail-visual .gift-model-note {
+    top: 12px;
+    left: 12px;
+  }
+  .detail-visual .gift-model-note strong {
+    font-size: 8px;
+  }
+  .detail-visual .gift-model-note > span {
+    font-size: 7px;
+  }
+  .detail-visual .gift-scene-packaging {
+    width: 27%;
+    bottom: 36px;
+  }
+}

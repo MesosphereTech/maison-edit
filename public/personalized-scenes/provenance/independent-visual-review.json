@@ -1,0 +1,398 @@
+{
+  "reviewedAt": "2026-10-15T23:12:27.217461+00:00",
+  "method": "Independent full contact-sheet review against each actual primary packshot, original persona identity and room references. The scene is illustrative; no verified physical match, fit or scale.",
+  "assets": [
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-015__wear.webp",
+      "skuId": "ME-015",
+      "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-017__room.webp",
+      "skuId": "ME-017",
+      "sha256": "802ffff4f04dfd00bcd76dafe1f2e7b2ed3277cd05bca169785b12d4468df681",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-014__wear.webp",
+      "skuId": "ME-014",
+      "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-021__room.webp",
+      "skuId": "ME-021",
+      "sha256": "b77a4a63fc0c4d04d12796475dd7e9268a0fc8f7d690a12ffc164d6a234ea619",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-002__wear.webp",
+      "skuId": "ME-002",
+      "sha256": "db0a7cd5938fd41e31918ac53211a5286fd53d690a38821abd86e23c2e169859",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-004__wear.webp",
+      "skuId": "ME-004",
+      "sha256": "e4c7a82e28c29659c215d20de08efaeb21f3cd7b562c620b317ba3070cde34bb",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-019__room.webp",
+      "skuId": "ME-019",
+      "sha256": "7ca313581a9cebb32f7d2bfe95a5d6c6b9a772e8eb6ddc1b4dc40c0b0189873c",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-010__wear.webp",
+      "skuId": "ME-010",
+      "sha256": "ec6510a9deab9193c45745e14d7a22fcac4a004745fc410d372f503f24f9293a",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-013__wear.webp",
+      "skuId": "ME-013",
+      "sha256": "77670998f5908f6690e8b9937f0f3d2843476a31f7393ef2ce2c3768cd541731",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-022__room.webp",
+      "skuId": "ME-022",
+      "sha256": "81450ab6af295adc184e8d2a200f7f3152d658eceaa2e68407b10c22dd7d5cbc",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-001__wear.webp",
+      "skuId": "ME-001",
+      "sha256": "a28752da1ce4de569700ea7ca48b5972fd3d8ce18ef9e0968a9e915fc93c589c",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-003__wear.webp",
+      "skuId": "ME-003",
+      "sha256": "c78a67df24e8d029f903d412a427f57a951c87b810e7d07932cd6a5a7ebb4e22",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-005__wear.webp",
+      "skuId": "ME-005",
+      "sha256": "f67f9fba7ffa532e94c9b0974bbc0524370d2ca53b2a4c7549057fc4a52abc2a",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-006__wear.webp",
+      "skuId": "ME-006",
+      "sha256": "2d53225fd0aad9df6c6dc3ddcf59a5680d848b68b7b11d6b15aed4509ed91d55",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-007__wear.webp",
+      "skuId": "ME-007",
+      "sha256": "713d33059c49a5b5a0aaa4c53384c56f9f42433972aa256155b1d988d2bff887",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-008__wear.webp",
+      "skuId": "ME-008",
+      "sha256": "b91facc38484e6f9e2e1ccc7d186ce6b27f0a5240054b9da3048f7bc6897508b",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-009__wear.webp",
+      "skuId": "ME-009",
+      "sha256": "d936c2bd39cdd07736afbf19da1bb46c9f899c70e0ddb6b8be36debf0cf2c10c",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-010__wear.webp",
+      "skuId": "ME-010",
+      "sha256": "b360dba182f7d5232dd2c4f0ceb84f4d387116f8f8f3075b5e01073041772dad",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-001__wear.webp",
+      "skuId": "ME-001",
+      "sha256": "bd5ad91a72c43e1e5c91ced356f2626c0fb982d75d320452d20a805168028e98",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-002__wear.webp",
+      "skuId": "ME-002",
+      "sha256": "9984fb7aae7bbca58af322a3b82f1b595a3baaf930d99954d5acbf78855da155",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-003__wear.webp",
+      "skuId": "ME-003",
+      "sha256": "0bf2505fd3b312a23c8330499f4b9ea211cca8928ae1457c36ec12f34f49b9ab",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-004__wear.webp",
+      "skuId": "ME-004",
+      "sha256": "4ec142d391606c2920ed786017d5dc9796b194a2e13611d48ee0aa3be81ba32f",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-005__wear.webp",
+      "skuId": "ME-005",
+      "sha256": "60697827c8b3c9961e9d3a92ecf9d004b1093b52274139b2661019c8e2291fdc",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-006__wear.webp",
+      "skuId": "ME-006",
+      "sha256": "59e3042043dcf67414ca8c623e3e9b1dd9f307774034ae4a7e40f18225b50326",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-007__wear.webp",
+      "skuId": "ME-007",
+      "sha256": "f5e2566588f656668610a6566880e00976efafffe87fa55b6353435026b3c99e",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-011__wear.webp",
+      "skuId": "ME-011",
+      "sha256": "578c6c3d753192135bae886ec47962d023c7a0716d5bf3efbc7f4a2e3395f73a",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-012__wear.webp",
+      "skuId": "ME-012",
+      "sha256": "863c00bcc0408aa5b5c6bd1476089ebe210bfa10a7b4422c89281d9929d4a819",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-013__wear.webp",
+      "skuId": "ME-013",
+      "sha256": "7c271edbdd34d3ca9a205a4ebf5bd88625896c03cf5e0cb481329fb23d9660c1",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-014__wear.webp",
+      "skuId": "ME-014",
+      "sha256": "688a89ec094342e6442e5f0576ab18d5049fce37c8a941fcdf26c94447a03105",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-009__wear.webp",
+      "skuId": "ME-009",
+      "sha256": "c931efc5b95aa3e063b66b86ac66a350b24af42686ec8715e0ea6b7c1eed7814",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-011__wear.webp",
+      "skuId": "ME-011",
+      "sha256": "d3f82ec979efbfbbe424acff8252b2045a9e1900f1758fbff42a3f8b3abc4b59",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-012__wear.webp",
+      "skuId": "ME-012",
+      "sha256": "f7f43ff69cc7f04618e33eec159e82fb0bde3921440660dabdd665b142cad04b",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-016__wear.webp",
+      "skuId": "ME-016",
+      "sha256": "c82468cddade89fa0367461e71af57c64fb9482bbd6a0a0ec2f9a3ab90770900",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-017__room.webp",
+      "skuId": "ME-017",
+      "sha256": "a196035bcb2d3f34d0b8ac74b5f652dff222a681dc5735d90fa80ecd94a2412c",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-016__wear.webp",
+      "skuId": "ME-016",
+      "sha256": "3da38a438b4524f2993f334c8ca6805cec3d4e941b0b9a7c0c60896579bc885c",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-018__room.webp",
+      "skuId": "ME-018",
+      "sha256": "d4af36a40700415a7faa1598ab1c80f85acb98fc97d9caee960b77b798bf05e3",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-020__room.webp",
+      "skuId": "ME-020",
+      "sha256": "f9e78f6a08ce3d02fd05f4c8f560b6f28b42c6e8745a7b5b5bab2ba099600c31",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-021__room.webp",
+      "skuId": "ME-021",
+      "sha256": "56268f7ce2cac7bd213cb9a9679cea5e659dfe0d6b61076cff6a6bf1c429ae3f",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-015__wear.webp",
+      "skuId": "ME-015",
+      "sha256": "da505f2a1c20d573fa519f30fb508e459e4d32d0d5d50cc1921537e1d11162c5",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-022__room.webp",
+      "skuId": "ME-022",
+      "sha256": "e86ba60a1a89a99d4478862f5f36f28660ca0c004ac289ba2dc65831311b4328",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-023__room.webp",
+      "skuId": "ME-023",
+      "sha256": "7198f3d83aea3a8122190528edd14881d80febdea5e8539b7c372fde7423c924",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-024__room.webp",
+      "skuId": "ME-024",
+      "sha256": "0b5b5c34bc33d87418b59a5ba05c6db17f8bb3d81797050c2f220872b7752f2e",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-025__wear.webp",
+      "skuId": "ME-025",
+      "sha256": "3e9043f02ce92f4b20b5a8ff29d02b3242bed6b89fcda008c07f08584172a1aa",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-026__wear.webp",
+      "skuId": "ME-026",
+      "sha256": "b0ef0fb406a95c614f42e835a8fb88fe7de423b3a3b7e3e0f2980e89946a3797",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-027__wear.webp",
+      "skuId": "ME-027",
+      "sha256": "05b6628346b1baca7547abb69cf7a829044544401b7dba05a4021757c48b204f",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-018__room.webp",
+      "skuId": "ME-018",
+      "sha256": "a203538ca859dcca0e8acc9bbad5d93e031acd68a3c96b31e3e9df363a584b22",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-019__room.webp",
+      "skuId": "ME-019",
+      "sha256": "093443d1e9ab2cfd0bd159cb279d7f0c49c47de105abd12182485c928c65df73",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-020__room.webp",
+      "skuId": "ME-020",
+      "sha256": "62d539dae3ee986453ec0023f3b7a5902c16fa4f189e691bd7055ff843dddd12",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-023__room.webp",
+      "skuId": "ME-023",
+      "sha256": "05d4805149616e0793d2c6338a815f084f3d7b0626270bb310a551cdfbf16a21",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-024__room.webp",
+      "skuId": "ME-024",
+      "sha256": "f277922d16b48831c20c1d437b6c95067037b14d6414a288c7e797795bf1cbfa",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-025__wear.webp",
+      "skuId": "ME-025",
+      "sha256": "efb12e9d2ebac1c849655f5ae7d587b28a9b7ab2b5db91846a77ef9a8a4aa553",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "everyday-woman-45__warm-family__ME-028__room.webp",
+      "skuId": "ME-028",
+      "sha256": "e2ee813c5c51e62b8bb67a25a9a56fcd1900038816df78859a95528dec082a5d",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-008__wear.webp",
+      "skuId": "ME-008",
+      "sha256": "8a6543918b08c16936af8aeafa9ca9f7187d7b13b151750b408fd092e278e876",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-026__wear.webp",
+      "skuId": "ME-026",
+      "sha256": "956b5e43d9e2d6393d7942f0ccd6fb7ad2c78106220a5d6d174d8b91c6160528",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-027__wear.webp",
+      "skuId": "ME-027",
+      "sha256": "735b71c0a15e9b47ec8c2c7cc61b453a81c6bc25d25c76f16b5ed6ba76b596f1",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    },
+    {
+      "fileName": "relaxed-man-50__compact-city__ME-028__room.webp",
+      "skuId": "ME-028",
+      "sha256": "7cc9d98080e7f09008c890341ae159e06d20bb8b1680677d531852b5c8801d3e",
+      "status": "pass",
+      "review": "pass: recognizable reference persona/home, primary product type and color, plausible adult anatomy; no obvious unrelated product substitution."
+    }
+  ]
+}

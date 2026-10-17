@@ -1,0 +1,105 @@
+/* Every close folds the current conversation into one deliberate return point. */
+body:has(.subtitle-concierge) .concierge-button {
+  display: none;
+}
+aside.subtitle-concierge.is-minimized {
+  top: calc(50dvh - 32px);
+  right: 12px;
+  bottom: auto;
+  left: auto;
+  width: 60px;
+  max-width: 60px;
+  z-index: 114;
+}
+.subtitle-concierge .subtitle-resume {
+  float: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  width: 60px;
+  min-height: 64px;
+  padding: 7px 4px;
+  border: 1px solid #a98653;
+  border-radius: 17px;
+  color: #594330;
+  background: #fbf7edf2;
+  box-shadow:
+    0 4px 22px #6d4e2725,
+    inset 0 0 0 2px #e7d6b94d;
+  cursor: pointer;
+  font-size: 9px;
+  line-height: 1.15;
+  letter-spacing: 0.3px;
+  animation: concierge-launcher-arrive 180ms ease-out both;
+}
+.subtitle-resume strong {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.subtitle-resume-mark {
+  color: #b58a40;
+  font-size: 17px;
+  line-height: 13px;
+}
+.subtitle-resume:hover {
+  background: #fffaf0;
+  box-shadow: 0 4px 24px #8b632d38;
+}
+.subtitle-resume:focus-visible {
+  outline: 2px solid #a57936;
+  outline-offset: 3px;
+}
+aside.subtitle-concierge.is-leaving {
+  transform-origin: top left;
+  animation: concierge-fold-to-edge 360ms cubic-bezier(0.28, 0.7, 0.28, 1) both;
+  pointer-events: none;
+}
+aside.subtitle-concierge.is-leaving .subtitle-composer {
+  visibility: hidden;
+}
+/* Preserve the visible outgoing bubble while its whole shell folds right. */
+aside.subtitle-concierge.is-leaving .subtitle-bubble[data-persistent-surface],
+aside.subtitle-concierge.is-leaving .subtitle-history,
+aside.subtitle-concierge.is-leaving .subtitle-heading {
+  opacity: 1;
+  transform: none;
+}
+@keyframes concierge-fold-to-edge {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.65;
+  }
+  100% {
+    transform: translate3d(var(--collapse-x, 0), var(--collapse-y, 0), 0)
+      scale(0.18);
+    opacity: 0.12;
+  }
+}
+@keyframes concierge-launcher-arrive {
+  from {
+    opacity: 0.2;
+    transform: scale(0.86);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media (max-width: 580px) {
+  aside.subtitle-concierge.is-minimized {
+    right: 10px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  aside.subtitle-concierge.is-leaving,
+  .subtitle-concierge .subtitle-resume {
+    animation: none;
+    transition: none;
+  }
+}

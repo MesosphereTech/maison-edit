@@ -1,0 +1,453 @@
+{
+  "schemaVersion": 1,
+  "project": "MAISON ÉDIT",
+  "createdAt": "2026-10-15T16:51:55.574Z",
+  "generator": "OpenAI built-in image_gen",
+  "generationMode": "reference-guided synthetic image generation",
+  "status": "generated",
+  "synthetic": true,
+  "realPersonalData": false,
+  "allPeopleAdults": true,
+  "fitVerified": false,
+  "roomScaleVerified": false,
+  "notice": "AI-generated synthetic demo scenes. Garment appearance and furniture placement are illustrative; not a verified fit, size, colour, material, room measurement, product photograph or availability guarantee.",
+  "assets": [
+    {
+      "id": "everyday-woman-45__warm-family__ME-015__wear",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-015",
+      "fileName": "everyday-woman-45__warm-family__ME-015__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 252636,
+        "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-017__room",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "room",
+      "primarySku": "ME-017",
+      "fileName": "everyday-woman-45__warm-family__ME-017__room.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 351864,
+        "sha256": "802ffff4f04dfd00bcd76dafe1f2e7b2ed3277cd05bca169785b12d4468df681"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "relaxed-man-50__compact-city__ME-014__wear",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-014",
+      "fileName": "relaxed-man-50__compact-city__ME-014__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 264566,
+        "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "relaxed-man-50__compact-city__ME-021__room",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "roomId": "living",
+      "sceneType": "room",
+      "primarySku": "ME-021",
+      "fileName": "relaxed-man-50__compact-city__ME-021__room.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 305282,
+        "sha256": "b77a4a63fc0c4d04d12796475dd7e9268a0fc8f7d690a12ffc164d6a234ea619"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-002__wear",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-002",
+      "color": "Ivory",
+      "fileName": "everyday-woman-45__warm-family__ME-002__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Consistent fictional middle-aged woman and warm-family room. Ivory pointed collar, button front, fluid shirt sheen and long cuffs are visible; shirt unobscured.",
+      "prompt": "Use case: photorealistic-natural. Asset type: additional reference-guided synthetic prepared shopping scene for MAISON EDIT. Style: polished natural luxury editorial photography in a genuinely lived-in home, realistic skin and material texture, soft warm window daylight, calm everyday confidence rather than fashion posing. Input images: 1 = exact synthetic adult persona identity; 2 = exact fictional home living-room reference; 3 = exact primary SKU packshot and selected color; 4 = continuity reference for the same adult in this home. Portrait 2:3 photograph with full head-to-toe person and both feet in frame, eye-level 50mm composition. The woman wears the EXACT ivory silk shirt from reference image 3: soft satin ivory rather than white, pointed classic collar, visible central pearlescent button placket, long sleeves with single button cuffs, gently curved untucked hem and softly fluid cut. Keep its design, color, fabric sheen and details. Pair with quiet dark navy straight trousers and simple beige flats. Her hands relax naturally at her sides, shirt front clearly unobscured. Show her in the warm family living room beside its grey sectional, with walnut bookcase and dining-window view recognizable. Preserve real age and fuller ordinary torso. Reference 4 is the existing scene solely for identity/room continuity, not the dress: replace the terracotta dress completely with the shirt outfit. Constraints: Preserve the reference person's exact fictional identity, age, face shape, hairline, hairstyle, ordinary average-to-soft build and natural skin texture. Do not de-age, slim, glamourize or change ethnicity. Exactly one fully clothed adult. Natural anatomy and plausible hands. Preserve the same living-room architecture and its recognizable furniture arrangement, window, curtains, woods and plants. A single continuous photograph, never a collage or comparison layout. No text, labels, logo, watermark or UI.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/shirt.webp",
+          "sha256": "59fadb220680f14de85d0ad9cc5b583ae7c0e2f4786af881b538ab234bb59b3a"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-002__wear.png",
+      "rawSourceSha256": "723ab5b3dfd6e6354404318ffea8b6fa2d1ae040923aa301d1f9189474013407",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 205512,
+        "sha256": "db0a7cd5938fd41e31918ac53211a5286fd53d690a38821abd86e23c2e169859"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-004__wear",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-004",
+      "color": "Burgundy",
+      "fileName": "everyday-woman-45__warm-family__ME-004__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Consistent fictional middle-aged woman and warm-family room. Burgundy bag held naturally by short arc handle, front flap, clasp and metal rings clearly visible; no false strap.",
+      "prompt": "Use case: photorealistic-natural. Asset type: additional reference-guided synthetic prepared shopping scene for MAISON EDIT. Style: polished natural luxury editorial photography in a genuinely lived-in home, realistic skin and material texture, soft warm window daylight, calm everyday confidence rather than fashion posing. Input images: 1 = exact synthetic adult persona identity; 2 = exact fictional home living-room reference; 3 = exact primary SKU packshot and selected color; 4 = continuity reference for the same adult in this home. Portrait 2:3 photograph with the woman standing naturally, framed head to just below knees, hands and complete handbag in focus. The woman holds the EXACT burgundy leather handbag from reference image 3 by its arched short top handle in one hand at hip level; bag front faces camera at slight three-quarter angle, unoccluded. Reproduce the burgundy rounded-rectangle body, curved flap front, subtle stitched edges, gold/brass small vertical rounded clasp and handle attachment rings; no shoulder strap or additional logo. A realistic everyday handbag proportion, not oversized. She wears her simple warm neutral shirt and navy trousers, tasteful ordinary attire. Same warm family room with grey sectional, walnut bookcase, window and plants recognizable. Reference 4 is only identity and room continuity. Product is held, never floating or pasted onto the image. Constraints: Preserve the reference person's exact fictional identity, age, face shape, hairline, hairstyle, ordinary average-to-soft build and natural skin texture. Do not de-age, slim, glamourize or change ethnicity. Exactly one fully clothed adult. Natural anatomy and plausible hands. Preserve the same living-room architecture and its recognizable furniture arrangement, window, curtains, woods and plants. A single continuous photograph, never a collage or comparison layout. No text, labels, logo, watermark or UI.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/bag.webp",
+          "sha256": "813624b649a0ebfd162ca01415ea0f206fc24c607a9778b5955efcd9d5df973b"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-004__wear.png",
+      "rawSourceSha256": "57c49567f132788da8346238099085149c4b1789909d98426bdb42a0a10caa4b",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 211056,
+        "sha256": "e4c7a82e28c29659c215d20de08efaeb21f3cd7b562c620b317ba3070cde34bb"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-019__room",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "room",
+      "primarySku": "ME-019",
+      "color": "Brass",
+      "fileName": "everyday-woman-45__warm-family__ME-019__room.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Consistent woman and recognizable warm-family living room. Brass turned table-lamp stem, stepped base, cream shade and finial preserved; whole lamp visible on sideboard.",
+      "prompt": "Use case: photorealistic-natural. Asset type: additional reference-guided synthetic prepared shopping scene for MAISON EDIT. Style: polished natural luxury editorial photography in a genuinely lived-in home, realistic skin and material texture, soft warm window daylight, calm everyday confidence rather than fashion posing. Input images: 1 = exact synthetic adult persona identity; 2 = exact fictional home living-room reference; 3 = exact primary SKU packshot and selected color; 4 = continuity reference for the same adult in this home. Landscape 3:2 natural interior photograph. Set the EXACT table lamp from reference image 3 on a small existing walnut sideboard next to the grey sectional, clearly visible in foreground with its entire base and shade. Reproduce a brushed warm brass round stepped base, slender turned column, small ornamental collar, cream linen gently tapered drum shade and small brass ball finial, no invented articulated arm or floor-lamp design. Warm subtle light inside the shade complements daylight. The woman sits comfortably nearby on the grey sofa reading an unlettered closed-cover book, face clear and recognizable, dressed in ordinary ivory tee and navy trousers. Natural relaxed interaction, no posing. Retain the family living room window/dining table, right-side walnut bookcase, plants and grey sectional. Compose lamp as clear primary product and person secondary; no giant lamp. Reference 4 is continuity for person and room. Constraints: Preserve the reference person's exact fictional identity, age, face shape, hairline, hairstyle, ordinary average-to-soft build and natural skin texture. Do not de-age, slim, glamourize or change ethnicity. Exactly one fully clothed adult. Natural anatomy and plausible hands. Preserve the same living-room architecture and its recognizable furniture arrangement, window, curtains, woods and plants. A single continuous photograph, never a collage or comparison layout. No text, labels, logo, watermark or UI.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/lamp.webp",
+          "sha256": "55c1d8485b5a75deb2f038a8ef3c9f791ac580a02f2e1765a88249484ab3a80e"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-019__room.png",
+      "rawSourceSha256": "cace4021651e693c5f4544a94ee5c3afcbb301afe552c1a45334b1a4cbccdc9b",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 228190,
+        "sha256": "7ca313581a9cebb32f7d2bfe95a5d6c6b9a772e8eb6ddc1b4dc40c0b0189873c"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "relaxed-man-50__compact-city__ME-010__wear",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-010",
+      "color": "Chalk",
+      "fileName": "relaxed-man-50__compact-city__ME-010__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Consistent fictional middle-aged man and compact-city room. White/chalk matte band-collar button shirt visible head-to-toe, shirt front unobscured.",
+      "prompt": "Use case: photorealistic-natural. Asset type: additional reference-guided synthetic prepared shopping scene for MAISON EDIT. Style: polished natural luxury editorial photography in a genuinely lived-in home, realistic skin and material texture, soft warm window daylight, calm everyday confidence rather than fashion posing. Input images: 1 = exact synthetic adult persona identity; 2 = exact fictional home living-room reference; 3 = exact primary SKU packshot and selected color; 4 = continuity reference for the same adult in this home. Portrait 2:3 photograph with full head-to-toe person, both feet and natural margin in frame. The man wears the EXACT chalk white cotton poplin shirt from reference image 3: narrow stand/band collar with button closure, full visible central light button placket, long sleeves with simple button cuffs, curved untucked hem, matte crisp cotton and relaxed straight cut. Do not add pointed lapels, chest pockets, logos or silk shine. Pair with the man's plain charcoal straight trousers and dark ordinary shoes. Softly rounded torso and true middle-age face remain. Hands at sides and shirt unobscured. Same compact-city living room with round dining table and cream-curtained window behind, glazed wood cabinet and cream sofa. Reference 4 is existing scene solely for consistent identity/room, completely replace the oat sweater with this exact shirt. Constraints: Preserve the reference person's exact fictional identity, age, face shape, hairline, hairstyle, ordinary average-to-soft build and natural skin texture. Do not de-age, slim, glamourize or change ethnicity. Exactly one fully clothed adult. Natural anatomy and plausible hands. Preserve the same living-room architecture and its recognizable furniture arrangement, window, curtains, woods and plants. A single continuous photograph, never a collage or comparison layout. No text, labels, logo, watermark or UI.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/shirt-cotton.webp",
+          "sha256": "698570b5666fbe5095f3b7e7d1a54950c1e3458737a84a3ed70dad9ed46928a8"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawSourceFile": "raw/relaxed-man-50__compact-city__ME-010__wear.png",
+      "rawSourceSha256": "98d8d1d7b6e2fdde596b4b8551aacf8ed4034f9f5422437939e5a3559f5fa6ea",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 195736,
+        "sha256": "ec6510a9deab9193c45745e14d7a22fcac4a004745fc410d372f503f24f9293a"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "relaxed-man-50__compact-city__ME-013__wear",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-013",
+      "color": "Walnut",
+      "fileName": "relaxed-man-50__compact-city__ME-013__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Consistent man seated in compact-city room. Both walnut suede loafers clearly visible, apron seams and dark thin soles recognizable; no duplicated feet.",
+      "prompt": "Use case: photorealistic-natural. Asset type: additional reference-guided synthetic prepared shopping scene for MAISON EDIT. Style: polished natural luxury editorial photography in a genuinely lived-in home, realistic skin and material texture, soft warm window daylight, calm everyday confidence rather than fashion posing. Input images: 1 = exact synthetic adult persona identity; 2 = exact fictional home living-room reference; 3 = exact primary SKU packshot and selected color; 4 = continuity reference for the same adult in this home. Portrait 2:3 natural lifestyle photograph of the same man seated upright on his cream sofa, entire head and full body down to both shoes visible, diagonal three-quarter view so shoes are distinctly visible in foreground with enough detail. His feet rest comfortably on pale oak floor, one slightly forward, legs uncrossed. He wears the EXACT pair of walnut brown suede loafers from reference image 3, with softly rounded almond toes, stitched apron/moc toe edges, plain broad upper with subtle loafer saddle seam and no tassel or metal, thin dark leather soles and low stacked heels. Both shoes worn naturally, no floating or duplicate feet. Shorter plain charcoal trouser hems leave loafers fully unobscured; simple oatmeal top. Keep the man's actual stocky ordinary build and age. Retain cream sofa, recognizable cabinet, trailing plants, dining table and sheer-curtained window. Product shoes primary, face visible and consistent; no closeup-only isolated shoe. Reference 4 only for same identity/room. Constraints: Preserve the reference person's exact fictional identity, age, face shape, hairline, hairstyle, ordinary average-to-soft build and natural skin texture. Do not de-age, slim, glamourize or change ethnicity. Exactly one fully clothed adult. Natural anatomy and plausible hands. Preserve the same living-room architecture and its recognizable furniture arrangement, window, curtains, woods and plants. A single continuous photograph, never a collage or comparison layout. No text, labels, logo, watermark or UI.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/shoe-suede.webp",
+          "sha256": "8ea86e44800434db615fea7b9e5dd150becdbd01399682f6484e66263bb2351f"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawSourceFile": "raw/relaxed-man-50__compact-city__ME-013__wear.png",
+      "rawSourceSha256": "0349bc703291d2ff6cca0cd51bbd110084af0009ab15758055e978afa0c723d8",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 281388,
+        "sha256": "77670998f5908f6690e8b9937f0f3d2843476a31f7393ef2ce2c3768cd541731"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "relaxed-man-50__compact-city__ME-022__room",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "roomId": "living",
+      "sceneType": "room",
+      "primarySku": "ME-022",
+      "color": "Blue",
+      "fileName": "relaxed-man-50__compact-city__ME-022__room.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Consistent man and compact-city room. Blue/cream abstract wool throw draped on sofa with its fringe and large pattern visible.",
+      "prompt": "Use case: photorealistic-natural. Asset type: additional reference-guided synthetic prepared shopping scene for MAISON EDIT. Style: polished natural luxury editorial photography in a genuinely lived-in home, realistic skin and material texture, soft warm window daylight, calm everyday confidence rather than fashion posing. Input images: 1 = exact synthetic adult persona identity; 2 = exact fictional home living-room reference; 3 = exact primary SKU packshot and selected color; 4 = continuity reference for the same adult in this home. Landscape 3:2 natural interior photograph. Replace the brown plaid throw on the cream sofa with the EXACT wool throw from reference image 3, draped gracefully over the near sofa arm and seat so its pale powder-blue, cream and slightly darker dusty-blue abstract block pattern, soft wool texture, and blue-and-cream twisted fringe are clearly recognizable. Do not change it to a solid blanket, stripes, checks or brown. Show generous fabric area in foreground without covering the man's face or hands. The same man sits casually on the other side of the sofa with one hand resting on the soft throw edge, dressed in his ordinary moss-green polo and charcoal trousers, looking peaceful. Retain compact city apartment architecture, cream sofa, wood coffee table, wood cabinet, round dining table and light curtains. Composition product primary, recognizable person and room visible, natural human scale. Reference 4 is continuity only. Constraints: Preserve the reference person's exact fictional identity, age, face shape, hairline, hairstyle, ordinary average-to-soft build and natural skin texture. Do not de-age, slim, glamourize or change ethnicity. Exactly one fully clothed adult. Natural anatomy and plausible hands. Preserve the same living-room architecture and its recognizable furniture arrangement, window, curtains, woods and plants. A single continuous photograph, never a collage or comparison layout. No text, labels, logo, watermark or UI.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/throw.webp",
+          "sha256": "636657338d7ed8b8dcf58219d98ff9b9c301b74e3810c0b77ac85a5b0b6f212c"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawSourceFile": "raw/relaxed-man-50__compact-city__ME-022__room.png",
+      "rawSourceSha256": "9fecc79882100be4ed76a48c782cda18d166125a3543b707bb2294f5d7812a29",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 248980,
+        "sha256": "81450ab6af295adc184e8d2a200f7f3152d658eceaa2e68407b10c22dd7d5cbc"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    }
+  ],
+  "expandedAt": "2026-10-15T22:20:44.890602+00:00"
+}

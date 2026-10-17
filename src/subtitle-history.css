@@ -1,0 +1,153 @@
+/* The history trigger is a real button; product, dismiss and reply controls
+   remain its siblings so activating them never toggles the transcript. */
+.subtitle-concierge .bubble-history-trigger {
+  display: block;
+  width: 100%;
+  padding: 0;
+  color: inherit;
+  text-align: left;
+  font: inherit;
+  background: transparent;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.bubble-history-trigger:focus-visible {
+  outline: 2px solid #a77b40;
+  outline-offset: 5px;
+}
+.bubble-history-cue {
+  float: right;
+  font-size: 11px;
+  line-height: 1;
+}
+.subtitle-bubble .bubble-text {
+  display: block;
+  font-family: var(--serif);
+  font-size: 15px;
+  letter-spacing: 0.12px;
+  line-height: 1.55;
+  margin: 8px 0 0;
+}
+:lang(zh-CN) .subtitle-bubble .bubble-text {
+  font-family: "Noto Serif CJK SC", "Songti SC", "STSong", var(--serif);
+  font-size: 13px;
+  line-height: 1.85;
+}
+.subtitle-history-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 6px 12px 8px;
+  background: #f8f4eced;
+  border-radius: 14px 14px 0 0;
+  font-size: 9px;
+  pointer-events: auto;
+}
+.subtitle-history-heading button {
+  padding: 4px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+.subtitle-concierge.is-history-expanded .subtitle-history {
+  max-height: min(390px, 46dvh, var(--subtitle-available-height, 46dvh));
+  padding: 7px 5px;
+  gap: 8px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  overflow-anchor: none;
+  scrollbar-width: thin;
+  scrollbar-color: #bfa983 transparent;
+  pointer-events: auto;
+}
+.subtitle-concierge.is-history-expanded .subtitle-history::-webkit-scrollbar {
+  display: block;
+  width: 3px;
+}
+.subtitle-concierge.is-history-expanded
+  .subtitle-history::-webkit-scrollbar-thumb {
+  background: #bfa983;
+  border-radius: 3px;
+}
+.subtitle-concierge.is-history-expanded .subtitle-history .subtitle-bubble {
+  display: block;
+  flex-shrink: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px 15px;
+  animation: none;
+  opacity: 1;
+}
+.subtitle-concierge.is-history-expanded
+  .subtitle-history
+  .subtitle-bubble.user {
+  width: 92%;
+}
+.subtitle-concierge.is-history-expanded .subtitle-history .subtitle-bubble p,
+.subtitle-concierge.is-history-expanded
+  .subtitle-history
+  .subtitle-bubble
+  .bubble-text {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+  font-size: 13px;
+  line-height: 1.55;
+}
+@media (max-width: 580px) {
+  .subtitle-bubble .bubble-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  :lang(zh-CN) .subtitle-bubble .bubble-text {
+    font-size: 12px;
+    line-height: 1.75;
+  }
+  .subtitle-concierge.is-history-expanded .subtitle-history {
+    max-height: min(300px, 38dvh, var(--subtitle-available-height, 38dvh));
+  }
+  .subtitle-concierge.is-history-expanded .subtitle-history .subtitle-bubble p,
+  .subtitle-concierge.is-history-expanded
+    .subtitle-history
+    .subtitle-bubble
+    .bubble-text {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+}
+@media (max-width: 899px) {
+  .overlay .subtitle-bubble .bubble-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .subtitle-concierge.avoids-controls:not(.is-history-expanded)
+    .subtitle-bubble
+    .bubble-text {
+    -webkit-line-clamp: 2;
+  }
+}
+/* Closing/minimizing keeps the same outgoing surfaces until their exit ends. */
+.subtitle-concierge.is-leaving .subtitle-heading,
+.subtitle-concierge.is-leaving .subtitle-composer,
+.subtitle-concierge.is-leaving .subtitle-footnote,
+.subtitle-concierge.is-leaving .subtitle-history-heading {
+  opacity: 0;
+  transform: translate3d(0, 4px, 0);
+  transition: opacity 360ms ease, transform 360ms ease;
+  pointer-events: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .subtitle-concierge.is-leaving * { transition: none !important; animation: none !important; }
+}
+.subtitle-concierge.is-leaving .subtitle-history {
+  opacity: 0;
+  transform: translate3d(0, -6px, 0);
+  transition: opacity 360ms ease, transform 360ms ease;
+}

@@ -1,0 +1,1785 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "quiet-city",
+  "personaId": "relaxed-man-50",
+  "homeId": "compact-city",
+  "roomId": "living",
+  "generator": "OpenAI built-in image_gen",
+  "generationMode": "reference-guided synthetic image generation",
+  "synthetic": true,
+  "realPersonalData": false,
+  "allPeopleAdults": true,
+  "fitVerified": false,
+  "roomScaleVerified": false,
+  "notice": "Synthetic fictional shopping scenes. Illustrative product appearance and placement, not verified fit, scale, measurements, color, material, availability or a real product photograph.",
+  "preservedExistingSkus": [
+    "ME-010",
+    "ME-013",
+    "ME-014",
+    "ME-021",
+    "ME-022"
+  ],
+  "assets": [
+    {
+      "sku": "ME-001",
+      "skuId": "ME-001",
+      "label": "The sculpted wool blazer",
+      "category": "women",
+      "kind": "blazer",
+      "color": "Walnut",
+      "type": "wear",
+      "packshot": "/tmp/maison-release-v7/public/images/blazer.webp",
+      "id": "relaxed-man-50__compact-city__ME-001__wear",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-001",
+      "file": "relaxed-man-50__compact-city__ME-001__wear.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-001__wear.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-001__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "held-on-hanger",
+      "displayMode": "garment displayed on hanger",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Portrait 2:3 photograph, frame the man from head to below knees standing naturally beside his cream sofa. He wears a simple cream shirt and charcoal trousers. He holds a wooden hanger with the EXACT women's walnut sculpted wool blazer from image 3 at his side, product front fully visible and oriented to camera, independently hanging rather than worn. Preserve its warm walnut brown textured wool, shaped waist, notch lapels, two dark front buttons, two narrow welt hip pockets and long sleeves. Show full blazer with hem and sleeves unobscured; realistic adult garment size. His free hand lightly supports the lower edge. Natural relaxed gesture, not retail counter posing. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/blazer.webp",
+          "sha256": "f641f7ea1b811c57c986c01907c98adaaf0d5c2b644f445d6b607234627696fe"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-fb5aeafe-e1d3-4b25-a42e-c3b494243965.png",
+      "generatedAt": "2026-10-15T22:28:12.925503+00:00",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 220822,
+        "sha256": "bd5ad91a72c43e1e5c91ced356f2626c0fb982d75d320452d20a805168028e98"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-002",
+      "skuId": "ME-002",
+      "label": "The silk column shirt",
+      "category": "women",
+      "kind": "shirt",
+      "color": "Ivory",
+      "type": "wear",
+      "packshot": "/tmp/maison-release-v7/public/images/shirt.webp",
+      "id": "relaxed-man-50__compact-city__ME-002__wear",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-002",
+      "file": "relaxed-man-50__compact-city__ME-002__wear.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-002__wear.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-002__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "held-on-hanger",
+      "displayMode": "garment displayed on hanger",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Portrait 2:3 photograph, frame the man from head to below knees standing naturally by his cream sofa. He wears a simple muted green polo and charcoal trousers. He holds a wooden hanger with the EXACT women's ivory silk shirt from image 3 in front beside his torso, shirt front facing camera and unobscured. Preserve warm ivory satin sheen, pointed classic collar, pearlescent central button placket, long sleeves with button cuffs, gently curved hem and fluid cut. The garment hangs independently, not worn. Full shirt including hem and cuffs visible, realistic adult garment proportion. Keep the man's identity clearly visible. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/shirt.webp",
+          "sha256": "59fadb220680f14de85d0ad9cc5b583ae7c0e2f4786af881b538ab234bb59b3a"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-16a61f4f-ef64-4bed-9e10-d906c87db36c.png",
+      "generatedAt": "2026-10-15T22:29:13.357980+00:00",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 177556,
+        "sha256": "9984fb7aae7bbca58af322a3b82f1b595a3baaf930d99954d5acbf78855da155"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-003",
+      "skuId": "ME-003",
+      "label": "The long-line trouser",
+      "category": "women",
+      "kind": "trouser",
+      "color": "Walnut",
+      "type": "wear",
+      "packshot": "/tmp/maison-release-v7/public/images/trouser.webp",
+      "id": "relaxed-man-50__compact-city__ME-003__wear",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-003",
+      "file": "relaxed-man-50__compact-city__ME-003__wear.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-003__wear.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-003__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "held-on-hanger",
+      "displayMode": "garment displayed on hanger",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Portrait 2:3 photograph, show the man from head to shoes in the same living room wearing his muted green polo and charcoal trousers. He holds a wooden clip hanger with the EXACT women's walnut wool trousers from image 3 beside his body, front facing camera and full length visible, no folding. Preserve the high waistband, single brown front button, front fly, belt loops, two subtle front pleats and long wide straight legs with pressed creases, warm grey-walnut wool color. Both trouser legs hang freely above the floor, independently rather than worn. Natural everyday gesture. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/trouser.webp",
+          "sha256": "91aa6271fe46c2575a75c3bb84ebd41ccb00aa4d29701ab06bbda6d4cddf16ca"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-10ccac78-2ca0-4e0f-951c-ba7a00122f56.png",
+      "generatedAt": "2026-10-15T22:31:34.921Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 201050,
+        "sha256": "0bf2505fd3b312a23c8330499f4b9ea211cca8928ae1457c36ec12f34f49b9ab"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-004",
+      "skuId": "ME-004",
+      "label": "The arc leather bag",
+      "category": "accessories",
+      "kind": "bag",
+      "color": "Burgundy",
+      "type": "wear",
+      "packshot": "/tmp/maison-release-v7/public/images/bag.webp",
+      "id": "relaxed-man-50__compact-city__ME-004__wear",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-004",
+      "file": "relaxed-man-50__compact-city__ME-004__wear.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-004__wear.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-004__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "held-product",
+      "displayMode": "product held naturally",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Portrait 2:3 photograph, head to knee framing. The same man in his muted green polo and charcoal trousers stands beside his cream sofa, holding the EXACT burgundy arc leather bag from image 3 naturally by its padded short arch handle at hip height. Show its complete rounded rectangular burgundy body, curved flap, stitched edging, brass handle rings and small vertical rounded brass clasp. Front three-quarter view, realistic ordinary handbag proportion. His fingers wrap naturally around handle and face remains recognizable. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/bag.webp",
+          "sha256": "813624b649a0ebfd162ca01415ea0f206fc24c607a9778b5955efcd9d5df973b"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-fae21be8-d14d-4d8f-88f5-228657841410.png",
+      "generatedAt": "2026-10-15T22:32:32.081Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 181404,
+        "sha256": "4ec142d391606c2920ed786017d5dc9796b194a2e13611d48ee0aa3be81ba32f"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-005",
+      "skuId": "ME-005",
+      "label": "The liquid satin skirt",
+      "category": "women",
+      "kind": "skirt",
+      "color": "Champagne",
+      "type": "wear",
+      "packshot": "/tmp/maison-release-v7/public/images/skirt.webp",
+      "id": "relaxed-man-50__compact-city__ME-005__wear",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-005",
+      "file": "relaxed-man-50__compact-city__ME-005__wear.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-005__wear.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-005__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "held-on-hanger",
+      "displayMode": "garment displayed on hanger",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Portrait 2:3 photograph, head to shoes framing. The same man in his muted green polo and charcoal trousers holds a wooden clip hanger with the EXACT women's champagne satin midi skirt from image 3 beside him in the living room. Show the complete skirt front with narrow smooth waistband, luminous champagne satin, fluid softly A-line bias silhouette and gently waved mid-calf hem. Skirt hangs naturally from waistband clips without becoming a dress or pleated skirt. His face and both hands visible; garment does not obscure face. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/skirt.webp",
+          "sha256": "d791a9abf7670fb351c9e2d2bc0c374096d09e3cd1f47f0d77b6c090bb1bb669"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-dfcad556-8c0d-4920-9def-6f17d5dbf327.png",
+      "generatedAt": "2026-10-15T22:33:31.554Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 172018,
+        "sha256": "60697827c8b3c9961e9d3a92ecf9d004b1093b52274139b2661019c8e2291fdc"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-006",
+      "skuId": "ME-006",
+      "label": "The cashmere layer",
+      "category": "women",
+      "kind": "knit",
+      "color": "Oat",
+      "type": "wear",
+      "packshot": "/tmp/maison-release-v7/public/images/knit.webp",
+      "id": "relaxed-man-50__compact-city__ME-006__wear",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-006",
+      "file": "relaxed-man-50__compact-city__ME-006__wear.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-006__wear.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-006__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "held-on-hanger",
+      "displayMode": "garment displayed on hanger",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Portrait 2:3 photograph, head to knee framing. The same man wears muted green polo and charcoal trousers. He holds a wooden hanger with the EXACT women's oat cashmere crewneck sweater from image 3 beside his torso, complete front and sleeves visible. Preserve plain fine-knit warm oat body with raglan sleeve seams, ribbed round neckline, broad ribbed hem and slim ribbed cuffs, no vertical all-over ribbing. Product is a separate hanging garment, not the oat ribbed sweater in continuity image 4. Natural soft fabric drape and realistic garment size. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/knit.webp",
+          "sha256": "fbc99ef7808ab2557c0ae033f540ed0625591ce2120f6edabccff0e15e94ceec"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-62a2c141-e2e4-4239-9ab1-56ffbd4ee38e.png",
+      "generatedAt": "2026-10-15T22:34:30.100Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 206672,
+        "sha256": "59e3042043dcf67414ca8c623e3e9b1dd9f307774034ae4a7e40f18225b50326"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-007",
+      "skuId": "ME-007",
+      "label": "The soft ballet flat",
+      "category": "accessories",
+      "kind": "shoe",
+      "color": "Burgundy",
+      "type": "wear",
+      "packshot": "/tmp/maison-release-v7/public/images/shoe.webp",
+      "id": "relaxed-man-50__compact-city__ME-007__wear",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-007",
+      "file": "relaxed-man-50__compact-city__ME-007__wear.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-007__wear.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-007__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "placed-in-room",
+      "displayMode": "product placed in the living room",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Portrait 2:3 photograph, seated man from head to knees. On his wood coffee table in the near foreground, display the EXACT pair of burgundy leather ballet flats from image 3, arranged at a natural slight angle with both shoes complete and clearly visible. Preserve softly rounded almond toes, unadorned smooth burgundy uppers, low dark flat soles and tan interiors. The same man sits on the cream sofa behind, wearing muted green polo and dark trousers, leaning forward slightly with one hand naturally near the pair but not covering it. Focus product sharp while face remains recognizable. Normal shoe scale, no giant shoes. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/shoe.webp",
+          "sha256": "1ebec0b1fc2cd7f9f4c600794014f70e5bfd2a8ead24c493b8887d087216b080"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-7c7802f6-d071-4fc8-8d6b-a4fc4b07b408.png",
+      "generatedAt": "2026-10-15T22:36:36.133Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 195776,
+        "sha256": "f5e2566588f656668610a6566880e00976efafffe87fa55b6353435026b3c99e"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-008",
+      "skuId": "ME-008",
+      "label": "The sculptural earring",
+      "category": "accessories",
+      "kind": "jewelry",
+      "color": "Brass",
+      "type": "wear",
+      "packshot": "/tmp/maison-release-v7/public/images/jewelry.webp",
+      "id": "relaxed-man-50__compact-city__ME-008__wear",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-008",
+      "file": "relaxed-man-50__compact-city__ME-008__wear.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-008__wear.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-008__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "held-product",
+      "displayMode": "product held naturally",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Portrait 2:3 editorial photograph in the same compact-city living room. The same man, seated in muted green polo, gently holds a small plain cream jewelry display card at lower chest level. On the card is the EXACT matching pair of sculptural brass stud earrings from image 3, shown front on with clear fine detail: organic curled teardrop/leaf forms, softly hammered gold brass surface, concave fold and raised overlapping curved edge. Preserve their compact ordinary earring proportions, no giant jewelry, gemstones, hoops or extra pieces. Both earrings complete, visible and not covered by fingers; his recognizable face above. Cream sofa, glazed wood cabinet and curtain-window setting remain visible. Single continuous photograph. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/jewelry.webp",
+          "sha256": "25771c47afae012cf9f04caf1a6f49f9453ed92d9d4985bb4de4097e0040c33b"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-3df8920e-94d1-4c4f-973f-091854c968ee.png",
+      "generatedAt": "2026-10-15T23:10:44.010Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 170090,
+        "sha256": "8a6543918b08c16936af8aeafa9ca9f7187d7b13b151750b408fd092e278e876"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-009",
+      "skuId": "ME-009",
+      "label": "The city coat",
+      "category": "women",
+      "kind": "coat",
+      "color": "Camel",
+      "type": "wear",
+      "packshot": "/tmp/maison-release-v7/public/images/coat.webp",
+      "id": "relaxed-man-50__compact-city__ME-009__wear",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-009",
+      "file": "relaxed-man-50__compact-city__ME-009__wear.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-009__wear.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-009__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "held-on-hanger",
+      "displayMode": "garment displayed on hanger",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Portrait 2:3 photograph, head to shoes framing. The same man in a muted green polo and charcoal trousers holds a strong wooden hanger with the EXACT women's camel long wool coat from image 3 beside him, front fully visible and hem just above floor. Preserve its camel fuzzy wool, large notch lapels, long straight sleeves, slanted welt pockets, wrap front and matching belt with rectangular fabric-covered buckle and long belt tail. Coat stays a separate hanging garment, not worn; no double-breasted invented buttons. Natural calm gesture with face clear. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/coat.webp",
+          "sha256": "919597ddb24fb67b213c263bc96452b9598fe20c9f0fe756e94ba7f1cd0d2cf9"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-610a70a4-0c1e-4607-98e9-97989bf4cf87.png",
+      "generatedAt": "2026-10-15T22:44:23.360Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 205024,
+        "sha256": "c931efc5b95aa3e063b66b86ac66a350b24af42686ec8715e0ea6b7c1eed7814"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-011",
+      "skuId": "ME-011",
+      "label": "The pleated wool trouser",
+      "category": "men",
+      "kind": "trouser",
+      "color": "Ink",
+      "type": "wear",
+      "packshot": "/tmp/maison-release-v7/public/images/trouser-ink.webp",
+      "id": "relaxed-man-50__compact-city__ME-011__wear",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-011",
+      "file": "relaxed-man-50__compact-city__ME-011__wear.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-011__wear.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-011__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "worn-product",
+      "displayMode": "garment worn by persona",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Portrait 2:3 full head-to-toe photograph with both shoes visible. The same man wears the EXACT ink navy men's wool trousers from image 3 with his plain ivory short-sleeve tee tucked in so waistband and front double pleats are visible. Preserve dark ink blue matte wool, double front pleats on each side, pressed straight legs, single dark button, zip fly and side waistband adjusters, no conspicuous belt. Show front three-quarter relaxed standing pose, hands naturally at sides. Do not change man's softly rounded torso or stocky natural build. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/trouser-ink.webp",
+          "sha256": "b11c55f492a939607f40b4e4e83c361e413e2cf24ce85438e60bb6c6044ef718"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-deb6442c-30a2-45b7-9440-b3f53d0bc921.png",
+      "generatedAt": "2026-10-15T22:45:11.819Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 187098,
+        "sha256": "d3f82ec979efbfbbe424acff8252b2045a9e1900f1758fbff42a3f8b3abc4b59"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-012",
+      "skuId": "ME-012",
+      "label": "The relaxed wool jacket",
+      "category": "men",
+      "kind": "blazer",
+      "color": "Ink",
+      "type": "wear",
+      "packshot": "/tmp/maison-release-v7/public/images/blazer-ink.webp",
+      "id": "relaxed-man-50__compact-city__ME-012__wear",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-012",
+      "file": "relaxed-man-50__compact-city__ME-012__wear.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-012__wear.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-012__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "worn-product",
+      "displayMode": "garment worn by persona",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Portrait 2:3 full head-to-toe photograph. The same man wears the EXACT ink navy wool jacket from image 3 over a plain ivory crewneck tee and neutral charcoal trousers. Reproduce relaxed unstructured silhouette, notch lapels, two dark front buttons, two large rounded patch hip pockets and small welt chest pocket, matte textured navy wool. Jacket front hangs naturally open enough to show both buttons and pockets, sleeves down, hands relaxed at sides. Preserve average-to-stocky middle-aged body without slimming. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/blazer-ink.webp",
+          "sha256": "63173ffeb36ccd91fc9df3e824c0f40360c1f040347194a890ba2f22ffa40006"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-e57fe51f-0c96-465e-856e-4781d1353dbc.png",
+      "generatedAt": "2026-10-15T22:49:07.963Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 194606,
+        "sha256": "f7f43ff69cc7f04618e33eec159e82fb0bde3921440660dabdd665b142cad04b"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-015",
+      "skuId": "ME-015",
+      "label": "The linen column dress",
+      "category": "women",
+      "kind": "dress",
+      "color": "Terracotta",
+      "type": "wear",
+      "packshot": "/tmp/maison-release-v7/public/images/dress.webp",
+      "id": "relaxed-man-50__compact-city__ME-015__wear",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-015",
+      "file": "relaxed-man-50__compact-city__ME-015__wear.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-015__wear.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-015__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "held-on-hanger",
+      "displayMode": "garment displayed on hanger",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Portrait 2:3 photograph, head to shoes framing. The same man wears his muted green polo and charcoal trousers and holds a wooden hanger with the EXACT women's terracotta linen column dress from image 3 beside his torso. Show entire dress from straps to hem, front oriented to camera. Preserve broad shoulder straps, rounded square/scoop neckline, fitted seamed bodice, natural waist seam and long simple slightly A-line column skirt in warm terracotta textured linen. It is a separate hanging garment, not worn; no sleeves, belt, buttons or added print. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/dress.webp",
+          "sha256": "3d961934228ae23c2e8090238417f8e18bb275093cb3454895ec3843f7ef752a"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-54c2a942-568e-4d2f-9812-57db648205a0.png",
+      "generatedAt": "2026-10-15T22:53:01.233Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 199902,
+        "sha256": "da505f2a1c20d573fa519f30fb508e459e4d32d0d5d50cc1921537e1d11162c5"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-016",
+      "skuId": "ME-016",
+      "label": "The minimal leather belt",
+      "category": "accessories",
+      "kind": "belt",
+      "color": "Walnut",
+      "type": "wear",
+      "packshot": "/tmp/maison-release-v7/public/images/belt.webp",
+      "id": "relaxed-man-50__compact-city__ME-016__wear",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-016",
+      "file": "relaxed-man-50__compact-city__ME-016__wear.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-016__wear.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-016__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "placed-in-room",
+      "displayMode": "product placed in the living room",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Portrait 2:3 editorial photograph, frame the seated man from head to upper thighs with wood coffee table close in foreground. The EXACT narrow walnut leather belt from image 3 lies in a loose natural oval on the table, entire belt and buckle sharply visible. Reproduce warm walnut brown smooth leather, subtle tan edge stitching, small brushed brass rounded rectangular buckle with single prong, matching keeper and rounded pointed end. Normal adult belt proportion, not oversized. The man in muted green polo sits behind, one hand resting near belt without obscuring it. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/belt.webp",
+          "sha256": "4a91fccd7a7c69f5dd5294c466887eacabc04ac4638794fbe039df2c9cfa84d7"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-abe4783b-e1b8-4536-8535-7b3b8e4339a5.png",
+      "generatedAt": "2026-10-15T22:50:15.026Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 182066,
+        "sha256": "c82468cddade89fa0367461e71af57c64fb9482bbd6a0a0ec2f9a3ab90770900"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-017",
+      "skuId": "ME-017",
+      "label": "The sculptural lounge chair",
+      "category": "home",
+      "kind": "chair",
+      "color": "Terracotta",
+      "type": "room",
+      "packshot": "/tmp/maison-release-v7/public/images/chair.webp",
+      "id": "relaxed-man-50__compact-city__ME-017__room",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "room",
+      "primarySku": "ME-017",
+      "file": "relaxed-man-50__compact-city__ME-017__room.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-017__room.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-017__room.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "placed-in-room",
+      "displayMode": "product placed in the living room",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Landscape 3:2 interior photograph. Place the EXACT terracotta sculptural lounge chair from image 3 in the foreground left near the cream sofa, realistically scaled with clear walking space. Reproduce curved enveloping barrel back and low integrated curved arms, thick single rounded cushion, soft terracotta velvet-like upholstery, piped edge and four splayed tapered walnut legs. Show the full chair three-quarter view, legs unobscured. The same man sits naturally in it, wearing his muted green polo and charcoal trousers, face clear and recognizable, hands on arms. Retain the original cream sofa, wood coffee table, glazed cabinet with plants and rear dining-window view. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/chair.webp",
+          "sha256": "49811cc8e130f7b42b390e99e2fb232b6ad41a802e3da2533e128169b0105079"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-f233c18b-6f3d-4724-9364-adcbaf94bac6.png",
+      "generatedAt": "2026-10-15T22:51:16.389Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 237156,
+        "sha256": "a196035bcb2d3f34d0b8ac74b5f652dff222a681dc5735d90fa80ecd94a2412c"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-018",
+      "skuId": "ME-018",
+      "label": "The hand-formed vessel",
+      "category": "home",
+      "kind": "vase",
+      "color": "Chalk",
+      "type": "room",
+      "packshot": "/tmp/maison-release-v7/public/images/vase.webp",
+      "id": "relaxed-man-50__compact-city__ME-018__room",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "room",
+      "primarySku": "ME-018",
+      "file": "relaxed-man-50__compact-city__ME-018__room.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-018__room.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-018__room.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "placed-in-room",
+      "displayMode": "product placed in the living room",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Landscape 3:2 natural interior product photograph. Place the EXACT chalk hand-formed ceramic vessel from image 3 on the near wood coffee table, fully visible in foreground. Preserve its warm off-white/chalk speckled matte ceramic, plump rounded pear body, gently irregular shoulder, narrow softly flared neck and open circular mouth, subtle asymmetric handmade surface and unglazed base rim. Vase is empty, no decorative branches hiding its outline. The same man sits on the cream sofa behind in his muted green polo, relaxed with face recognizable. Product has normal tabletop vase proportion and sharp detail; keep glazed cabinet, plants, dining window visible. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/vase.webp",
+          "sha256": "20549d3fb3ee3c3ba8d43a6645fb274fb663e59debce1d830806ec922e7e7f9a"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-80b1ca8e-cc37-41da-8a96-2f1580349744.png",
+      "generatedAt": "2026-10-15T22:55:48.995Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 216192,
+        "sha256": "a203538ca859dcca0e8acc9bbad5d93e031acd68a3c96b31e3e9df363a584b22"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-019",
+      "skuId": "ME-019",
+      "label": "The brass reading lamp",
+      "category": "home",
+      "kind": "lamp",
+      "color": "Brass",
+      "type": "room",
+      "packshot": "/tmp/maison-release-v7/public/images/lamp.webp",
+      "id": "relaxed-man-50__compact-city__ME-019__room",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "room",
+      "primarySku": "ME-019",
+      "file": "relaxed-man-50__compact-city__ME-019__room.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-019__room.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-019__room.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "placed-in-room",
+      "displayMode": "product placed in the living room",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Landscape 3:2 interior photograph. Place the EXACT brass reading table lamp from image 3 on a small wood sideboard beside the cream sofa, entire lamp from base to finial clear in foreground. Reproduce round stepped brushed-brass base, slender turned brass column with small ornamental collar, cream linen gently tapered drum shade and brass ball finial. Warm subtle glow complements window daylight. The same man sits comfortably on cream sofa reading a plain unlettered book, wearing muted green polo and charcoal trousers. Lamp is primary, man secondary but recognizable. No floor-lamp conversion or giant lamp; preserve room layout. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/lamp.webp",
+          "sha256": "55c1d8485b5a75deb2f038a8ef3c9f791ac580a02f2e1765a88249484ab3a80e"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-db7c8188-28c0-4c41-be35-189caaf5e656.png",
+      "generatedAt": "2026-10-15T22:57:52.858Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 220834,
+        "sha256": "093443d1e9ab2cfd0bd159cb279d7f0c49c47de105abd12182485c928c65df73"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-020",
+      "skuId": "ME-020",
+      "label": "The woven linen cushion",
+      "category": "home",
+      "kind": "cushion",
+      "color": "Oat",
+      "type": "room",
+      "packshot": "/tmp/maison-release-v7/public/images/cushion.webp",
+      "id": "relaxed-man-50__compact-city__ME-020__room",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "room",
+      "primarySku": "ME-020",
+      "file": "relaxed-man-50__compact-city__ME-020__room.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-020__room.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-020__room.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "placed-in-room",
+      "displayMode": "product placed in the living room",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Landscape 3:2 photograph of the same compact-city living room. Place the EXACT oat woven linen square cushion from image 3 in the near foreground against the cream sofa arm, entire front clear with softly plump square shape, visible natural crosshatch linen texture and narrow flanged stitched border on all sides. Preserve warm pale oat color, no print, buttons or tassels. The same man sits naturally beside it on sofa in muted green polo and charcoal trousers, one relaxed hand resting gently on its upper corner without covering texture. Face recognizable, room cabinet, dining table, curtains and plants retained. Normal cushion scale. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/cushion.webp",
+          "sha256": "853d36cbe4293fff17415eb5540c995887abbcf4d55f78f68c711b70fcd1f929"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-c9d7f0fa-4135-4caf-a628-0b550dbf6438.png",
+      "generatedAt": "2026-10-15T22:58:55.290Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 213342,
+        "sha256": "62d539dae3ee986453ec0023f3b7a5902c16fa4f189e691bd7055ff843dddd12"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-023",
+      "skuId": "ME-023",
+      "label": "The morning porcelain set",
+      "category": "home",
+      "kind": "cup",
+      "color": "Chalk",
+      "type": "room",
+      "packshot": "/tmp/maison-release-v7/public/images/cup.webp",
+      "id": "relaxed-man-50__compact-city__ME-023__room",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "room",
+      "primarySku": "ME-023",
+      "file": "relaxed-man-50__compact-city__ME-023__room.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-023__room.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-023__room.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "placed-in-room",
+      "displayMode": "product placed in the living room",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Landscape 3:2 editorial photograph. On the near wood coffee table place the EXACT matching pair of chalk porcelain cups with saucers from image 3. Show exactly two cups and exactly two matching saucers, softly rounded tapered bowls, slender rims, curved loop handles, warm off-white/chalk speckled glaze. One cup sits nearer camera and the other slightly back, both complete and sharp, handles unoccluded. Same man in muted green polo sits on cream sofa behind, hand gently near the farther saucer but both cups rest on table. Calm coffee ritual in recognizable compact-city living room, normal cup proportions. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/cup.webp",
+          "sha256": "015826b035a705bda17c950788b47fee02c74b7e789c616732c3a8e17fe18853"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-9fbedea1-95c1-4352-a25c-83925d97b885.png",
+      "generatedAt": "2026-10-15T22:59:59.508Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 186282,
+        "sha256": "05d4805149616e0793d2c6338a815f084f3d7b0626270bb310a551cdfbf16a21"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-024",
+      "skuId": "ME-024",
+      "label": "The travertine tray",
+      "category": "home",
+      "kind": "tray",
+      "color": "Sand",
+      "type": "room",
+      "packshot": "/tmp/maison-release-v7/public/images/tray.webp",
+      "id": "relaxed-man-50__compact-city__ME-024__room",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "room",
+      "primarySku": "ME-024",
+      "file": "relaxed-man-50__compact-city__ME-024__room.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-024__room.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-024__room.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "placed-in-room",
+      "displayMode": "product placed in the living room",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Landscape 3:2 interior editorial photograph. Place the EXACT sand travertine rectangular tray from image 3 on the near wood coffee table, completely visible at a gentle three-quarter angle. Preserve creamy sandy natural porous stone texture, shallow rectangular recessed basin, thick low raised rim, softened rounded corners and solid stone edges. Tray is empty so its complete surface and outline are visible, normal tabletop proportions. The same man in muted green polo sits on cream sofa behind, one hand resting on table near tray, not covering it. Face clear and room recognizably same with glazed wood cabinet, plants and rear dining window. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/tray.webp",
+          "sha256": "f4cc70d749f309fe9dcc6e0c9f47e29fa833725b2332be83add47e0179f4ea0f"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-73fefbe9-0bde-483c-b0a6-114ce02989da.png",
+      "generatedAt": "2026-10-15T23:03:02.664Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 207522,
+        "sha256": "f277922d16b48831c20c1d437b6c95067037b14d6414a288c7e797795bf1cbfa"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-025",
+      "skuId": "ME-025",
+      "label": "The cropped trench",
+      "category": "women",
+      "kind": "coat",
+      "color": "Oat",
+      "type": "wear",
+      "packshot": "/tmp/maison-release-v7/public/images/coat-cropped.webp",
+      "id": "relaxed-man-50__compact-city__ME-025__wear",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-025",
+      "file": "relaxed-man-50__compact-city__ME-025__wear.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-025__wear.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-025__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "held-on-hanger",
+      "displayMode": "garment displayed on hanger",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Portrait 2:3 photograph, frame the same man from head to below knees beside his cream sofa wearing muted green polo and charcoal trousers. He holds a wooden hanger with the EXACT women's oat cropped cotton trench from image 3 beside his torso. Preserve pale oat cotton, cropped hip-length straight hem, double-breasted six tortoiseshell buttons, large notch collar and lapels, buttoned shoulder epaulettes, one front storm flap, slanted welt pockets, long sleeves with buckled/buttoned cuff straps. Entire garment front and both sleeves unobscured, independently hanging and not worn, no long coat or belt. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/coat-cropped.webp",
+          "sha256": "74f85f9e5af1b9e438fc2204894d53bc153d070f5419136c2b4ff79cef9083af"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-9241b7ca-4273-4968-a801-099924192bd4.png",
+      "generatedAt": "2026-10-15T23:04:06.708Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 184456,
+        "sha256": "efb12e9d2ebac1c849655f5ae7d587b28a9b7ab2b5db91846a77ef9a8a4aa553"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-026",
+      "skuId": "ME-026",
+      "label": "The everyday wool knit",
+      "category": "women",
+      "kind": "knit",
+      "color": "Blue",
+      "type": "wear",
+      "packshot": "/tmp/maison-release-v7/public/images/knit-blue.webp",
+      "id": "relaxed-man-50__compact-city__ME-026__wear",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-026",
+      "file": "relaxed-man-50__compact-city__ME-026__wear.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-026__wear.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-026__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "held-on-hanger",
+      "displayMode": "garment displayed on hanger",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Portrait 2:3 photograph, frame the same man from head to below knees beside his cream sofa, wearing his muted green polo and charcoal trousers. He holds a wooden hanger with the EXACT women's pale blue everyday wool knit from image 3 beside his torso. Preserve powder-blue fine-knit plain body, ribbed crew neckline, slim ribbed cuffs and hem, set-in shoulders and long softly full sleeves. Show full front, hem and both sleeves. Separate hanging garment, not worn. Do not confuse with warm oat knit in continuity image. His free hand lightly supports one cuff, face clearly recognizable. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/knit-blue.webp",
+          "sha256": "d4ef6a358b040a8f356a170945edcd9468c429494a9c516b771a10ade916ea2c"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-279f87e0-a9c0-4928-bc09-e2231ecbd5e7.png",
+      "generatedAt": "2026-10-15T23:06:52.972Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 186552,
+        "sha256": "956b5e43d9e2d6393d7942f0ccd6fb7ad2c78106220a5d6d174d8b91c6160528"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-027",
+      "skuId": "ME-027",
+      "label": "The canvas day bag",
+      "category": "accessories",
+      "kind": "bag",
+      "color": "Oat",
+      "type": "wear",
+      "packshot": "/tmp/maison-release-v7/public/images/bag-canvas.webp",
+      "id": "relaxed-man-50__compact-city__ME-027__wear",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "wear",
+      "primarySku": "ME-027",
+      "file": "relaxed-man-50__compact-city__ME-027__wear.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-027__wear.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-027__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "held-product",
+      "displayMode": "product held naturally",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Portrait 2:3 photograph, frame the same man from head to knees standing naturally beside his cream sofa in muted green polo and charcoal trousers. He carries the EXACT oat canvas day bag from image 3 in one hand by its two broad canvas shoulder handles at hip height, complete bag front facing camera. Preserve pale natural oat coarse canvas, unstructured generous rectangular tote body, two wide stitched straps, square stitched strap attachment patches, vertical side seams and open top, no leather trim, printing, hardware or logo. Normal useful everyday tote proportion and realistic fabric folds, fingers natural. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/bag-canvas.webp",
+          "sha256": "ad689cccbf85083dfdabc46a31bc17ebff589cb0dfd4246f5f354f81e9dbd626"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-de1f699a-f3e8-46cb-9916-34eab28edba3.png",
+      "generatedAt": "2026-10-15T23:07:52.504Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 191530,
+        "sha256": "735b71c0a15e9b47ec8c2c7cc61b453a81c6bc25d25c76f16b5ed6ba76b596f1"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    },
+    {
+      "sku": "ME-028",
+      "skuId": "ME-028",
+      "label": "The linen curtain sample",
+      "category": "home",
+      "kind": "throw",
+      "color": "Chalk",
+      "type": "room",
+      "packshot": "/tmp/maison-release-v7/public/images/throw-chalk.webp",
+      "id": "relaxed-man-50__compact-city__ME-028__room",
+      "personaId": "relaxed-man-50",
+      "homeId": "compact-city",
+      "room": "living",
+      "roomId": "living",
+      "sceneType": "room",
+      "primarySku": "ME-028",
+      "file": "relaxed-man-50__compact-city__ME-028__room.webp",
+      "fileName": "relaxed-man-50__compact-city__ME-028__room.webp",
+      "assetPath": "/tmp/maison-complete-city/relaxed-man-50__compact-city__ME-028__room.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "interaction": "placed-in-room",
+      "displayMode": "small linen fabric sample displayed on coffee table, no curtain installation implied",
+      "fullPrompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Input images: 1 exact fictional adult persona identity, 2 exact fictional compact-city living room, 3 exact SKU product packshot, 4 identity and room continuity only. Style: polished natural luxury editorial photography with realistic skin and tactile product materials, soft warm window daylight, calm everyday life. Landscape 3:2 close natural interior photograph. Show the EXACT chalk linen curtain FABRIC SAMPLE from image 3 lying folded loosely on the near wood coffee table, one small draped edge showing its airy translucent open weave, soft chalk off-white color and delicate hem. This is a modest fabric swatch for color preview, not a full blanket or installed curtain; keep all existing room curtains unchanged. The same man in muted green polo sits at cream sofa behind and gently touches one swatch edge with a hand, product texture sharp, face recognizable, glazed cabinet and rear dining window identifiable. Avoid huge swatch, fringe, tassels or decorative fabric pattern. Constraints: Preserve this same 50-year-old East Asian man's exact face, natural middle-aged skin, graying hair, softly rounded average-to-stocky build. Do not de-age or slim. Exactly one fully clothed adult, plausible anatomy and hands. Keep the recognizable compact-city living room with cream sofa, round wood dining table, cream-curtained rear window, glazed wood cabinet and trailing plants. A single continuous photo, no collage, no text, labels, brand logos, watermark or UI. No clinical, fit, size or measurement claims.",
+      "referenceProvenance": [
+        {
+          "imageIndex": 1,
+          "role": "exact fictional adult persona identity",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/personas/relaxed-man-50.jpg",
+          "sha256": "c556a5565295320a930ef68084aa1fc90d09d921f46be5409130cf4ce032725b"
+        },
+        {
+          "imageIndex": 2,
+          "role": "exact fictional compact-city living room",
+          "path": "/tmp/maison-release-v7/public/test-fixtures/homes/compact-city-living.jpg",
+          "sha256": "b7f6c285d7ea47f62d6d3e438e02f708e012f8f284c180efc1ebc42aa8c95753"
+        },
+        {
+          "imageIndex": 3,
+          "role": "exact primary SKU packshot and selected color",
+          "path": "/tmp/maison-release-v7/public/images/throw-chalk.webp",
+          "sha256": "3c4eeb106ab7890447bc7197bb7468a68275989c2c19d44e2c2bd304b0121a01"
+        },
+        {
+          "imageIndex": 4,
+          "role": "same persona and room continuity",
+          "path": "/tmp/maison-release-v7/public/personalized-scenes/relaxed-man-50__compact-city__ME-014__wear.webp",
+          "sha256": "dad28824c7eb2e8e43992726eb3e6bb42b63895d6252705924d09f62deee297e"
+        }
+      ],
+      "rawGenerationPath": "/workspace/scratch/15f65e6b91cc/generated_images/exec-e4df4618-abc5-4824-ab01-68de10cc2c3c.png",
+      "generatedAt": "2026-10-15T23:08:47.314Z",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=87 method=6, no crop or compositing after generation",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 189514,
+        "sha256": "7cc9d98080e7f09008c890341ae159e06d20bb8b1680677d531852b5c8801d3e"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "visualReview": {
+        "identityContinuity": true,
+        "roomContinuity": true,
+        "primaryProductRecognizable": true,
+        "selectedCatalogColorMatched": true,
+        "anatomyPlausible": true,
+        "noUIOrAddedBrandLogo": true,
+        "fitOrScaleVerified": false
+      }
+    }
+  ],
+  "generatedCount": 23,
+  "targetNewCount": 23,
+  "totalScenarioCoverage": 28,
+  "remainingSkus": [],
+  "updatedAt": "2026-10-15T23:11:36.705685+00:00",
+  "completionStatus": "completed",
+  "generationIssues": [
+    {
+      "skuId": "ME-008",
+      "issue": "Initial built-in generation returned upstream HTTP 504; no image returned.",
+      "resolution": "Retried built-in generation successfully; final output visually reviewed."
+    }
+  ]
+}

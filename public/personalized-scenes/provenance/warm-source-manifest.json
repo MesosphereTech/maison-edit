@@ -1,0 +1,1447 @@
+{
+  "schemaVersion": 1,
+  "project": "MAISON ÉDIT",
+  "scenarioId": "warm-everyday",
+  "personaId": "everyday-woman-45",
+  "homeId": "warm-family",
+  "roomId": "living",
+  "generator": "OpenAI built-in image_gen",
+  "generationMode": "reference-guided synthetic image generation",
+  "synthetic": true,
+  "realPersonalData": false,
+  "allPeopleAdults": true,
+  "fitVerified": false,
+  "roomScaleVerified": false,
+  "notice": "AI-generated synthetic demo scenes. Illustrative only; not verified fit, size, material, color, room measurement, physical product photograph or availability guarantee.",
+  "assets": [
+    {
+      "id": "everyday-woman-45__warm-family__ME-001__wear",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "wear",
+      "type": "wear",
+      "skuId": "ME-001",
+      "primarySku": "ME-001",
+      "color": "Walnut",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-001__wear.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-001__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Portrait 2:3, full body and both feet in frame. The woman wears the walnut-brown sculpted wool blazer in image 3, exact notched lapels, two dark buttons, shaped waist with darts and two horizontal welt pockets, long sleeves and soft structured shoulders. Show blazer front clearly over plain ivory top and dark navy trousers. Relaxed standing next to sofa, hands down, no handbag. Product color and tailoring closely follow packshot.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/blazer.webp",
+          "sha256": "f641f7ea1b811c57c986c01907c98adaaf0d5c2b644f445d6b607234627696fe"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-001__wear.png",
+      "rawSourceSha256": "9972d5db30f340f10ed19bf56a8fef3319db69fd68490906753cff7754f5a7fb",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 248418,
+        "sha256": "a28752da1ce4de569700ea7ca48b5972fd3d8ce18ef9e0968a9e915fc93c589c"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "interaction": "worn"
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-003__wear",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "wear",
+      "type": "wear",
+      "skuId": "ME-003",
+      "primarySku": "ME-003",
+      "color": "Walnut",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-003__wear.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-003__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Portrait 2:3, head-to-toe and both feet in frame. The woman wears the walnut/taupe high-waisted long wool trousers in image 3: buttoned waistband with belt loops, front pleat on each side, straight wide long legs with pressed creases. Preserve muted taupe walnut color and matte wool. Pair with a simple ivory tee neatly tucked to expose waistband and plain beige flats. Stand relaxed, slight three-quarter pose, hands down so entire trouser silhouette is clear.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/trouser.webp",
+          "sha256": "91aa6271fe46c2575a75c3bb84ebd41ccb00aa4d29701ab06bbda6d4cddf16ca"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-003__wear.png",
+      "rawSourceSha256": "06b8dae0feda03a0a70c120a671da3d7387e9593f2dd54f08167f4c938c31dbe",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 245656,
+        "sha256": "c78a67df24e8d029f903d412a427f57a951c87b810e7d07932cd6a5a7ebb4e22"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "interaction": "worn"
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-005__wear",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "wear",
+      "type": "wear",
+      "skuId": "ME-005",
+      "primarySku": "ME-005",
+      "color": "Champagne",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-005__wear.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-005__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Portrait 2:3, full head-to-toe photograph including both feet. The woman wears exactly the champagne satin midi skirt in image 3: narrow clean waistband, softly bias-cut A-line flowing lower half, warm pale champagne sheen, below-calf length and smooth unadorned silhouette. Pair with a plain dark navy tee neatly tucked and quiet beige flats. Natural relaxed slight turning pose beside sofa, skirt completely visible, no handbag.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/skirt.webp",
+          "sha256": "d791a9abf7670fb351c9e2d2bc0c374096d09e3cd1f47f0d77b6c090bb1bb669"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-005__wear.png",
+      "rawSourceSha256": "0c8950e4337a53a3c8fe02dfde24089e4d73ca5412cd2377c0b4f23a0915289e",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 222064,
+        "sha256": "f67f9fba7ffa532e94c9b0974bbc0524370d2ca53b2a4c7549057fc4a52abc2a"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "interaction": "worn"
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-006__wear",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "wear",
+      "type": "wear",
+      "skuId": "ME-006",
+      "primarySku": "ME-006",
+      "color": "Oat",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-006__wear.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-006__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Portrait 2:3, full body in frame. The woman wears exactly the oat cashmere pullover in image 3: soft warm oatmeal color, round ribbed crew neck, raglan seam sleeves, fine plain knit body, deep ribbed cuffs and hem and long sleeves, gently relaxed rather than oversized. Pair with plain navy trousers and beige flats. Hands relaxed at sides and sweater front clear. Natural everyday stance beside her sofa.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/knit.webp",
+          "sha256": "fbc99ef7808ab2557c0ae033f540ed0625591ce2120f6edabccff0e15e94ceec"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-006__wear.png",
+      "rawSourceSha256": "95f237ef91157386955ae689444336742249c079e06afc28a15e47891538eead",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 238084,
+        "sha256": "2d53225fd0aad9df6c6dc3ddcf59a5680d848b68b7b11d6b15aed4509ed91d55"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "interaction": "worn"
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-007__wear",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "wear",
+      "type": "wear",
+      "skuId": "ME-007",
+      "primarySku": "ME-007",
+      "color": "Burgundy",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-007__wear.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-007__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Portrait 2:3 natural photo, woman seated on grey sofa, entire head and body down to both shoes visible. One foot slightly forward on oak floor so both exact burgundy leather ballet flats from image 3 are clear in foreground: rounded almond toes, open low vamp, plain smooth burgundy leather, thin dark soles and tiny low heel, no bow or strap. Pair short plain navy trousers with ivory tee; no cropped head or isolated feet. Familiar middle-aged face and room visible. Natural human proportions.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/shoe.webp",
+          "sha256": "1ebec0b1fc2cd7f9f4c600794014f70e5bfd2a8ead24c493b8887d087216b080"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-007__wear.png",
+      "rawSourceSha256": "deea6771729123aaa2abc81b7b2f8c930e5bd39d8ee7eaaf565f7fbd829e4457",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 282784,
+        "sha256": "713d33059c49a5b5a0aaa4c53384c56f9f42433972aa256155b1d988d2bff887"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "interaction": "worn"
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-008__wear",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "wear",
+      "type": "wear",
+      "skuId": "ME-008",
+      "primarySku": "ME-008",
+      "color": "Brass",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-008__wear.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-008__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Portrait 2:3 intimate natural shoulder-up photograph of the woman beside the same living-room window, grey sofa and walnut bookcase still recognizable softly in background. She wears the exact pair of brushed brass/gold sculptural stud earrings from image 3: small curled leaf-like teardrops, folded convex surface with a diagonal recessed curl and subtle hammered texture, no gems, no dangling chain, no hoop. Hair tucked behind both ears, three-quarter angle with both earrings visible at plausible jewelry size. Wear a plain ivory crew-neck tee. Preserve mature facial lines, ordinary appearance, no beauty retouching. Earrings clear in focus.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/jewelry.webp",
+          "sha256": "25771c47afae012cf9f04caf1a6f49f9453ed92d9d4985bb4de4097e0040c33b"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-008__wear.png",
+      "rawSourceSha256": "9a74972e9ff70f36e66af35d394f56a7b5c9abca842142d2459bb02164df74bb",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 183370,
+        "sha256": "b91facc38484e6f9e2e1ccc7d186ce6b27f0a5240054b9da3048f7bc6897508b"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      },
+      "interaction": "worn"
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-009__wear",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "wear",
+      "type": "wear",
+      "skuId": "ME-009",
+      "primarySku": "ME-009",
+      "color": "Camel",
+      "interaction": "worn",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-009__wear.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-009__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Portrait 2:3, full head-to-toe photograph, both feet in frame. The woman wears exactly the camel long coat in image 3: warm camel matte wool, broad notched lapels, long sleeves, clean wrap front, matching fabric belt threaded through rectangular fabric-covered buckle at waist with hanging end, two angled welt pockets, calf-length hem. Preserve no visible buttons. Navy trousers and beige shoes beneath. Natural relaxed standing beside sofa with coat front clearly visible and hands down.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/coat.webp",
+          "sha256": "919597ddb24fb67b213c263bc96452b9598fe20c9f0fe756e94ba7f1cd0d2cf9"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-009__wear.png",
+      "rawSourceSha256": "bc2718cbac2de7d3fe799b1c1d1ab6541bed4860b6b6915303dde1d1a3dce161",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 253232,
+        "sha256": "d936c2bd39cdd07736afbf19da1bb46c9f899c70e0ddb6b8be36debf0cf2c10c"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-010__wear",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "wear",
+      "type": "wear",
+      "skuId": "ME-010",
+      "primarySku": "ME-010",
+      "color": "Chalk",
+      "interaction": "displayed-garment",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-010__wear.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-010__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Portrait 2:3 photograph framed head to below knee. The woman wears her ordinary ivory tee and navy trousers, standing naturally in the living room, and displays the exact mens chalk cotton band-collar shirt from image 3 on a plain wood hanger, holding hanger hook with one hand beside her body at shoulder height so her face and entire shirt are unobscured. Shirt has narrow stand/band collar with button, central light button placket, long sleeves with button cuffs, relaxed straight cut, curved hem, crisp matte white/chalk cotton and no chest pocket. Garment hangs plausibly under gravity; her other hand lightly supports lower edge. This is a displayed garment, not being worn. No second person, no mannequin.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/shirt-cotton.webp",
+          "sha256": "698570b5666fbe5095f3b7e7d1a54950c1e3458737a84a3ed70dad9ed46928a8"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-010__wear.png",
+      "rawSourceSha256": "4a34ab1bd8b4f4a3e6de141b6e5b5890d7fbb0cbf80a18e6ae09dfda8cfc3e63",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 189116,
+        "sha256": "b360dba182f7d5232dd2c4f0ceb84f4d387116f8f8f3075b5e01073041772dad"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-011__wear",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "wear",
+      "type": "wear",
+      "skuId": "ME-011",
+      "primarySku": "ME-011",
+      "color": "Ink",
+      "interaction": "displayed-garment",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-011__wear.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-011__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Portrait 2:3 full body photograph including feet. The woman in ordinary ivory tee and plain navy trousers displays the exact mens ink navy wool trousers in image 3 on a wood clip hanger, holding the hanger at shoulder height beside her body so complete garment from waistband to hems is visible and her face is unobscured. Trousers hang under gravity, waistband horizontal: exact dark ink wool, small brown button closure, side-adjuster tabs, two forward pleats each side, pressed creases, straight long legs, plain hems. Hanger clips at outer waistband. Her free hand rests naturally by her side. It is a held garment, not worn or floating; no second person or mannequin.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/trouser-ink.webp",
+          "sha256": "b11c55f492a939607f40b4e4e83c361e413e2cf24ce85438e60bb6c6044ef718"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-011__wear.png",
+      "rawSourceSha256": "ac6daa35503fa196be7c59a00b25fecfd13fbe0a236087ce0a2aee782aa5922f",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 225012,
+        "sha256": "578c6c3d753192135bae886ec47962d023c7a0716d5bf3efbc7f4a2e3395f73a"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-012__wear",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "wear",
+      "type": "wear",
+      "skuId": "ME-012",
+      "primarySku": "ME-012",
+      "color": "Ink",
+      "interaction": "displayed-garment",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-012__wear.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-012__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Portrait 2:3 photograph head to below knees. The woman in ordinary ivory tee and navy trousers displays the exact mens ink navy wool jacket from image 3 on a plain wood hanger beside her body. Her face is clear and the whole jacket is visible, held at shoulder height, hanging naturally. Exact dark ink navy matte wool, notched lapels, two dark brown buttons, rounded front hem, two large rounded patch pockets at hips and single welt chest pocket. Preserve soft relaxed mens tailoring, no fitted female waist. Her other hand gently holds sleeve edge without obscuring the front. No other person, no mannequin.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/blazer-ink.webp",
+          "sha256": "63173ffeb36ccd91fc9df3e824c0f40360c1f040347194a890ba2f22ffa40006"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-012__wear.png",
+      "rawSourceSha256": "696ab9334a715b0f79c9d145cf6d82094dda7b6c8aa7dc11950cba5c1d2770bb",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 233256,
+        "sha256": "863c00bcc0408aa5b5c6bd1476089ebe210bfa10a7b4422c89281d9929d4a819"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-013__wear",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "wear",
+      "type": "wear",
+      "skuId": "ME-013",
+      "primarySku": "ME-013",
+      "color": "Walnut",
+      "interaction": "worn",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-013__wear.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-013__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Portrait 2:3 natural photo of the woman seated casually on grey sectional, full head and full body down to both shoes in frame. She wears the exact walnut-brown suede loafers from image 3: plain broad uppers, stitched apron toe edges, softly rounded almond toes, low dark stacked heels and thin dark soles, no tassel or metal, true brown suede texture. Both feet rest uncrossed on oak floor, one slightly forward so shoes clear. Plain navy trousers with hems above shoes, ivory tee. Face recognizable, natural relaxed body. No duplicate feet, no oversized shoes.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/shoe-suede.webp",
+          "sha256": "8ea86e44800434db615fea7b9e5dd150becdbd01399682f6484e66263bb2351f"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-013__wear.png",
+      "rawSourceSha256": "b87b6baeb9c844af997f66cd0fd422699508a8ba588f23d1735c83f837a9fdac",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 293868,
+        "sha256": "7c271edbdd34d3ca9a205a4ebf5bd88625896c03cf5e0cb481329fb23d9660c1"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-014__wear",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "wear",
+      "type": "wear",
+      "skuId": "ME-014",
+      "primarySku": "ME-014",
+      "color": "Oat",
+      "interaction": "displayed-garment",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-014__wear.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-014__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Portrait 2:3 framed head to below knees. The woman wearing ordinary ivory tee and navy trousers displays the exact mens oat fine-rib knit sweater from image 3 on a broad plain wood hanger beside her at shoulder height. Her face and complete sweater remain unobscured. Preserve warm pale oat color, fine close vertical ribs across body and long sleeves, simple round ribbed crew neck, straight hem with narrow rib trim and ribbed cuffs, classic straight mens cut. No raglan diagonal seams, no cable knit or plain smooth body. Free hand lightly supports a cuff. Garment hangs realistically; not worn, not a mannequin.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/knit-rib.webp",
+          "sha256": "a77287da6ed02c79cb3b59dc432c351ed0f67505a419be118e0be1c243fa9030"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-014__wear.png",
+      "rawSourceSha256": "62936185652d0ca69fba175f698b5a654ad00bfa4354e0a9c9cdde800c858c8b",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 270750,
+        "sha256": "688a89ec094342e6442e5f0576ab18d5049fce37c8a941fcdf26c94447a03105"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-016__wear",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "wear",
+      "type": "wear",
+      "skuId": "ME-016",
+      "primarySku": "ME-016",
+      "color": "Walnut",
+      "interaction": "worn",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-016__wear.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-016__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Portrait 2:3 natural lifestyle photograph framed full head to mid thighs so face and belt both clear. Woman wears a plain ivory cotton shirt neatly tucked into simple navy tailored trousers and the exact narrow walnut-brown leather belt from image 3. Show belt encircling trouser waist naturally, small rectangular brushed brass single-prong buckle front and center, stitched brown leather edges, matching leather keeper and rounded tip extending modestly. Correct realistic narrow width, not an oversized corset. Hands relaxed at sides, belt unobscured. She stands near the grey sofa in recognizable home.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/belt.webp",
+          "sha256": "4a91fccd7a7c69f5dd5294c466887eacabc04ac4638794fbe039df2c9cfa84d7"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-016__wear.png",
+      "rawSourceSha256": "88fc342155f776df86f33981c0e86c7622ac3e099cd30d2b2e7e2a33ace8ad83",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 198676,
+        "sha256": "3da38a438b4524f2993f334c8ca6805cec3d4e941b0b9a7c0c60896579bc885c"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-018__room",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "room",
+      "type": "room",
+      "skuId": "ME-018",
+      "primarySku": "ME-018",
+      "color": "Chalk",
+      "interaction": "room-placement",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-018__room.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-018__room.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Landscape 3:2 natural interior photograph. Put the exact chalk hand-formed ceramic vessel from image 3 on the walnut coffee table in foreground: round bulbous pear-like body, softly asymmetric narrower neck, gently flared irregular round lip, pale creamy chalk speckled matte glaze and small beige foot. Preserve its singular shape, no handles or geometric cylinder. One simple leafy stem may stand within it without hiding neck. The same woman in ivory tee and navy trousers sits on grey sofa just behind, recognizable face visible, one hand resting on table near vessel without obscuring it. Whole vase clearly visible at plausible tabletop size, primary product in focus. Room architecture recognizable.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/vase.webp",
+          "sha256": "20549d3fb3ee3c3ba8d43a6645fb274fb663e59debce1d830806ec922e7e7f9a"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-018__room.png",
+      "rawSourceSha256": "e8020b4c116d94a6fb93c61b4d817e9c7289a9d1256acdd0e8cbddf20ca019ea",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 234300,
+        "sha256": "d4af36a40700415a7faa1598ab1c80f85acb98fc97d9caee960b77b798bf05e3"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-020__room",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "room",
+      "type": "room",
+      "skuId": "ME-020",
+      "primarySku": "ME-020",
+      "color": "Oat",
+      "interaction": "room-placement",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-020__room.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-020__room.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Landscape 3:2 natural interior photo. Place the exact oat woven linen cushion from image 3 prominently against grey sectional backrest in foreground: square plump pale oatmeal linen, coarse natural slub weave, narrow flange seam border on four sides, no piping, tassel, printed pattern or buttons. The woman in ivory tee and navy trousers sits comfortably beside it with one hand resting lightly on its top corner; her face visible and consistent. Cushion face largely unobscured and its texture in focus, realistic couch cushion size. Retain warm living room window, walnut bookshelves, wood dining table and plants.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/cushion.webp",
+          "sha256": "853d36cbe4293fff17415eb5540c995887abbcf4d55f78f68c711b70fcd1f929"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-020__room.png",
+      "rawSourceSha256": "55c14978a3caec9400922bcbe9d5ad74c5aa6bad7a6136fe1bfd60eaf602f3a1",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 267184,
+        "sha256": "f9e78f6a08ce3d02fd05f4c8f560b6f28b42c6e8745a7b5b5bab2ba099600c31"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-021__room",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "room",
+      "type": "room",
+      "skuId": "ME-021",
+      "primarySku": "ME-021",
+      "color": "Oak",
+      "interaction": "room-placement",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-021__room.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-021__room.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Landscape 3:2 natural interior photo. Position the exact oak round side table from image 3 beside near end of grey sectional, whole table visible in foreground from top to floor: thick softly rounded circular golden-oak top, single hourglass-shaped sculpted wood pedestal narrowing under top then flaring to broad round base, natural visible oak grain. Do not add legs, drawer or metal. Place only an ordinary unlettered small book and tea cup near back edge, leave table silhouette and grain mostly clear. The same woman in ivory tee and navy trousers sits relaxed beside it, face visible, hand near cup. Retain recognizable warm-family architecture and furniture. Table primary subject at plausible side-table scale, no giant dining table.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/table.webp",
+          "sha256": "4c2dfb2d52d618b9449f393f4b3392b68242e8d849d03e77b61bcd0b867e1df6"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-021__room.png",
+      "rawSourceSha256": "aebf754f567b5cc7016c318954105804b673c9a774b504d69e7e1452fe20e214",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 292884,
+        "sha256": "56268f7ce2cac7bd213cb9a9679cea5e659dfe0d6b61076cff6a6bf1c429ae3f"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-022__room",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "room",
+      "type": "room",
+      "skuId": "ME-022",
+      "primarySku": "ME-022",
+      "color": "Blue",
+      "interaction": "room-placement",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-022__room.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-022__room.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Landscape 3:2 natural interior photo. Drape the exact abstract wool throw from image 3 over the near arm and seat of grey sectional, generous visible fabric area primary in foreground. Preserve powder-blue, cream and darker dusty-blue large abstract block pattern, fine soft wool texture and twisted blue-and-cream fringe along end. No brown plaid, no simple stripe or solid blanket. Woman in ivory tee and navy trousers sits at other end of sofa, face recognizable and one hand rests on throw edge. Blanket must not cover face, hands or whole room. Familiar architecture and furniture in view, cozy refined daylight.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/throw.webp",
+          "sha256": "636657338d7ed8b8dcf58219d98ff9b9c301b74e3810c0b77ac85a5b0b6f212c"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-022__room.png",
+      "rawSourceSha256": "f9d4747bbda5643199c0086b58412ead82594b95af96d3603f9480ab77d56e17",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 270962,
+        "sha256": "e86ba60a1a89a99d4478862f5f36f28660ca0c004ac289ba2dc65831311b4328"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-023__room",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "room",
+      "type": "room",
+      "skuId": "ME-023",
+      "primarySku": "ME-023",
+      "color": "Chalk",
+      "interaction": "tabletop-display",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-023__room.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-023__room.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Landscape 3:2 natural lifestyle interior photo from modestly lowered eye level toward walnut coffee table. The exact pair of chalk porcelain coffee cups with matching saucers from image 3 sits in foreground, both cups and saucers fully visible, primary product in focus: warm chalk/off-white light-speckled glaze, round gently tapered bowls, plain rounded handles, thin rim, no pattern or lettering. One cup contains coffee, the other empty. Woman in ivory tee and navy trousers sits behind on grey sofa and reaches naturally toward one handle, her recognizable face visible. Natural tabletop size and realistic porcelain reflections. Same room, no extra cups in foreground, no giant cup, no text.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/cup.webp",
+          "sha256": "015826b035a705bda17c950788b47fee02c74b7e789c616732c3a8e17fe18853"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-023__room.png",
+      "rawSourceSha256": "cdd994c8f1cdf49938c3ce7f8a7260299961163742fa204976f8713d985dc6c2",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 211600,
+        "sha256": "7198f3d83aea3a8122190528edd14881d80febdea5e8539b7c372fde7423c924"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-024__room",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "room",
+      "type": "room",
+      "skuId": "ME-024",
+      "primarySku": "ME-024",
+      "color": "Sand",
+      "interaction": "tabletop-display",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-024__room.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-024__room.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Landscape 3:2 natural living-room photograph, walnut coffee table in foreground. Place exact sand travertine tray from image 3 centrally on table, full silhouette visible and primary in focus: shallow rectangular stone dish with rounded corners, low thick raised rim, beige sand color with characteristic porous pits and subtle natural veins. No handles, metal or changed shape. Two small ordinary keys and a simple unlettered closed notebook may sit on one far corner but leave most inner tray surface visible. Woman in ivory tee and navy trousers sits on grey sofa behind, recognizable face visible, one hand rests on table beside tray. Natural object scale, same room and warm refined daylight.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/tray.webp",
+          "sha256": "f4cc70d749f309fe9dcc6e0c9f47e29fa833725b2332be83add47e0179f4ea0f"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-024__room.png",
+      "rawSourceSha256": "a3bfcd4161f8a6470e2655f8daf54ebb14290205321dd8c6a3766a56e37e4d35",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 256926,
+        "sha256": "0b5b5c34bc33d87418b59a5ba05c6db17f8bb3d81797050c2f220872b7752f2e"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-025__wear",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "wear",
+      "type": "wear",
+      "skuId": "ME-025",
+      "primarySku": "ME-025",
+      "color": "Oat",
+      "interaction": "worn",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-025__wear.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-025__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Portrait 2:3 full body natural photograph including feet. Woman wears exactly the cropped oat cotton trench jacket from image 3: pale warm oat/beige cotton, short hip length, double-breasted front with six mottled brown buttons in two columns of three, pointed notched collar/lapels, shoulder epaulettes with button, front chest storm flap on one side, angled welt pockets, long sleeves with buttoned cuff straps. No belt, no full-length coat, no added logo. Pair plain navy trousers and beige flats. Standing relaxed with both hands at sides, jacket front unobscured, same room.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/coat-cropped.webp",
+          "sha256": "74f85f9e5af1b9e438fc2204894d53bc153d070f5419136c2b4ff79cef9083af"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-025__wear.png",
+      "rawSourceSha256": "669bb6292dccfd2102232518f954ecd98fdc964da9388abcfee9763437cf776a",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 220540,
+        "sha256": "3e9043f02ce92f4b20b5a8ff29d02b3242bed6b89fcda008c07f08584172a1aa"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-026__wear",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "wear",
+      "type": "wear",
+      "skuId": "ME-026",
+      "primarySku": "ME-026",
+      "color": "Blue",
+      "interaction": "worn",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-026__wear.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-026__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Portrait 2:3 full-body natural photograph including feet. Woman wears exactly the powder-blue fine wool knit sweater from image 3: simple round ribbed crew neck, smooth fine-gauge knit body in soft pale blue, classic set-in long sleeves, ribbed cuffs and hem, relaxed ordinary shape. Not vertical rib-knit body, not cable knit, no patterns or logos. Pair simple navy trousers and beige flats. Stand relaxed next to grey sofa, hands down so sweater front, hem and sleeves unobscured. Face and ordinary mature body preserved.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/knit-blue.webp",
+          "sha256": "d4ef6a358b040a8f356a170945edcd9468c429494a9c516b771a10ade916ea2c"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-026__wear.png",
+      "rawSourceSha256": "2c317c29fd49999d59616439638be8bf12d09722e2bb037df5e08ae2c33e809d",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 232478,
+        "sha256": "b0ef0fb406a95c614f42e835a8fb88fe7de423b3a3b7e3e0f2980e89946a3797"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-027__wear",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "wear",
+      "type": "wear",
+      "skuId": "ME-027",
+      "primarySku": "ME-027",
+      "color": "Oat",
+      "interaction": "carried",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-027__wear.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-027__wear.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Portrait 2:3 natural photo framed head to below knees. The woman in ivory tee and navy trousers carries exactly the oat canvas day tote from image 3 by its two long flat canvas handles in one hand beside her hip, fully visible front. Preserve warm unbleached oatmeal canvas texture, softly structured broad rectangular body, open top, boxed bottom corners, side seams, reinforced square cross-stitch handle attachments, no exterior pocket or logo, no leather trim, no shoulder strap. Hand holds both handles naturally, bag hangs under gravity at realistic daily tote scale, front unobscured. Recognizable warm living room surrounds her.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/bag-canvas.webp",
+          "sha256": "ad689cccbf85083dfdabc46a31bc17ebff589cb0dfd4246f5f354f81e9dbd626"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-027__wear.png",
+      "rawSourceSha256": "a4b4b3c2c8644b9deeb6b378ef3d808f13cf9422c034e5fff20d3f38435aee26",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1024,
+        "height": 1536,
+        "bytes": 235646,
+        "sha256": "05b6628346b1baca7547abb69cf7a829044544401b7dba05a4021757c48b204f"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    },
+    {
+      "id": "everyday-woman-45__warm-family__ME-028__room",
+      "scenarioId": "warm-everyday",
+      "personaId": "everyday-woman-45",
+      "homeId": "warm-family",
+      "roomId": "living",
+      "sceneType": "room",
+      "type": "room",
+      "skuId": "ME-028",
+      "primarySku": "ME-028",
+      "color": "Chalk",
+      "interaction": "held-sample",
+      "presetKey": "everyday-woman-45/warm-family/living",
+      "file": "everyday-woman-45__warm-family__ME-028__room.webp",
+      "fileName": "everyday-woman-45__warm-family__ME-028__room.webp",
+      "generationStatus": "generated",
+      "reviewStatus": "visually-reviewed",
+      "reviewNotes": "Reviewed identity, product silhouette/color, natural anatomy and recognizable warm-family room.",
+      "prompt": "Use case: photorealistic-natural. Asset type: reference-guided synthetic prepared shopping scene for MAISON EDIT. Create one standalone natural luxury lifestyle photograph, soft warm window daylight, real skin and fabric texture, refined but genuinely lived-in family home. Input images: 1 = exact fictional adult woman identity; 2 = exact warm-family living room architecture; 3 = exact SKU product packshot in its selected primary color; 4 = existing prepared scene for person and home continuity only. Preserve the woman's middle-aged face, shoulder-length dark brown hair, natural average-to-soft build and age. Do not de-age, slim, change ethnicity or glamourize. Same grey sectional, walnut bookcase, window, cream curtains, wood dining table and plants. Single continuous photo; one fully clothed adult, plausible anatomy and hands, no collage, no text, logo, watermark or UI. Illustrative visualization only, no verified fit or room scale. Landscape 3:2 natural lifestyle photo of the woman at the living room window, her face fully visible and grey sectional, walnut bookcase and dining area recognizable behind. She wears ivory tee and navy trousers and holds a SMALL rectangular chalk cotton-linen curtain fabric sample in both hands at lower chest level, perhaps 30 by 45 centimetres as a visual approximation, not an installed curtain or full blanket. Reference image 3 defines only the fabric appearance: off-white chalk, fine open crosswoven linen texture, soft semi-sheer cloth, no pattern, no fringe. Let sample hang loosely between her hands with soft folds, one edge catching daylight to show translucency, cloth fully visible below face. Keep the EXISTING installed cream curtains unchanged. Emphasize small physical textile swatch used to compare color with this room; no roll, no package, no sample card text, no installation or measurement claim.",
+      "inputReferences": [
+        {
+          "index": 1,
+          "role": "synthetic-persona-identity",
+          "sourcePublicPath": "/test-fixtures/personas/everyday-woman-45.jpg",
+          "sha256": "8739f7e96bd235c762dfcaec27ed00a1ebc54313e58550c9641c6a1f6887366d"
+        },
+        {
+          "index": 2,
+          "role": "synthetic-home-room",
+          "sourcePublicPath": "/test-fixtures/homes/warm-family-living.jpg",
+          "sha256": "e64f7e3a54b2ecaadeb92b0138e5dad97cc6bcec4194b2b9214c1d02da30f43e"
+        },
+        {
+          "index": 3,
+          "role": "primary-sku-packshot-exact-variant",
+          "sourcePublicPath": "/images/throw-chalk.webp",
+          "sha256": "3c4eeb106ab7890447bc7197bb7468a68275989c2c19d44e2c2bd304b0121a01"
+        },
+        {
+          "index": 4,
+          "role": "existing-synthetic-scene-continuity",
+          "sourcePublicPath": "/personalized-scenes/everyday-woman-45__warm-family__ME-015__wear.webp",
+          "sha256": "60898af8b7172598f76736af5238495b0c0a6e23530d4e95fe1cc3c0cec42695"
+        }
+      ],
+      "rawSourceFile": "raw/everyday-woman-45__warm-family__ME-028__room.png",
+      "rawSourceSha256": "82b2d6306285fae2536793f94db9a77cec61ffa727720eeabfd3508477bff40a",
+      "output": {
+        "mimeType": "image/webp",
+        "conversion": "RGB WebP quality=89, method=6; no crop or compositing after generation",
+        "width": 1536,
+        "height": 1024,
+        "bytes": 206382,
+        "sha256": "e2ee813c5c51e62b8bb67a25a9a56fcd1900038816df78859a95528dec082a5d"
+      },
+      "claims": {
+        "measuredBody": false,
+        "verifiedFit": false,
+        "verifiedRoomScale": false,
+        "exactPhysicalProduct": false
+      }
+    }
+  ],
+  "updatedAt": "2026-10-15T23:07:00.932505+00:00",
+  "generatedCount": 23,
+  "remainingSkus": []
+}

@@ -1,0 +1,263 @@
+/* One anchored contour lap, followed by small non-glyph pixels. The live
+   bubble never donates its surface or becomes inert during the effect. */
+.concierge-attention-frame {
+  contain: layout style;
+  will-change: auto;
+  border-radius: 10px;
+}
+.concierge-attention-frame .attention-shell-fill {
+  display: none;
+}
+.concierge-attention-frame .attention-shell-outline {
+  stroke: #bd8a3c;
+  stroke-width: 2.6px;
+  stroke-dasharray: 25 75;
+  stroke-linecap: round;
+  filter: drop-shadow(0 0 4px #e4bc78d9);
+  opacity: 0;
+}
+.concierge-attention-frame .attention-shell-halo {
+  stroke: #c49a5e;
+  stroke-width: 1.4px;
+  stroke-dasharray: none;
+  filter: none;
+  opacity: 0;
+}
+.concierge-particle-field {
+  position: fixed;
+  inset: 0;
+  z-index: 111;
+  pointer-events: none;
+  overflow: hidden;
+  contain: strict;
+}
+.concierge-magic-pixel {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #bd8a3c;
+  box-shadow: 0 0 4px 1px #dbb36b9c;
+  will-change: transform, opacity;
+}
+.concierge-magic-pixel.is-leading {
+  background: #dfb66b;
+  box-shadow: 0 0 6px 2px #d7aa5b99;
+}
+/* One soft edge accent acknowledges arrival. The persistent bubble does not
+   translate, resize or flash; controls and screen-reader copy stay available. */
+.subtitle-concierge .subtitle-bubble[data-persistent-surface]::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid #b68a49;
+  border-radius: inherit;
+  box-shadow: inset 0 0 12px #d6ae6529;
+  opacity: 0;
+  pointer-events: none;
+}
+.subtitle-concierge .subtitle-bubble.has-attention-arrival::after {
+  animation: bubble-attention-arrival 320ms ease-out both;
+}
+@keyframes bubble-attention-arrival {
+  0% {
+    opacity: 0;
+  }
+  24% {
+    opacity: 0.95;
+  }
+  55% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* Passive product copy is already readable during the decorative lap. */
+.bubble-progressive-copy[data-copy-mode="immediate"] .bubble-reveal-phrase {
+  animation: none;
+  opacity: 1;
+}
+.concierge-attention-current > .product-visual,
+.concierge-attention-current .detail-visual {
+  outline: 1px solid #b58a49;
+  outline-offset: 3px;
+}
+.subtitle-concierge .subtitle-bubble[data-persistent-surface] {
+  animation: none;
+  transform: none;
+  opacity: 1;
+  transition:
+    opacity 240ms ease,
+    background-color 240ms ease;
+}
+.bubble-progressive-copy {
+  display: block;
+}
+.bubble-current-subject {
+  display: block;
+  margin-bottom: 7px;
+  font-family: var(--sans);
+  font-size: 0.62em;
+  letter-spacing: 0.06em;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+.bubble-reveal-phrase {
+  opacity: 0;
+  animation: bubble-phrase-reveal 520ms ease var(--phrase-delay, 0ms) forwards;
+}
+@keyframes bubble-phrase-reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.subtitle-concierge.is-yielding:not(.is-history-expanded) {
+  width: min(232px, calc(100vw - 28px));
+  transition:
+    left 320ms cubic-bezier(0.22, 0.7, 0.2, 1),
+    bottom 320ms cubic-bezier(0.22, 0.7, 0.2, 1);
+}
+.subtitle-concierge.is-yielding:not(.is-history-expanded) .subtitle-bubble {
+  opacity: 0.5;
+  padding: 12px 29px 12px 15px;
+}
+.subtitle-concierge.is-yielding:not(.is-history-expanded) .bubble-text {
+  font-size: 13px;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.subtitle-concierge.is-yielding:not(.is-history-expanded) .bubble-piece,
+.subtitle-concierge.is-yielding:not(.is-history-expanded)
+  .bubble-owned-reference,
+.subtitle-concierge.is-yielding:not(.is-history-expanded) .bubble-replies,
+.subtitle-concierge.is-yielding:not(.is-history-expanded)
+  .subtitle-footnote
+  > span {
+  display: none;
+}
+.subtitle-concierge.is-yielding:not(.is-history-expanded) .subtitle-heading {
+  font-size: 8px;
+  padding-bottom: 6px;
+  letter-spacing: 0.8px;
+}
+.subtitle-concierge.is-yielding:not(.is-history-expanded)
+  .subtitle-controls
+  button {
+  min-width: 27px;
+  height: 28px;
+  font-size: 16px;
+}
+/* Fixed input is always centered, even while the reading bubble yields. */
+.subtitle-concierge.is-yielding .subtitle-composer {
+  opacity: 1;
+}
+body:has(.modal[data-concierge-current-product]) > #root ~ .subtitle-concierge,
+body:has(.modal[data-concierge-current-product]) > .subtitle-concierge {
+  z-index: 102;
+}
+@media (max-width: 899px) {
+  body:has(> .subtitle-concierge:not(.is-minimized))
+    .overlay:has(.modal[data-concierge-current-product]) {
+    align-items: flex-start;
+  }
+  body:has(> .subtitle-concierge:not(.is-minimized))
+    .overlay
+    .modal[data-concierge-current-product] {
+    max-height: max(120px, calc(100dvh - 350px));
+  }
+  body:has(.modal[data-concierge-current-product])
+    > .subtitle-concierge
+    .bubble-piece {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .concierge-attention-frame,
+  .concierge-particle-field {
+    display: none;
+  }
+  .subtitle-concierge .subtitle-bubble.has-attention-arrival::after {
+    animation: none;
+    opacity: 0;
+  }
+  .subtitle-concierge .bubble-reveal-phrase {
+    animation: none;
+    opacity: 1;
+  }
+  .subtitle-concierge.is-yielding,
+  .subtitle-concierge .subtitle-bubble[data-persistent-surface] {
+    transition: none;
+  }
+}
+
+.subtitle-concierge.is-yielding:not(.is-history-expanded) .subtitle-footnote {
+  display: none;
+}
+
+.subtitle-concierge.is-leaving .subtitle-bubble[data-persistent-surface] {
+  opacity: 0;
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+  body:has(> .subtitle-concierge.is-yielding)
+    .overlay:has(.modal[data-concierge-current-product]) {
+    align-items: flex-start;
+  }
+  body:has(> .subtitle-concierge.is-yielding)
+    .overlay
+    .modal[data-concierge-current-product] {
+    max-height: max(220px, calc(100dvh - 400px));
+  }
+}
+
+/* Explicit dismissal still has a gentle exit on this very same DOM node. */
+.subtitle-concierge .subtitle-bubble[data-persistent-surface].is-retiring {
+  opacity: 0;
+  transform: translate3d(0, -5px, 0);
+  transition:
+    opacity 360ms ease,
+    transform 360ms ease;
+  pointer-events: none;
+}
+:lang(zh-CN)
+  .subtitle-concierge.is-yielding:not(.is-history-expanded)
+  .bubble-text {
+  font-size: 13px;
+  line-height: 1.6;
+}
+@media (prefers-reduced-motion: reduce) {
+  .subtitle-concierge .subtitle-bubble[data-persistent-surface].is-retiring {
+    transition: none;
+    transform: none;
+  }
+}
+
+/* A card acknowledges entry even when another visible piece owns the reply. */
+.concierge-just-visible > .product-visual {
+  animation: catalog-visible-cue 420ms ease-out both;
+}
+@keyframes catalog-visible-cue {
+  0%,
+  35% {
+    box-shadow:
+      0 0 0 1px #b58a4980,
+      0 0 12px #d9bc7d33;
+  }
+  100% {
+    box-shadow:
+      0 0 0 1px transparent,
+      0 0 0 transparent;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .concierge-just-visible > .product-visual {
+    animation: none;
+  }
+}

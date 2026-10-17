@@ -1,0 +1,428 @@
+.gift-editor {
+  border: 1px solid #d9cbb7;
+  background: #f8f4ed;
+  padding: 18px;
+  color: #49332f;
+  min-width: 0;
+}
+.gift-editor-heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.gift-symbol {
+  font-size: 27px;
+  color: #9a7849;
+  line-height: 1;
+}
+.gift-editor .gift-eyebrow {
+  margin: 0 0 4px;
+  color: #957445;
+  font-size: 7px;
+  letter-spacing: 1.7px;
+  line-height: 1.4;
+}
+.gift-editor-heading h3 {
+  font: 400 16px/1.4 var(--serif, Georgia, serif);
+  color: #603340;
+  margin: 0;
+}
+.gift-editor fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+.gift-intent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+.gift-intent label {
+  position: relative;
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+  background: #fffdf9;
+  border: 1px solid #ded3c4;
+  padding: 10px 6px;
+  font-size: 10px;
+  cursor: pointer;
+}
+.gift-intent label.is-selected {
+  color: #603340;
+  border-color: #86624d;
+  background: #ece3d5;
+}
+.gift-editor input[type="radio"],
+.gift-editor input[type="checkbox"] {
+  accent-color: #653544;
+  width: 13px;
+  height: 13px;
+  margin: 0;
+  flex-shrink: 0;
+}
+.gift-editor label:focus-within {
+  outline: 2px solid #9c7b51;
+  outline-offset: 3px;
+}
+.gift-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+.gift-details {
+  display: grid;
+  gap: 16px;
+  padding-top: 14px;
+}
+.gift-editor .gift-help {
+  font-size: 10px;
+  color: #7a6c62;
+  line-height: 1.8;
+  margin: 0;
+}
+.gift-packaging-options legend {
+  padding: 0;
+  font-size: 10px;
+  color: #603340;
+  margin-bottom: 9px;
+}
+.gift-packaging-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 7px;
+}
+.gift-packaging-option {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  border: 1px solid #ddd0be;
+  background: #fffcf6;
+  padding: 0 0 10px;
+  cursor: pointer;
+}
+.gift-packaging-option.is-selected {
+  border-color: #70424a;
+  box-shadow: 0 0 0 1px #70424a;
+}
+.gift-packaging-option > input {
+  position: absolute;
+  z-index: 1;
+  top: 7px;
+  left: 7px;
+}
+.gift-packaging-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: #e9e0d2;
+  width: 100%;
+}
+.gift-packaging-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gift-packaging-name {
+  font-size: 10px;
+  color: #603340;
+  margin: 9px 7px 3px;
+  line-height: 1.45;
+}
+.gift-packaging-description {
+  font-size: 8px;
+  color: #8b7968;
+  line-height: 1.5;
+  margin: 0 7px;
+}
+.gift-packaging-check {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  background: #653544;
+  color: #fffaf0;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+}
+.gift-packaging-check:empty {
+  display: none;
+}
+.gift-box-concept {
+  display: block;
+  width: 62%;
+  height: 47%;
+  background: #f6efe2;
+  border: 1px solid #d4c5b0;
+  box-shadow: 4px 9px 12px #8a6f4e25;
+  transform: rotate(-8deg);
+  position: relative;
+}
+.gift-box-concept::before,
+.gift-box-concept::after {
+  content: "";
+  position: absolute;
+  background: #6a303e;
+}
+.gift-box-concept::before {
+  top: 0;
+  bottom: 0;
+  left: 43%;
+  width: 13%;
+}
+.gift-box-concept::after {
+  left: 0;
+  right: 0;
+  top: 40%;
+  height: 20%;
+}
+.gift-box-concept i {
+  position: absolute;
+  z-index: 1;
+  width: 34%;
+  height: 26%;
+  border: 3px solid #6a303e;
+  border-radius: 50% 50% 12% 12%;
+  left: 32%;
+  top: 20%;
+  transform: rotate(-20deg);
+}
+.gift-visual-floral-accent {
+  background: #ede1da;
+}
+.gift-visual-floral-accent .gift-box-concept {
+  background: #e2d3cb;
+}
+.gift-visual-floral-accent .gift-box-concept::before,
+.gift-visual-floral-accent .gift-box-concept::after {
+  background: #8b8e72;
+}
+.gift-visual-floral-accent .gift-box-concept i {
+  border-color: #8b8e72;
+}
+.gift-visual-recycled-cotton {
+  background: #e5e2d4;
+}
+.gift-visual-recycled-cotton .gift-box-concept {
+  border-radius: 15% 15% 27% 27%;
+  background: #d8ccb2;
+}
+.gift-visual-recycled-cotton .gift-box-concept::before,
+.gift-visual-recycled-cotton .gift-box-concept::after {
+  background: #968363;
+}
+.gift-visual-recycled-cotton .gift-box-concept i {
+  border-color: #968363;
+}
+.gift-context-fields {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.gift-context-fields label,
+.gift-card-message,
+.gift-recipient-size {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 7px;
+  font-size: 10px;
+  color: #6b554a;
+}
+.gift-context-fields input,
+.gift-context-fields select,
+.gift-card-message textarea,
+.gift-recipient-size select {
+  min-width: 0;
+  width: 100%;
+  border: 1px solid #d8cbb9;
+  padding: 9px 8px;
+  border-radius: 0;
+  background: #fffdf8;
+  color: #49332f;
+  font: 11px/1.5 var(--sans, sans-serif);
+}
+.gift-card-message textarea {
+  resize: vertical;
+  min-height: 72px;
+}
+.gift-card-message > span {
+  text-align: right;
+  font-size: 8px;
+  color: #93816f;
+}
+.gift-card-toggle {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  font-size: 10px;
+  color: #603340;
+  cursor: pointer;
+  padding: 10px 0;
+  border-top: 1px solid #e1d8c9;
+  border-bottom: 1px solid #e1d8c9;
+}
+.gift-card-toggle > span:last-child {
+  margin-left: auto;
+  font-size: 17px;
+  color: #99734d;
+}
+.gift-editor .gift-demo-note {
+  font-size: 8px;
+  line-height: 1.8;
+  margin: 0;
+  color: #8b7b6d;
+}
+.gift-summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  padding: 9px 10px;
+  background: #f5eee3;
+  border-left: 2px solid #a78658;
+  margin: 10px 0;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.gift-summary-symbol {
+  color: #997548;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+.gift-summary > div {
+  min-width: 0;
+}
+.gift-summary p,
+.bag-item .gift-summary p:not(.eyebrow) {
+  color: #67434a;
+  font-size: 10px;
+  line-height: 1.7;
+  margin: 0;
+}
+.gift-summary .gift-summary-message,
+.bag-item .gift-summary .gift-summary-message {
+  color: #847165;
+  font-size: 9px;
+}
+.gift-summary-demo {
+  display: block;
+  color: #96816c;
+  font-size: 8px;
+  line-height: 1.6;
+  margin-top: 2px;
+}
+.bag-gift-edit {
+  margin-top: 10px;
+}
+.bag-gift-edit > summary {
+  color: #70404b;
+  font-size: 10px;
+  cursor: pointer;
+  padding: 7px 0;
+}
+.bag-gift-edit .gift-editor {
+  margin-top: 8px;
+  padding: 12px;
+}
+.bag-gift-edit .gift-editor-heading h3 {
+  font-size: 14px;
+}
+.bag-gift-edit .gift-packaging-grid {
+  gap: 5px;
+}
+.bag-gift-edit .gift-packaging-name {
+  font-size: 9px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.bag-gift-edit .gift-packaging-description {
+  font-size: 7px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.booking-items-summary .gift-summary {
+  margin: 4px 0 12px;
+}
+.booking-items-summary > div > span {
+  font-size: 11px;
+}
+@media (max-width: 600px) {
+  .gift-editor {
+    padding: 14px;
+  }
+  .gift-editor-heading h3 {
+    font-size: 15px;
+  }
+  .gift-packaging-name {
+    font-size: 9px;
+  }
+  .gift-packaging-description {
+    font-size: 7px;
+  }
+  .bag-gift-edit .gift-packaging-grid {
+    grid-template-columns: 1fr;
+  }
+  .bag-gift-edit .gift-packaging-option {
+    padding: 0 4px 6px 68px;
+    min-height: 64px;
+    justify-content: center;
+  }
+  .bag-gift-edit .gift-packaging-visual {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 61px;
+    height: 100%;
+    aspect-ratio: auto;
+  }
+  .bag-gift-edit .gift-packaging-option > input {
+    left: auto;
+    right: 6px;
+    top: 7px;
+  }
+  .bag-gift-edit .gift-packaging-check {
+    display: none;
+  }
+  .bag-gift-edit .gift-context-fields {
+    grid-template-columns: 1fr;
+  }
+  .bag-gift-edit .gift-intent label {
+    font-size: 9px;
+    gap: 4px;
+  }
+}
+@media (max-width: 350px) {
+  .gift-context-fields {
+    grid-template-columns: 1fr;
+  }
+  .gift-editor {
+    padding: 11px;
+  }
+  .gift-packaging-name {
+    margin: 7px 5px 3px;
+  }
+  .gift-packaging-description {
+    margin: 0 5px;
+  }
+}
+
+.gift-recipient-size > span {
+  color: #93816f;
+  font-size: 8px;
+  line-height: 1.6;
+}
